@@ -31,7 +31,7 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 | wissen/01_regeln_core.md | Markdown-Konvertierung erstellt; vollständige lokale Sicherung vorhanden; Repository-Aufteilung ausstehend |
 | wissen/01_regeln_turnier.md | Markdown-Konvertierung erstellt; vollständige lokale Sicherung vorhanden; Repository-Aufteilung ausstehend |
 | wissen/02_format.md | Deckbau-, Legalitäts-, Sideboard-, Match- und Zeitregeln mit Quellenbelegen; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt (2026-11-07) |
-| wissen/03_kartenpool.csv | nur Kopfzeile |
+| wissen/03_kartenpool.csv | erstellt, Stichprobe offen |
 | wissen/04_meta_turniere.csv | nur Kopfzeile |
 | wissen/05_meta_decklisten.md | Vorlage |
 | wissen/06_lokale_meta.md | Vorlage (ab Phase 5) |
@@ -42,3 +42,4 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 - 2026-11-07: Grundstruktur angelegt.
 - 2026-11-07: `02_format.md` anhand der Core Rules und Tournament Rules (Last Updated 2026-10-09) um Deckbau-, Format-, Sideboard-, Legalitäts- und Zeitregeln samt Regelnummern ergänzt; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt und eingetragen.
 - 2026-11-07: Vollständige englische Core Rules und Tournament Rules (RUP5; Last Updated 2026-10-09) aus den Quelldokumenten als Markdown übertragen und lokal als Fallback gesichert. Die Aufteilung in kleinere Repository-Dateien samt Indizes ist noch nicht veröffentlicht.
+- 2026-11-07: Kartenpool aus Rifthunt-Bulk-Export erstellt; rechtliche Sets und Bannliste abgeglichen; Stichprobe offen.
