@@ -32,10 +32,12 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 | wissen/01_regeln_turnier.md | Markdown-Konvertierung erstellt; vollständige lokale Sicherung vorhanden; Repository-Aufteilung ausstehend |
 | wissen/02_format.md | Deckbau-, Legalitäts-, Sideboard-, Match- und Zeitregeln mit Quellenbelegen; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt (2026-11-07) |
 | wissen/03_kartenpool.csv | 1.259 Karten (OGN, OGS, RAD, SFD, UNL, VEN); Stichprobe 20/20 ohne Abweichung (2026-11-07); offen: Dreaming Tree fehlt im Export, 41 Karten ohne Kartentext |
-| wissen/04_meta_turniere.csv | nur Kopfzeile |
-| wissen/05_meta_decklisten.md | Vorlage |
+| wissen/04_meta_turniere.csv | 16 Top-8-Zeilen zu zwei Showdowns (Stand 2026-11-07); Spieler und Legenden erfasst, Archetyp/Listlink nicht vollständig verfügbar |
+| wissen/05_meta_decklisten.md | Eine vollständige Siegerliste mit Mengen und Set-Nummern; Kartenpool-Abgleich durchgeführt (Stand 2026-11-07) |
 | wissen/06_lokale_meta.md | Vorlage (ab Phase 5) |
 | prompts/*.md | Entwurf v0.1 |
+
+**Meta-Datenhinweis:** Regional Championship Stuttgart (6.–8.11.2026) läuft am Stand 07.11.2026 noch; Ergebnisse sind in dieser Aktualisierung nicht als abgeschlossen erfasst. Die CSV deckt die letzten sechs Wochen ab und enthält nur tatsächlich veröffentlichte, prüfbare Top-8-Angaben.
 
 ## Änderungsprotokoll
 
@@ -44,3 +46,4 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 - 2026-11-07: Vollständige englische Core Rules und Tournament Rules (RUP5; Last Updated 2026-10-09) aus den Quelldokumenten als Markdown übertragen und lokal als Fallback gesichert. Die Aufteilung in kleinere Repository-Dateien samt Indizes ist noch nicht veröffentlicht.
 - 2026-11-07: Kartenpool aus Rifthunt-Bulk-Export erstellt; rechtliche Sets und Bannliste abgeglichen; Stichprobe offen.
 - 2026-11-07: Stichprobe Kartenpool (20 Karten gegen offizielle Kartenbilder) bestanden: 0 Abweichungen.
+- 2026-11-07: Turnier-Meta der Sacramento- und Orlando-Showdowns ergänzt; Platzierungssnapshot, vollständige Riven-Siegerliste und Quellenverweise in `04_meta_turniere.csv` und `05_meta_decklisten.md` dokumentiert. Stuttgart-Ergebnisstand als ausstehend vermerkt.
