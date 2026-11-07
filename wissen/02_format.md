@@ -12,27 +12,25 @@
 - Eine Reprint-Kartennummer außerhalb der normalen Setnummerierung macht die Karte nicht automatisch in diesem Standard legal. (TR 601.2.c–601.2.c.1)
 - Die PDFs enthalten keine Aussage, dass Rotation erst 2028 beginnt. Maßgeblich ist hier die oben zitierte Set-/Formatregel; weitergehende Rotationsplanung [BITTE PRÜFEN].
 
-## Bannliste Standard Constructed (Stand 18.09.2026)
+## Offizielle Bannliste Standard Constructed (Stand 07.11.2026)
 
-| Karte | Typ | Gebannt seit |
-|---|---|---|
-| Called Shot | Spell | 31.03.2026 |
-| Draven, Vanquisher | Champion Unit | 31.03.2026 |
-| Fight or Flight | Spell | 31.03.2026 |
-| Scrapheap | Gear | 31.03.2026 |
-| Stealthy Pursuer | Unit | 24.07.2026 |
-| Ekko, Recurrent | Unit | 18.09.2026 |
-| Stacked Deck | Spell | 18.09.2026 |
-| The Dreaming Tree | Battlefield | 31.03.2026 |
-| Obelisk of Power | Battlefield | 31.03.2026 |
-| Reaver's Row | Battlefield | 31.03.2026 |
-| The Arena's Greatest | Battlefield | 24.07.2026 |
-| Aspirant's Climb | Battlefield | 24.07.2026 |
+Quelle: offizieller Riftbound Rules Hub (vom Nutzer am 07.11.2026 übermittelt). Gilt für sanktionierte Constructed-Turniere.
 
-- Nur in 2v2 gebannt: Master Yi, Wuju Bladesman (Legende). Im 1v1 legal.
-- Ausnahme: Unveränderte Precon-Decks dürfen bei kleinen Events (z. B. Nexus Nights) gebannte Karten enthalten. Für unsere selbstgebauten Decks gilt die Bannliste strikt.
-- Die Tournament Rules sagen: Karten, die in einem Format gebannt sind, dürfen nicht im Deck sein; die offizielle Bannliste liegt separat vor. Bei Low OPL dürfen exakte, unveränderte Riftbound-Precon-Deckkonfigurationen gebannte Karten enthalten; Änderungen oder Hinzufügen eines Sideboards beenden diese Ausnahme. (TR 601.2.d–601.2.d.2.a)
-- Die PDFs nennen keine Karten der obigen Bannliste einzeln und bestätigen deren Status/Datum nicht. Daher wurde die bestehende Liste unverändert belassen; Aktualität [BITTE PRÜFEN].
+**Karten**
+- Called Shot
+- Ekko, Recurrent
+- Draven, Vanquisher
+- Fight or Flight
+- Scrapheap
+- Stealthy Pursuer
+- Stacked Deck
+
+**Battlefields**
+- The Arena's Greatest
+- Aspirant's Climb
+- Dreaming Tree
+- Obelisk of Power
+- Reaver's Row
 
 ## Deckbauregeln (Standard Constructed)
 - **Main Deck:** Im Core Rules mindestens 40 Karten; in Constructed-Turnieren genau 40 Karten einschließlich Chosen Champion. (CR 103.3; TR 402.1; TR 601.1.b)

@@ -18,7 +18,7 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 
 ## Regeln für Änderungen
 
-- Die Assistenten haben nur Leserechte. Änderungsvorschläge werden als Text ausgegeben und vom Nutzer eingetragen.
+- Die Assistenten haben nur Leserechte. Änderungsvorschläge an Dateien werden als Text ausgegeben und vom Nutzer eingetragen.
 - Jede Datei in `wissen/` trägt oben ein Stand-Datum.
 - Bei neuem Set oder neuer Bannliste: `02_format.md`, `03_kartenpool.csv` aktualisieren und Kontrolltest (20 Fragen) wiederholen.
 
@@ -30,7 +30,7 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 | wissen/RiftboundTournamentRulesRUP5_en_EN.pdf | Quelldokument vorhanden; Last Updated 2026-10-09 |
 | wissen/01_regeln_core.md | Markdown-Konvertierung erstellt; vollständige lokale Sicherung vorhanden; Repository-Aufteilung ausstehend |
 | wissen/01_regeln_turnier.md | Markdown-Konvertierung erstellt; vollständige lokale Sicherung vorhanden; Repository-Aufteilung ausstehend |
-| wissen/02_format.md | Deckbau-, Legalitäts-, Sideboard-, Match- und Zeitregeln mit Quellenbelegen aktualisiert (2026-11-07) |
+| wissen/02_format.md | Deckbau-, Legalitäts-, Sideboard-, Match- und Zeitregeln mit Quellenbelegen; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt (2026-11-07) |
 | wissen/03_kartenpool.csv | nur Kopfzeile |
 | wissen/04_meta_turniere.csv | nur Kopfzeile |
 | wissen/05_meta_decklisten.md | Vorlage |
@@ -40,5 +40,5 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 ## Änderungsprotokoll
 
 - 2026-11-07: Grundstruktur angelegt.
-- 2026-11-07: `02_format.md` anhand der Core Rules und Tournament Rules (Last Updated 2026-10-09) um Deckbau-, Format-, Sideboard-, Legalitäts- und Zeitregeln samt Regelnummern ergänzt; ursprüngliche Bannliste beibehalten.
+- 2026-11-07: `02_format.md` anhand der Core Rules und Tournament Rules (Last Updated 2026-10-09) um Deckbau-, Format-, Sideboard-, Legalitäts- und Zeitregeln samt Regelnummern ergänzt; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt und eingetragen.
 - 2026-11-07: Vollständige englische Core Rules und Tournament Rules (RUP5; Last Updated 2026-10-09) aus den Quelldokumenten als Markdown übertragen und lokal als Fallback gesichert. Die Aufteilung in kleinere Repository-Dateien samt Indizes ist noch nicht veröffentlicht.

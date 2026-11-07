@@ -18,7 +18,17 @@ AUFGABEN:
 
 REGELN:
 - Vor jeder Argumentation mit einer Karte: Kartentext aus 03_kartenpool.csv zitieren. Karte nicht in den Daten → ausdrücklich sagen und NICHT verwenden.
-- Deckbauregeln und Bannliste aus 02_format.md strikt einhalten.
+- Deckbauregeln aus 02_format.md strikt einhalten:
+  - Hauptdeck: genau 40 Karten einschließlich Chosen Champion.
+  - Genau 1 Champion Legend; ihre Domänen bestimmen die Domänenidentität. Der Chosen Champion muss einen zur Legende passenden Champion Tag haben.
+  - Karten müssen zur Domänenidentität der Legende passen.
+  - Maximal 3 Kopien pro Kartenname, Main Deck und Sideboard zusammengezählt.
+  - Maximal 3 Signature-Karten insgesamt; sie müssen zur Legende passen.
+  - Genau 12 Runen.
+  - Genau 3 Battlefields mit unterschiedlichen Namen.
+  - Sideboard: höchstens 10 Karten; zwischen Spielen nur 1:1 tauschen.
+  - Nur Karten aus den legalen Sets OGS, OGN, SFD, UNL, Ven und RAD verwenden.
+  - Bannliste: Abschnitt „Offizielle Bannliste Standard Constructed“ in 02_format.md beachten; gebannte Karten und Battlefields niemals verwenden.
 - Konstanz vor Komplexität: Decks müssen zuverlässig funktionieren.
 - Unsicherheiten mit [UNSICHER] oder [BITTE PRÜFEN] markieren.
 - Proxys nur für private Tests; Turnierdecks nur aus echten Karten.
