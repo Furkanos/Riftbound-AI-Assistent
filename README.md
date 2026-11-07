@@ -32,18 +32,16 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 | wissen/01_regeln_turnier.md | Markdown-Konvertierung erstellt; vollständige lokale Sicherung vorhanden; Repository-Aufteilung ausstehend |
 | wissen/02_format.md | Deckbau-, Legalitäts-, Sideboard-, Match- und Zeitregeln mit Quellenbelegen; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt (2026-11-07) |
 | wissen/03_kartenpool.csv | 1.259 Karten (OGN, OGS, RAD, SFD, UNL, VEN); Stichprobe 20/20 ohne Abweichung (2026-11-07); offen: Dreaming Tree fehlt im Export, 41 Karten ohne Kartentext |
-| wissen/04_meta_turniere.csv | 16 Top-8-Zeilen zu zwei Showdowns (Stand 2026-11-07); Spieler und Legenden erfasst, Archetyp/Listlink nicht vollständig verfügbar |
-| wissen/05_meta_decklisten.md | Eine vollständige Siegerliste mit Mengen und Set-Nummern; Kartenpool-Abgleich durchgeführt (Stand 2026-11-07) |
+| wissen/04_meta_turniere.csv | nur Kopfzeile |
+| wissen/05_meta_decklisten.md | 5 vollständige Turnierlisten; Summen programmatisch mit Chosen Champion im Main-Deck-Zählwert geprüft; Abweichung markiert |
 | wissen/06_lokale_meta.md | Vorlage (ab Phase 5) |
-| prompts/*.md | Entwurf v0.1 |
-
-**Meta-Datenhinweis:** Regional Championship Stuttgart (6.–8.11.2026) läuft am Stand 07.11.2026 noch; Ergebnisse sind in dieser Aktualisierung nicht als abgeschlossen erfasst. Die CSV deckt die letzten sechs Wochen ab und enthält nur tatsächlich veröffentlichte, prüfbare Top-8-Angaben.
+| prompts/*.md | v0.2; Deckbau-/Prüfhinweise und Champion-Zählregel ergänzt |
 
 ## Änderungsprotokoll
 
 - 2026-11-07: Grundstruktur angelegt.
-- 2026-11-07: `02_format.md` anhand der Core Rules und Tournament Rules (Last Updated 2026-10-09) um Deckbau-, Format-, Sideboard-, Legalitäts- und Zeitregeln samt Regelnummern ergänzt; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt und eingetragen.
+- 2026-11-07: `02_format.md` anhand der Core Rules und Tournament Rules (Last Updated 2026-10-09) um Deckbau-, Format-, Sideboard-, Legalitäts- und Zeitregeln samt Quellenbelegen ergänzt; offizielle Bannliste für sanktionierte Constructed-Turniere bestätigt und eingetragen.
 - 2026-11-07: Vollständige englische Core Rules und Tournament Rules (RUP5; Last Updated 2026-10-09) aus den Quelldokumenten als Markdown übertragen und lokal als Fallback gesichert. Die Aufteilung in kleinere Repository-Dateien samt Indizes ist noch nicht veröffentlicht.
 - 2026-11-07: Kartenpool aus Rifthunt-Bulk-Export erstellt; rechtliche Sets und Bannliste abgeglichen; Stichprobe offen.
 - 2026-11-07: Stichprobe Kartenpool (20 Karten gegen offizielle Kartenbilder) bestanden: 0 Abweichungen.
-- 2026-11-07: Turnier-Meta der Sacramento- und Orlando-Showdowns ergänzt; Platzierungssnapshot, vollständige Riven-Siegerliste und Quellenverweise in `04_meta_turniere.csv` und `05_meta_decklisten.md` dokumentiert. Stuttgart-Ergebnisstand als ausstehend vermerkt.
+- 2026-11-07: Main-Deck-Zählregel (Chosen Champion zählt trotz Start in Champion Zone mit) anhand CR 103.3/103.3.a.1 und TR 402.1 klargestellt; Meta-Decklisten maschinell nachgerechnet und Prompts auf v0.2 aktualisiert.

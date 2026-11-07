@@ -1,6 +1,8 @@
 # Meta-Decklisten – Stand: 2026-11-07
 
 **Datenfenster:** 2026-09-26 bis 2026-11-07 (letzte sechs Wochen). Nur vollständig einsehbare Decklisten werden aufgenommen.
+**Zählhinweis:** Der Chosen Champion gehört zum Main Deck-Zählwert, auch wenn er zu Spielbeginn in der Champion Zone liegt (CR 103.3, 103.3.a.1; TR 402.1). Die Kategoriesummen unten zählen nur die separat aufgeführten Main-Deck-Karten; „Hauptdeck gesamt“ addiert dazu 1 Chosen Champion. Bei Abweichungen vom Constructed-Soll (40) steht [BITTE PRÜFEN] mit Differenz. Summen sind programmatisch aus den einzelnen Mengen berechnet.
+
 **Abgleich:** Liste 1 ist mit `03_kartenpool.csv` geprüft. Listen 2–5 stammen aus dem Text-Export von RiftBench (Quelle TopDeck.gg). Die Set-Nummern dort stammen von RiftBench. Wo RiftBench keine Nummer anzeigt, steht [BITTE PRÜFEN]. Vor der Nutzung einer Karte gilt immer der Eintrag in `03_kartenpool.csv`.
 
 ## Meta-Zusammenfassung
@@ -60,7 +62,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 3 Zhonya's Hourglass (OGN-077)
 3 Blade of the Exile (RAD-150)
 
-**Hauptdeck gesamt: 39**
+**Hauptdeck gesamt: 40 = 1 Champion + 39 Main-Deck-Karten** (20 Units, 13 Spells, 6 Gear)
 
 #### Battlefields (3)
 1 Emperor's Dais (SFD-207)
@@ -94,7 +96,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 #### Champion (1)
 1 Riven, Broken Blade (RAD-043)
 
-#### Hauptdeck – Units (19)
+#### Hauptdeck – Units (20)
 3 Astral Heron (VEN-044)
 1 Baron Nashor (UNL-147) [BITTE PRÜFEN: Liste 1 nennt UNL-238, vermutlich ein anderer Druck]
 3 Bedeviling Stranger (RAD-107)
@@ -105,7 +107,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 2 Traveling Merchant (OGN-185)
 1 Vex, Apathetic (UNL-150)
 
-#### Hauptdeck – Spells (14)
+#### Hauptdeck – Spells (13)
 2 Battle Preparations (RAD-032)
 1 Charm (OGN-043)
 2 Defy (OGN-045)
@@ -119,7 +121,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 3 Blade of the Exile (RAD-150)
 3 Zhonya's Hourglass (OGN-077)
 
-**Hauptdeck gesamt: 39**
+**Hauptdeck gesamt: 40 = 1 Champion + 39 Main-Deck-Karten** (20 Units, 13 Spells, 6 Gear)
 
 #### Battlefields (3)
 1 Emperor's Dais (SFD-207)
@@ -181,7 +183,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 2 Edge of Night (SFD-139)
 2 Guardian Angel (SFD-051)
 
-**Hauptdeck gesamt: 39** [Kartentyp Orianna/Hunker Down/Battle Preparations laut Kartenpool BITTE PRÜFEN]
+**Hauptdeck gesamt: 40 = 1 Champion + 39 Main-Deck-Karten** (13 Units, 20 Spells, 6 Gear)
 
 #### Battlefields (3)
 1 Abandoned Hall · 1 Sunken Temple · 1 Targon's Peak [Nummern BITTE PRÜFEN]
@@ -205,7 +207,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 #### Champion (1)
 1 Kai'Sa, Survivor (OGN-039)
 
-#### Hauptdeck – Units (18)
+#### Hauptdeck – Units (21)
 3 Bilgewater Tracker (RAD-003)
 3 Brynhir Thundersong (OGN-026)
 3 Forecaster (SFD-065)
@@ -216,7 +218,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 2 The Empyrean (RAD-060)
 1 Watchful Sentry (OGN-096)
 
-#### Hauptdeck – Spells (20)
+#### Hauptdeck – Spells (17)
 1 Bellows Breath (SFD-080)
 3 Falling Star (OGN-029)
 2 Hextech Ray (OGN-009)
@@ -229,7 +231,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 #### Hauptdeck – Gear (1)
 1 Orb of Regret (OGN-090)
 
-**Hauptdeck gesamt: 39** [Summe Spells laut Export 17 + 3 Stupefy; Gesamtzahl im Deckcheck nachrechnen]
+**Hauptdeck gesamt: 40 = 1 Champion + 39 Main-Deck-Karten** (21 Units, 17 Spells, 1 Gear)
 
 #### Battlefields (3)
 1 Frozen Fortress (UNL-212)
@@ -255,7 +257,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 #### Champion (1)
 1 Akali, Deadly Weapon (VEN-021)
 
-#### Hauptdeck – Units (21)
+#### Hauptdeck – Units (17)
 3 Astral Heron (VEN-044)
 2 Blitzcrank, Impassive (OGN-067)
 3 Kai'Sa, Survivor (OGN-039)
@@ -265,7 +267,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 3 Stellacorn Herder (SFD-048)
 1 Tomb-Raider Barbara (VEN-037)
 
-#### Hauptdeck – Spells (17)
+#### Hauptdeck – Spells (16)
 2 Back Off (UNL-042)
 1 Block (OGN-057)
 3 Defy (OGN-045)
@@ -278,7 +280,7 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 3 Long Sword (SFD-022)
 3 Zhonya's Hourglass (OGN-077)
 
-**Hauptdeck gesamt laut Export: 39** [Summen der Gruppen im Deckcheck nachrechnen]
+**Hauptdeck gesamt: 40 = 1 Champion + 39 Main-Deck-Karten** (17 Units, 16 Spells, 6 Gear)
 
 #### Battlefields (3)
 1 Forgotten Monument (SFD-209)
@@ -293,4 +295,4 @@ Quellen: [Riftwatch](https://riftwatch.gg/), [RiftBench – Events](https://rift
 
 ---
 
-**Hinweis:** Gruppensummen bei Listen 2–5 wurden nicht im Kopf nachgerechnet, sondern sind laut Plan im Deckcheck-Blatt zu prüfen. Die Mengen pro Karte sind 1:1 aus dem Export übernommen.
+**Hinweis:** Kartennamen und Mengen der Listen 2–5 stammen aus dem Text-Export; die nachgerechneten Summen betreffen ausschließlich die dort ausgeschriebenen Kartenmengen. Kartentypen und [BITTE PRÜFEN]-Felder bleiben bei unklaren Quellenangaben offen.

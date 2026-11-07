@@ -33,9 +33,9 @@ Quelle: offizieller Riftbound Rules Hub (vom Nutzer am 07.11.2026 übermittelt).
 - Reaver's Row
 
 ## Deckbauregeln (Standard Constructed)
-- **Main Deck:** Im Core Rules mindestens 40 Karten; in Constructed-Turnieren genau 40 Karten einschließlich Chosen Champion. (CR 103.3; TR 402.1; TR 601.1.b)
+- **Main Deck:** Im Core Rules mindestens 40 Karten; in Constructed-Turnieren genau 40 Karten einschließlich Chosen Champion. Der Chosen Champion zählt zum Main Deck, auch wenn er zu Spielbeginn separat in der Champion Zone liegt. (CR 103.3; CR 103.3.a.1; TR 402.1; TR 601.1.b)
 - **Champion Legend:** genau 1. Ihre Domain(s) bestimmen die Domain Identity des Decks. (CR 103.2–103.2.b.2)
-- **Chosen Champion:** Eine Champion Unit mit Champion Tag passend zum Tag der Champion Legend; sie ist im Main Deck-Zählwert enthalten und unterliegt dem Kopienlimit. (CR 103.3, 103.3.a.2, 103.3.b.1; TR 402.1)
+- **Chosen Champion:** Eine Champion Unit mit Champion Tag passend zum Tag der Champion Legend. Sie zählt als eine der genau 40 Main-Deck-Karten (Constructed), obwohl sie zu Spielbeginn in der Champion Zone liegt; sie unterliegt dem Kopienlimit. (CR 103.3, 103.3.a.1–103.3.a.2, 103.3.b.1; TR 402.1)
 - **Runes:** genau 12 Rune Cards im Rune Deck, getrennt vom Main Deck; sie müssen zur Domain Identity der Champion Legend passen. (CR 103.4.a–103.4.b; TR 402.1)
 - **Battlefields:** genau 3, alle mit unterschiedlichen Namen. Anzahl sonst nach Mode of Play; Domain Identity gilt, falls zutreffend. (CR 103.5.a–103.5.c; TR 402.1)
 - **Kopienlimit:** bis zu 3 Exemplare je gleicher Kartenname im Main Deck; das Chosen Champion zählt mit. In Constructed gilt das Limit für die Kombination aus Main Deck und Sideboard. (CR 103.3.b–103.3.b.1; TR 403.3, 601.1.c.3)
