@@ -26,9 +26,11 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 
 | Datei | Status |
 |---|---|
-| wissen/01_regeln_core_2026-10-09.pdf | FEHLT – aus Rules Hub hochladen |
-| wissen/01_regeln_turnier_2026-10-09.pdf | FEHLT – aus Rules Hub hochladen |
-| wissen/02_format.md | Entwurf, Deckbauregeln noch [BITTE PRÜFEN] |
+| wissen/RiftboundCoreRulesRUP5_En_EN.pdf | Quelldokument vorhanden; Last Updated 2026-10-09 |
+| wissen/RiftboundTournamentRulesRUP5_en_EN.pdf | Quelldokument vorhanden; Last Updated 2026-10-09 |
+| wissen/01_regeln_core.md | Markdown-Konvertierung noch ausstehend |
+| wissen/01_regeln_turnier.md | Markdown-Konvertierung noch ausstehend |
+| wissen/02_format.md | Deckbau-, Legalitäts-, Sideboard-, Match- und Zeitregeln mit Quellenbelegen aktualisiert (2026-11-07) |
 | wissen/03_kartenpool.csv | nur Kopfzeile |
 | wissen/04_meta_turniere.csv | nur Kopfzeile |
 | wissen/05_meta_decklisten.md | Vorlage |
@@ -38,3 +40,4 @@ Die Sammlungs-CSV (Export aus NocoDB) liegt NICHT hier, sondern wird pro Chat an
 ## Änderungsprotokoll
 
 - 2026-11-07: Grundstruktur angelegt.
+- 2026-11-07: `02_format.md` anhand der Core Rules und Tournament Rules (Last Updated 2026-10-09) um Deckbau-, Format-, Sideboard-, Legalitäts- und Zeitregeln samt Regelnummern ergänzt; ursprüngliche Bannliste beibehalten. Die vollständigen Regelwerke liegen als PDFs vor; Markdown-Übertragung ist noch ausstehend.
