@@ -1,5 +1,14 @@
 # Legalitätscheck: kaisa
 
+| Bereich | Anzahl |
+|---|---:|
+| Legende | 1 |
+| Champion | 1 |
+| Main | 39 |
+| Rune | 12 |
+| Battlefield | 3 |
+| Sideboard | 10 |
+
 **Deckliste: vollständig markiert.**
 
 | Prüfung | Ergebnis | Details |

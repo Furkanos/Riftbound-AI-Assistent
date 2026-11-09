@@ -3,27 +3,28 @@ on:
   push:
     paths:
       - 'decks/**'
+      - 'tools/deckcheck.py'
       - 'wissen/**'
-      - 'tools/**'
+      - '.github/workflows/deckcheck.yml'
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
-  deckcheck:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Decklisten prüfen
+      - name: Decks prüfen und Ergebnisse erstellen
         run: python tools/deckcheck.py
       - name: Ergebnisse committen
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add ergebnis/*.csv ergebnis/*.md
+          git add ergebnis/
           if ! git diff --cached --quiet; then
-            git commit -m 'Aktualisiere Deckcheck-Ergebnisse'
+            git commit -m 'Automated deckcheck results [skip ci]'
             git push
           fi

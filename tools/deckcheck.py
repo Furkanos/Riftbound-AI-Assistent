@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 AREAS={'Legende','Champion','Main','Battlefield','Rune','Sideboard'}
+AREA_ALIASES={'Runen':'Rune','Battlefields':'Battlefield'}
 LEGAL={'OGS','OGN','SFD','UNL','VEN','RAD'}
 
 def norm(s):
@@ -55,10 +56,10 @@ def main():
   cards=[]
   for i,r in enumerate(rows,2):
    if not r or not any(r.values()): continue
-   q=int(r['Anzahl']); a=r['Bereich'].strip(); nm=r['Name'].strip(); st=r.get('Set','').strip().upper(); no=r.get('Nummer','').strip()
+   q=int(r['Anzahl']); a=r['Bereich'].strip(); a=AREA_ALIASES.get(a,a); nm=r['Name'].strip(); st=r.get('Set','').strip().upper(); no=r.get('Nummer','').strip()
    if q<1 or a not in AREAS or not nm: raise ValueError(f'{p}:{i}: ungültige Anzahl, Name oder Bereich')
    cards.append({'q':q,'name':nm,'set':st,'no':no,'area':a,'key':(st,num(no)),'cat':None})
-  # Choose the catalog print matching requested set+number; otherwise name lookup for diagnosis only.
+  # Choose the catalog printing matching requested set+number; otherwise name lookup for diagnosis only.
   issues=[]; all_catalog=True
   for c in cards:
    matches=ckey.get(c['key'],[])
@@ -94,6 +95,10 @@ def main():
    w=csv.writer(f,delimiter=';'); w.writerow(['Bereich','Karte','Set','Nummer','Benötigt','Besitz','Fehlend','Preis_€','Kosten_Fehlend_€'])
    for q,nm,area,st,no,h,m,pr,cost,matched in results: w.writerow([area,nm,st,no,q,h,m,f'{pr:.2f}' if pr is not None else '',f'{cost:.2f}' if cost is not None else ''])
    w.writerow(['SUMME','','','',need,owned,missing,'',f'{costs:.2f}' if costok else ''])
+  with (outdir/f'{p.stem}_kaufliste.csv').open('w',encoding='utf-8-sig',newline='') as f:
+   w=csv.writer(f,delimiter=';'); w.writerow(['Bereich','Anzahl','Name','Set','Nummer','Besitz','Fehlend','Preis_€','Kosten_€','Hinweis'])
+   for q,nm,area,st,no,h,m,pr,cost,matched in results:
+    if m: w.writerow([area,q,nm,st,no,h,m,f'{pr:.2f}' if pr is not None else '',f'{cost:.2f}' if cost is not None else '', '' if pr is not None else 'PREIS FEHLT'])
   maincount=areas['Main']+areas['Champion']; bfs=[norm(c['name']) for c in cards if c['area']=='Battlefield']
   domains=[]; signatures=[]; legend_tags=[]; champion_tags=[]
   for c in cards:
@@ -109,7 +114,9 @@ def main():
   tests=[('Main Deck = 40 (Champion einschließlich)',maincount==40,f'{maincount}/40'),('Genau 1 Legende',areas['Legende']==1,f'{areas["Legende"]} eingetragen'),('Genau 12 Runen',areas['Rune']==12,f'{areas["Rune"]}/12'),('Genau 3 Battlefields',areas['Battlefield']==3,f'{areas["Battlefield"]}/3'),('Battlefields unterschiedlich',len(bfs)==len(set(bfs)),'Namen verschieden' if len(bfs)==len(set(bfs)) else 'Doppelte Namen'),('Max. 3 Exemplare je Name (Main + Sideboard)',max(counts.values(),default=0)<=3,'keine Überschreitung' if max(counts.values(),default=0)<=3 else 'Überschreitung'),('Alle Karten Set/Nummer im Katalog',all_catalog,'Katalogabgleich'),('Keine gebannte Karte',not any(norm(c['name']) in bans for c in cards),'Bannliste aus wissen/02_format.md'),('Sideboard höchstens 10',areas['Sideboard']<=10,f'{areas["Sideboard"]}/10'),('Alle Domains entsprechen Legendenidentität',not domain_bad,', '.join(domain_bad) if domain_bad else 'keine Fremd-Domains; Identität '+', '.join(sorted(identity))),('Runen-Domains entsprechen Legendenidentität',not rune_bad,', '.join(rune_bad) if rune_bad else 'Runen passen zu '+', '.join(sorted(identity))),('Chosen Champion Tag passt zur Legende',bool(set(legend_tags)&set(champion_tags)),f'Legend: {legend_tags}; Champion: {champion_tags}'),('Höchstens 3 Signatures',len(signatures)<=3,f'{len(signatures)}/3')]
   with (outdir/f'{p.stem}_legalitaet.md').open('w',encoding='utf-8') as f:
    incomplete=any('UNVOLLSTÄNDIG' in x.upper() for x in comments)
-   f.write(f'# Legalitätscheck: {p.stem}\n\n**Deckliste: {"UNVOLLSTÄNDIG" if incomplete else "vollständig markiert"}.**\n\n| Prüfung | Ergebnis | Details |\n|---|---|---|\n')
+   f.write(f'# Legalitätscheck: {p.stem}\n\n| Bereich | Anzahl |\n|---|---:|\n')
+   for a in ('Legende','Champion','Main','Rune','Battlefield','Sideboard'): f.write(f'| {a} | {areas[a]} |\n')
+   f.write(f'\n**Deckliste: {"UNVOLLSTÄNDIG" if incomplete else "vollständig markiert"}.**\n\n| Prüfung | Ergebnis | Details |\n|---|---|---|\n')
    for label,ok,detail in tests: f.write(f'| {label} | {"BESTANDEN" if ok else "NICHT BESTANDEN"} | {detail} |\n')
    f.write('\n## Zuordnung und Besitz\n\nBesitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet.\n\n')
    f.write(('Hinweise:\n'+''.join(f'- {x}\n' for x in issues)) if issues else 'Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.\n')

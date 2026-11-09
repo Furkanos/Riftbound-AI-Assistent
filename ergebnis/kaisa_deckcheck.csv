@@ -1,38 +1,32 @@
-﻿Bereich;Anzahl;Name;Set;Nummer;Besitz;Fehlend;Preis_€;Kosten_€;Hinweis
-Legende;1;Kai'Sa, Daughter of the Void;OGN;247;0;1;;;PREIS FEHLT
-Champion;1;Kai'Sa, Survivor;OGN;39;0;1;;;PREIS FEHLT
-Main;3;Bilgewater Tracker;RAD;3;0;3;;;PREIS FEHLT
-Main;3;Lecturing Yordle;OGN;87;0;3;;;PREIS FEHLT
-Main;3;Noxus Hopeful;OGN;12;0;3;;;PREIS FEHLT
-Main;3;Brynhir Thundersong;OGN;26;0;3;;;PREIS FEHLT
-Main;3;Thousand-Tailed Watcher;OGN;116;0;3;;;PREIS FEHLT
-Main;2;The Empyrean;RAD;60;0;2;;;PREIS FEHLT
-Main;1;Bellows Breath;SFD;80;1;0;4.37;0.00;
-Main;3;Hextech Ray;OGN;9;0;3;;;PREIS FEHLT
-Main;3;Stupefy;OGN;95;0;3;;;PREIS FEHLT
-Main;1;Brittle Steel;VEN;3;1;0;0.13;0.00;
-Main;3;Falling Star;OGN;29;0;3;;;PREIS FEHLT
-Main;2;Smoke Screen;OGN;93;0;2;;;PREIS FEHLT
-Main;3;Temporal Breach;VEN;66;0;3;;;PREIS FEHLT
-Main;2;Void Seeker;OGN;24;0;2;;;PREIS FEHLT
-Main;2;Singularity;OGN;105;0;2;;;PREIS FEHLT
-Main;2;Time Warp;OGN;122;0;2;;;PREIS FEHLT
-Battlefield;1;Frozen Fortress;UNL;212;1;0;0.11;0.00;
-Battlefield;1;Rockfall Path;SFD;216;1;0;0.19;0.00;
-Battlefield;1;Void Gate;OGN;296;0;1;;;PREIS FEHLT
-Rune;6;Fury Rune;OGN;7;0;6;;;PREIS FEHLT
-Rune;6;Mind Rune;OGN;89;0;6;;;PREIS FEHLT
-Sideboard;1;Bellows Breath;SFD;80;0;1;4.37;4.37;
-Sideboard;1;Decree of Insight;VEN;61;0;1;;;PREIS FEHLT
-Sideboard;3;Decree of Rage;VEN;15;0;3;;;PREIS FEHLT
-Sideboard;1;Brittle Steel;VEN;3;0;1;0.13;0.13;
-Sideboard;2;Ferrous Forerunner;SFD;21;1;1;2.44;2.44;
-Sideboard;1;Icathian Rain;OGN;248;0;1;;;PREIS FEHLT
-Sideboard;1;The Empyrean;RAD;60;0;1;;;PREIS FEHLT
-Legende;1;SUMME Legende;;;0;1;;0.00;1 fehlende Karten ohne Preis (bekannte Kosten)
-Champion;1;SUMME Champion;;;0;1;;0.00;1 fehlende Karten ohne Preis (bekannte Kosten)
-Main;39;SUMME Main;;;2;37;;0.00;37 fehlende Karten ohne Preis (bekannte Kosten)
-Battlefield;3;SUMME Battlefield;;;2;1;;0.00;1 fehlende Karten ohne Preis (bekannte Kosten)
-Rune;12;SUMME Rune;;;0;12;;0.00;12 fehlende Karten ohne Preis (bekannte Kosten)
-Sideboard;10;SUMME Sideboard;;;1;9;;6.94;6 fehlende Karten ohne Preis (bekannte Kosten)
-SUMME;66;GESAMT;;;5;61;;6.94;"58 fehlende Karten ohne Preis; bekannte Kosten"
+﻿Bereich;Karte;Set;Nummer;Benötigt;Besitz;Fehlend;Preis_€;Kosten_Fehlend_€
+Legende;Kai'Sa, Daughter of the Void;OGN;247;1;0;1;;
+Champion;Kai'Sa, Survivor;OGN;39;1;0;1;;
+Main;Bilgewater Tracker;RAD;3;3;0;3;;
+Main;Lecturing Yordle;OGN;87;3;0;3;;
+Main;Noxus Hopeful;OGN;12;3;0;3;;
+Main;Brynhir Thundersong;OGN;26;3;0;3;;
+Main;Thousand-Tailed Watcher;OGN;116;3;0;3;;
+Main;The Empyrean;RAD;60;2;0;2;;
+Main;Bellows Breath;SFD;80;1;1;0;4.37;0.00
+Main;Hextech Ray;OGN;9;3;0;3;;
+Main;Stupefy;OGN;95;3;0;3;;
+Main;Brittle Steel;VEN;3;1;1;0;0.13;0.00
+Main;Falling Star;OGN;29;3;0;3;;
+Main;Smoke Screen;OGN;93;2;0;2;;
+Main;Temporal Breach;VEN;66;3;0;3;;
+Main;Void Seeker;OGN;24;2;0;2;;
+Main;Singularity;OGN;105;2;0;2;;
+Main;Time Warp;OGN;122;2;0;2;;
+Battlefield;Frozen Fortress;UNL;212;1;1;0;0.11;0.00
+Battlefield;Rockfall Path;SFD;216;1;1;0;0.19;0.00
+Battlefield;Void Gate;OGN;296;1;0;1;;
+Rune;Fury Rune;OGN;7;6;0;6;;
+Rune;Mind Rune;OGN;89;6;0;6;;
+Sideboard;Bellows Breath;SFD;80;1;0;1;4.37;4.37
+Sideboard;Decree of Insight;VEN;61;1;0;1;;
+Sideboard;Decree of Rage;VEN;15;3;0;3;;
+Sideboard;Brittle Steel;VEN;3;1;0;1;0.13;0.13
+Sideboard;Ferrous Forerunner;SFD;21;2;1;1;2.44;2.44
+Sideboard;Icathian Rain;OGN;248;1;0;1;;
+Sideboard;The Empyrean;RAD;60;0;1;1;;
+SUMME;;;;66;5;61;;
