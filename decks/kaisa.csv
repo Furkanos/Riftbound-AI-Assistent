@@ -1,7 +1,31 @@
-# UNVOLLSTÄNDIG: Enthält nur die vom Nutzer bestätigten Karten; unbekannte Karten wurden nicht ergänzt.
 Anzahl;Name;Set;Nummer;Bereich
 1;Kai'Sa, Daughter of the Void;OGN;247;Legende
 1;Kai'Sa, Survivor;OGN;39;Champion
 3;Bilgewater Tracker;RAD;3;Main
 3;Lecturing Yordle;OGN;87;Main
 3;Noxus Hopeful;OGN;12;Main
+3;Brynhir Thundersong;OGN;26;Main
+3;Thousand-Tailed Watcher;OGN;116;Main
+2;The Empyrean;RAD;60;Main
+1;Bellows Breath;SFD;80;Main
+3;Hextech Ray;OGN;9;Main
+3;Stupefy;OGN;95;Main
+1;Brittle Steel;VEN;3;Main
+3;Falling Star;OGN;29;Main
+2;Smoke Screen;OGN;93;Main
+3;Temporal Breach;VEN;66;Main
+2;Void Seeker;OGN;24;Main
+2;Singularity;OGN;105;Main
+2;Time Warp;OGN;122;Main
+1;Frozen Fortress;UNL;212;Battlefield
+1;Rockfall Path;SFD;216;Battlefield
+1;Void Gate;OGN;296;Battlefield
+6;Fury Rune;OGN;7;Rune
+6;Mind Rune;OGN;89;Rune
+1;Bellows Breath;SFD;80;Sideboard
+1;Decree of Insight;VEN;61;Sideboard
+3;Decree of Rage;VEN;15;Sideboard
+1;Brittle Steel;VEN;3;Sideboard
+2;Ferrous Forerunner;SFD;21;Sideboard
+1;Icathian Rain;OGN;248;Sideboard
+1;The Empyrean;RAD;60;Sideboard

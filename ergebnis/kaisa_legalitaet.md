@@ -1,25 +1,29 @@
 # Legalitätscheck: kaisa
 
-**Deckliste: UNVOLLSTÄNDIG.** Nur die ausdrücklich bekannten Karten sind enthalten; der Rest wurde nicht erfunden.
+**Deckliste: vollständig markiert.**
 
 | Prüfung | Ergebnis | Details |
 |---|---|---|
-| Main Deck = 40 (Champion einschließlich) | NICHT BESTANDEN | 10/40; Kai'Sa, Survivor zählt als Champion im Main Deck |
+| Main Deck = 40 (Champion einschließlich) | BESTANDEN | 40/40 |
 | Genau 1 Legende | BESTANDEN | 1 eingetragen |
-| Genau 12 Runen | NICHT BESTANDEN | 0/12 |
-| Genau 3 Battlefields | NICHT BESTANDEN | 0/3 |
+| Genau 12 Runen | BESTANDEN | 12/12 |
+| Genau 3 Battlefields | BESTANDEN | 3/3 |
 | Battlefields unterschiedlich | BESTANDEN | Namen verschieden |
 | Max. 3 Exemplare je Name (Main + Sideboard) | BESTANDEN | keine Überschreitung |
-| Alle Karten im Katalog | BESTANDEN | alle bekannten Karten gefunden |
+| Alle Karten Set/Nummer im Katalog | BESTANDEN | Katalogabgleich |
 | Keine gebannte Karte | BESTANDEN | Bannliste aus wissen/02_format.md |
-| Sideboard höchstens 10 | BESTANDEN | 0/10 |
+| Sideboard höchstens 10 | BESTANDEN | 10/10 |
+| Alle Domains entsprechen Legendenidentität | BESTANDEN | keine Fremd-Domains; Identität fury, mind |
+| Runen-Domains entsprechen Legendenidentität | BESTANDEN | Runen passen zu fury, mind |
+| Chosen Champion Tag passt zur Legende | BESTANDEN | Legend: ["Kai'Sa"]; Champion: ["Kai'Sa", 'The Void'] |
+| Höchstens 3 Signatures | BESTANDEN | 1/3 |
 
 ## Zuordnung und Besitz
 
-Inventar: `wissen/Riftbound - Karten (Karten) 2026-11-09_18-40.csv`; Katalog: `wissen/Riftbound - Kartenkatalog (Kartenkatalog) 2026-11-09_19-01.csv`. Besitzabgleich nach Set+Nummer, Foil/Normal addiert; bei fehlenden Angaben fallback auf normalisierten Namen. Inventar wurde mit Python-CSV-Parser eingelesen; Kommas und mehrzeilige Regeltexte werden als CSV-Felder behandelt.
+Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet.
 
-Für keine der 5 bekannten Karten ist im Inventar eine Besitzzeile und damit auch kein Preis vorhanden. Kostenfelder bleiben deshalb leer statt unbelegt €0 auszuweisen.
+Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.
 
-Die vollständige Deckliste wurde im Repo nicht gefunden. Die lokale Teilliste wurde mit den bekannten Karten angelegt; unbekannte Karten wurden nicht erfunden. Vollständige Decklegalität ist nicht bewertbar.
+Preise für fehlende Exemplare sind im Inventar nicht verfügbar; entsprechende Kosten bleiben leer.
 
-**Summe:** Benötigt 11 · Besitz 0 · Fehlend 11 · Kosten nicht vollständig bestimmbar.
+Benötigt **66** · Besitz **5** · Fehlend **61** · Kosten **nicht vollständig bestimmbar**.
