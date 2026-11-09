@@ -11,8 +11,9 @@ LEGAL={'OGS','OGN','SFD','UNL','VEN','RAD'}
 
 def norm(s):
  s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().casefold()
- s=re.sub(r'\[(?:foil|alternate\s*art|alt\s*art)[^]]*\]',' ',s)
- s=re.sub(r'\([^)]*(?:alternate art|overnumbered|signature|metal)[^)]*\)',' ',s)
+ s=re.sub(r'\[(?:foil|showcase|alternate\s*art|alt\s*art|signature)[^]]*\]',' ',s)
+ s=re.sub(r'\((?:foil|showcase|alternate\s*art|alt\s*art|signature|overnumbered|metal)[^)]*\)',' ',s)
+ s=re.sub(r'\b(?:foil|showcase)\b',' ',s)
  s=re.sub(r'\s+#\s*[a-z]*\d+[a-z]*\s*$',' ',s,flags=re.I)
  return ' '.join(re.sub(r'[^a-z0-9]+',' ',s).split())
 def num(s): return re.sub(r'[a-z]+$','',str(s or '').strip().casefold())
@@ -32,13 +33,19 @@ def main():
  invkey=defaultdict(lambda:[0,[]]); invname=defaultdict(lambda:[0,[]])
  for r in readcsv(invs[0]):
   nm=r.get('Titel',''); k=(r.get('SetCode','').strip().upper(),num(r.get('Kartennummer'))); q=int(dec(r.get('Owned'))); price=dec(r.get('PriceEUR'))
+  # Besitz wird kartennummern- und druckvariantenübergreifend über den normalisierten Kartennamen summiert.
   for d,key in ((invkey,k),(invname,norm(nm))):
    d[key][0]+=q
    if price>0: d[key][1].append((price,max(q,1)))
- ckey=defaultdict(list); cname=defaultdict(list)
+ ckey=defaultdict(list); cname=defaultdict(list); catalog_prices=defaultdict(list)
  for r in readcsv(cats[0]):
-  nm=r.get('Name') or r.get('Spielkartenname') or ''; k=(r.get('SetCode','').strip().upper(),num(r.get('Kartennummer')))
-  if nm: ckey[k].append(nm); cname[norm(nm)].append((k[0],nm))
+  nm=r.get('Name') or r.get('Spielkartenname') or ''; canonical=r.get('Spielkartenname') or nm; k=(r.get('SetCode','').strip().upper(),num(r.get('Kartennummer')))
+  if nm:
+   ckey[k].append(nm); cname[norm(nm)].append((k[0],nm)); cname[norm(canonical)].append((k[0],nm))
+  for col,value in r.items():
+   if value and not re.search(r'(?:url|image|bild)',col,re.I) and re.search(r'(?:price|preis|eur|cost|kosten)',col,re.I):
+    pv=dec(value)
+    if pv>0: catalog_prices[norm(canonical)].append(pv)
  fmt=ROOT/'wissen/02_format.md'; bans=set(); table=False
  for line in fmt.read_text(encoding='utf-8').splitlines():
   if 'Bannliste Standard' in line: table=True; continue
@@ -63,10 +70,11 @@ def main():
    if not catalog: issues.append(f'Katalog: **{nm}** nicht gefunden.'); legalcards=False
    if n in bans: issues.append(f'Gebannt: **{nm}** steht auf der Bannliste.'); legalcards=False
    if st not in LEGAL and not any(s in LEGAL for s,_ in cname.get(n,[])): legalcards=False
-   stock=invkey.get(k) if st and no else None
-   if not stock: stock=invname.get(n)
+   # Gleicher normalisierter Kartenname: normale, Foil-, Showcase- und anders nummerierte Ausgaben zählen zusammen.
+   stock=invname.get(n)
    have=stock[0] if stock else 0; miss=max(0,q-have); prices=stock[1] if stock else []
-   price=sum((v*w for v,w in prices),Decimal(0))/sum(w for _,w in prices) if prices else None
+   available=[v for v,_ in prices]+catalog_prices.get(n,[])
+   price=min(available) if available else None
    c=price*miss if price is not None else None
    if miss and c is None: costok=False
    if c is not None: cost+=c
@@ -82,7 +90,7 @@ def main():
    incomplete=any('UNVOLLSTÄNDIG' in x.upper() for x in comments)
    f.write(f'# Legalitätscheck: {p.stem}\n\n**Deckliste: {"UNVOLLSTÄNDIG" if incomplete else "nicht als unvollständig markiert"}.**\n\n| Prüfung | Ergebnis | Details |\n|---|---|---|\n')
    for label,ok,detail in tests: f.write(f'| {label} | {"BESTANDEN" if ok else "NICHT BESTANDEN"} | {detail} |\n')
-   f.write('\n## Zuordnung und Besitz\n\nBesitzabgleich zuerst nach Set+Nummer (Foil/Normal werden addiert), sonst normalisiertem Namen. CSV wird mit Python-CSV-Parser gelesen.\n\n')
+   f.write('\n## Zuordnung und Besitz\n\nBesitzabgleich über normalisierten Kartennamen; Nummern- und Druckvarianten (einschließlich Foil/Showcase) werden addiert. Fehlkosten verwenden den günstigsten verfügbaren Inventar- oder Katalogpreis. CSV wird mit Python-CSV-Parser gelesen.\n\n')
    if issues: f.write('Hinweise:\n'+''.join(f'- {x}\n' for x in issues))
    else: f.write('Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.\n')
    if not costok: f.write('\nPreise für fehlende Exemplare sind nicht im Inventar enthalten; Kostenfelder bleiben deshalb leer, nicht €0.\n')
