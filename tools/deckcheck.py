@@ -78,14 +78,19 @@ def main():
    if not stock or stock['owned']==0:
     stock=invname.get(n); matched='Name (Fallback)'
    stock=stock or {'owned':0,'prices':[]}
-   # Consume by exact key when available; fallback pool is separately de-duplicated.
-   name_avail=remaining_name.get(n,0)
-   avail=min(remaining_key.get(k,0),name_avail) if matched=='Set+Nummer' else name_avail
-   have=min(q,avail)
-   remaining_name[n]=name_avail-have
-   if matched=='Set+Nummer': remaining_key[k]=remaining_key.get(k,0)-have
-   miss=q-have; prices=stock['prices']; price=sum((v*w for v,w in prices),Decimal(0))/sum(w for _,w in prices) if prices else None
-   cost=price*miss if price is not None else None
+   # Rune cards are always available, regardless of inventory quantities.
+   is_rune=c['area']=='Rune' or (c['cat'] and str(c['cat'].get('Typ') or '').strip().casefold()=='rune')
+   if is_rune:
+    have=q; miss=0; price=Decimal(0); cost=Decimal(0)
+   else:
+    # Consume by exact key when available; fallback pool is separately de-duplicated.
+    name_avail=remaining_name.get(n,0)
+    avail=min(remaining_key.get(k,0),name_avail) if matched=='Set+Nummer' else name_avail
+    have=min(q,avail)
+    remaining_name[n]=name_avail-have
+    if matched=='Set+Nummer': remaining_key[k]=remaining_key.get(k,0)-have
+    miss=q-have; prices=stock['prices']; price=sum((v*w for v,w in prices),Decimal(0))/sum(w for _,w in prices) if prices else None
+    cost=price*miss if price is not None else None
    if miss and cost is None: costok=False
    if cost is not None: costs+=cost
    results.append((q,c['name'],c['area'],c['set'],c['no'],have,miss,price,cost,matched))
@@ -118,7 +123,7 @@ def main():
    for a in ('Legende','Champion','Main','Rune','Battlefield','Sideboard'): f.write(f'| {a} | {areas[a]} |\n')
    f.write(f'\n**Deckliste: {"UNVOLLSTÄNDIG" if incomplete else "vollständig markiert"}.**\n\n| Prüfung | Ergebnis | Details |\n|---|---|---|\n')
    for label,ok,detail in tests: f.write(f'| {label} | {"BESTANDEN" if ok else "NICHT BESTANDEN"} | {detail} |\n')
-   f.write('\n## Zuordnung und Besitz\n\nBesitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet.\n\n')
+   f.write('\n## Zuordnung und Besitz\n\nBesitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.\n\n')
    f.write(('Hinweise:\n'+''.join(f'- {x}\n' for x in issues)) if issues else 'Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.\n')
    if not costok: f.write('\nPreise für fehlende Exemplare sind im Inventar nicht verfügbar; entsprechende Kosten bleiben leer.\n')
    if incomplete: f.write('\nDie Liste ist als unvollständig markiert.\n')

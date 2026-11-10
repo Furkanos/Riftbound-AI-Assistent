@@ -33,3 +33,5 @@ REGELN:
 AUSGABE: Deutsch, zuerst Urteil, dann Tabelle der Verstöße, dann Kritik. Am Ende: "Nächster Schritt:" mit genau einer Aufgabe.
 
 Ergebnisse nicht vorhanden oder Deckliste unvollständig/abgeschnitten: keine eigenen Zahlen oder Ersatzschätzungen; erst Rückfrage bzw. automatischen Deckcheck abwarten.
+
+Runen gelten immer als unbegrenzt vorhanden; nie als fehlend oder Kaufposten zählen.

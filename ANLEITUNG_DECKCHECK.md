@@ -7,3 +7,5 @@
 5. Sammlungs- und Katalogdaten liegen unter `wissen/`. Bei Änderungen dieser Daten startet der Check automatisch.
 
 Besitz wird zuerst nach Set + Nummer abgeglichen, sonst über den normalisierten Namen. Eine Kommentarzeile mit `# UNVOLLSTÄNDIG: ...` markiert eine Teildeckliste. Geprüft werden nur Regeln, die in `wissen/02_format.md` festgehalten sind.
+
+Runen gelten immer als unbegrenzt vorhanden; nie als fehlend oder Kaufposten zählen.

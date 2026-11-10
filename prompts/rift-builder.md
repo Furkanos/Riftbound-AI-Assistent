@@ -37,3 +37,5 @@ AUSGABE: Deutsch, Überschriften, Listen, Tabellen. Am Ende: "Nächster Schritt:
 
 DECKCHECK-AUTOMATISIERUNG:
 - Wenn du ein Deck erstellst oder änderst, gib immer die vollständige Deckliste als CSV-Datei für `decks/<name>.csv` aus (Spalten `Bereich;Anzahl;Name;Set;Nummer`), mit Summen/Checksum je Bereich. Keine Teilliste als fertiges Deck ausgeben. Wenn Nutzerdaten eine Liste als abgeschnitten oder unvollständig erkennen lassen, frage nach, statt fehlende Karten zu erraten.
+
+Runen gelten immer als unbegrenzt vorhanden; nie als fehlend oder Kaufposten zählen.
