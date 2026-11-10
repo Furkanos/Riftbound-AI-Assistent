@@ -29,10 +29,10 @@
 
 ## Zuordnung und Besitz
 
-Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet.
+Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.
 
 Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.
 
 Preise für fehlende Exemplare sind im Inventar nicht verfügbar; entsprechende Kosten bleiben leer.
 
-Benötigt **66** · Besitz **5** · Fehlend **61** · Kosten **nicht vollständig bestimmbar**.
+Benötigt **66** · Besitz **17** · Fehlend **49** · Kosten **nicht vollständig bestimmbar**.
