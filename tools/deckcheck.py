@@ -61,8 +61,11 @@ def main():
    k=(str(r.get('Set') or '').strip().upper(),num(r.get('Nummer')))
    pkey.setdefault(k,r); pname.setdefault(norm(r.get('Name')),r)
  def info(k,nm,cat):
-  p=pkey.get(k) or pname.get(norm(nm)) or {}; cat=cat or {}
+  p=pkey.get(k); mismatch=bool(p and norm(p.get('Name'))!=norm(nm))
+  if mismatch: p=None
+  p=p or pname.get(norm(nm)) or {}; cat=cat or {}
   text=pick(p,'Kartentext','Text',anytext=True) or pick(cat,'Kartentext','Text','Regeltext','Effekt','Effekttext','Beschreibung',anytext=True)
+  if mismatch and not pname.get(norm(nm)): text='[WARNUNG: Name und Set-Nummer passen nicht zusammen]'
   typ=pick(p,'Typ') or pick(cat,'Typ','Kartentyp')
   dom=pick(p,'Domäne','Domaene','Domänen') or ', '.join(str(d) for d in arr(cat.get('Domaenen')))
   cost=pick(p,'Kosten') or pick(cat,'Kosten','Energie')
@@ -127,8 +130,10 @@ def main():
    w.writerow(['SUMME','','','',need,owned,missing,'',f'{costs:.2f}' if costok else ''])
   with (outdir/f'{p.stem}_kaufliste.csv').open('w',encoding='utf-8-sig',newline='') as f:
    w=csv.writer(f,delimiter=';'); w.writerow(['Bereich','Anzahl','Name','Set','Nummer','Besitz','Fehlend','Preis_€','Kosten_€','Hinweis'])
-   for q,nm,area,st,no,h,m,pr,cost,matched in results:
-    if m: w.writerow([area,q,nm,st,no,h,m,f'{pr:.2f}' if pr is not None else '',f'{cost:.2f}' if cost is not None else '', '' if pr is not None else 'PREIS FEHLT'])
+   missing_rows=[r for r in results if r[6]]
+   if not missing_rows: w.writerow(['KEINE FEHLENDEN KARTEN'])
+   for q,nm,area,st,no,h,m,pr,cost,matched in missing_rows:
+    w.writerow([area,q,nm,st,no,h,m,f'{pr:.2f}' if pr is not None else '',f'{cost:.2f}' if cost is not None else '', '' if pr is not None else 'PREIS FEHLT'])
   maincount=areas['Main']+areas['Champion']; bfs=[norm(c['name']) for c in cards if c['area']=='Battlefield']
   domains=[]; signatures=[]; legend_tags=[]; champion_tags=[]
   for c in cards:
@@ -163,8 +168,14 @@ def main():
     if not sel: continue
     f.write(f'\n## {a} ({sum(c["q"] for c in sel)})\n')
     for c in sel:
-     typ,dom,cost,stats,text=info(c['key'],c['name'],c['cat'])
-     f.write(f"\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\n- Typ: {typ or '?'} · Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\n- Text: {text or '[TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]'}\n")
+     is_rune=c['area']=='Rune' or c['name'].strip().casefold().endswith('rune')
+     if is_rune:
+      cat=c['cat'] or {}
+      dom=pick(cat,'Domäne','Domaene','Domänen') or ', '.join(str(d) for d in arr(cat.get('Domaenen'))) or '?'
+      f.write(f"\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\nRune – Basisressource (Domäne: {dom}), kein Kartentext\n")
+     else:
+      typ,dom,cost,stats,text=info(c['key'],c['name'],c['cat'])
+      f.write(f"\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\n- Typ: {typ or '?'} · Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\n- Text: {text or '[TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]'}\n")
   # Zusatzdatei 2: legale Alternativen aus der Sammlung, passend zur Legendenidentität.
   alts=[]; seen=set()
   for k,v in invkey.items():
