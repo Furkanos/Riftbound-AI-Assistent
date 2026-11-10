@@ -53,8 +53,8 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) Give a unit -1 :rb_might: this turn, to a minimum of 1 :rb_might:. Draw 1.
 
 ### 1× Brittle Steel (VEN-3)
-- Typ: Unit · Domäne: Mind · Kosten: 3 · Stats: 3/1
-- Text: When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.
+- Typ: Spell · Domäne: Fury · Kosten: 2 · Stats: 1
+- Text: Kill a gear. [Flow] :rb_energy_4::rb_rune_fury: (You may play this from your trash for its Flow cost. Then banish it.)
 
 ### 3× Falling Star (OGN-29)
 - Typ: Spell · Domäne: Fury · Kosten: 2 · Stats: 2
@@ -95,8 +95,8 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Text: [Action] (Play on your turn or in showdowns.) This can't be countered. Deal 4 to an enemy Calm (:rb_rune_calm:) unit.
 
 ### 1× Brittle Steel (VEN-3)
-- Typ: Unit · Domäne: Mind · Kosten: 3 · Stats: 3/1
-- Text: When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.
+- Typ: Spell · Domäne: Fury · Kosten: 2 · Stats: 1
+- Text: Kill a gear. [Flow] :rb_energy_4::rb_rune_fury: (You may play this from your trash for its Flow cost. Then banish it.)
 
 ### 2× Ferrous Forerunner (SFD-21)
 - Typ: Unit · Domäne: Fury · Kosten: 6 · Stats: 6/1
@@ -127,9 +127,7 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 ## Rune (12)
 
 ### 6× Fury Rune (OGN-7)
-- Typ: Rune · Domäne: Fury · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Fury), kein Kartentext
 
 ### 6× Mind Rune (OGN-89)
-- Typ: Rune · Domäne: Mind · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Mind), kein Kartentext

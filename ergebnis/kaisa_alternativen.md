@@ -6,7 +6,7 @@ Alle Karten aus der Sammlung, die legal sind (Set legal, nicht gebannt) und zur 
 - **Im Deck** = bereits in diesem Deck (alle Bereiche)
 - **Max. zusätzlich** = so viele dürfen noch dazu (Besitz und 3er-Limit berücksichtigt)
 
-Anzahl Karten: 148
+Anzahl Karten: 154
 
 ## Battlefield
 
@@ -84,11 +84,6 @@ Anzahl Karten: 148
 - Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
 - Domäne: Colorless · Kosten: ? · Stats: -
 - Text: When you conquer here, put the top 2 cards of your Main Deck into your trash.
-
-### Mischievous Marai (UNL-3)
-- Besitz: 9 · Im Deck: 0 · Max. zusätzlich: 9
-- Domäne: Colorless · Kosten: 2 · Stats: 2
-- Text: Bird, Cat, Dog, Poro, and Ivern units here have +1 :rb_might:. When you score here, you may replace this with the battlefield it replaced.
 
 ### Ornn's Forge (SFD-213)
 - Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
@@ -279,6 +274,16 @@ Anzahl Karten: 148
 - Domäne: Fury · Kosten: 1 · Stats: -
 - Text: [Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_1: (You may pay the additional cost to repeat this spell's effect.) Give a unit [Assault 2]. (+2 :rb_might: while it's an attacker.)
 
+### Brittle Steel (VEN-3)
+- Besitz: 1 · Im Deck: 2 · Max. zusätzlich: 0
+- Domäne: Fury · Kosten: 2 · Stats: 1
+- Text: Kill a gear. [Flow] :rb_energy_4::rb_rune_fury: (You may play this from your trash for its Flow cost. Then banish it.)
+
+### Bushwhack (SFD-4)
+- Besitz: 3 · Im Deck: 0 · Max. zusätzlich: 3
+- Domäne: Fury · Kosten: 2 · Stats: 1
+- Text: [Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) Friendly units enter ready this turn. Play a Gold gear token exhausted.
+
 ### Crescent Strike (UNL-72)
 - Besitz: 5 · Im Deck: 0 · Max. zusätzlich: 3
 - Domäne: Mind · Kosten: 3 · Stats: 1
@@ -293,6 +298,11 @@ Anzahl Karten: 148
 - Besitz: 3 · Im Deck: 0 · Max. zusätzlich: 3
 - Domäne: Mind · Kosten: 4 · Stats: -
 - Text: Deal 3 to an enemy unit. When it dies this turn, play a Gold gear token exhausted. (It has "[Reaction][>] Kill this, :rb_exhaust:: [Add] :rb_rune_rainbow:."")"
+
+### Detonate (SFD-5)
+- Besitz: 4 · Im Deck: 0 · Max. zusätzlich: 3
+- Domäne: Fury · Kosten: 1 · Stats: 1
+- Text: Kill a gear. Its controller draws 2.
 
 ### Downstage Dramatics (UNL-61)
 - Besitz: 11 · Im Deck: 0 · Max. zusätzlich: 3
@@ -466,11 +476,6 @@ Anzahl Karten: 148
 - Domäne: Mind · Kosten: 8 · Stats: 7/2
 - Text: Your Mechs have [Deflect] and [Ganking]. (Opponents must pay :rb_rune_rainbow: to choose us with a spell or ability. We can move from battlefield to battlefield.) I enter ready if you control another Mech.
 
-### Brittle Steel (VEN-3)
-- Besitz: 1 · Im Deck: 2 · Max. zusätzlich: 0
-- Domäne: Mind · Kosten: 3 · Stats: 3/1
-- Text: When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.
-
 ### Bubble Bot (SFD-62)
 - Besitz: 2 · Im Deck: 0 · Max. zusätzlich: 2
 - Domäne: Mind · Kosten: 3 · Stats: 3
@@ -531,6 +536,11 @@ Anzahl Karten: 148
 - Domäne: Mind · Kosten: 2 · Stats: 2
 - Text: Your Mechs have [Vision]. (When you play us, look at the top card of your Main Deck. You may recycle it.)
 
+### Forsaken Baccai (VEN-5)
+- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
+- Domäne: Fury · Kosten: 2 · Stats: 2
+- Text: If you control fewer runes than an opponent at the start of your Beginning Phase, give me +1 :rb_might: this turn.
+
 ### Frostcoat Cub (SFD-67)
 - Besitz: 5 · Im Deck: 0 · Max. zusätzlich: 3
 - Domäne: Mind · Kosten: 3 · Stats: 3
@@ -568,8 +578,8 @@ Anzahl Karten: 148
 
 ### Inferna (UNL-2)
 - Besitz: 11 · Im Deck: 0 · Max. zusätzlich: 3
-- Domäne: Colorless · Kosten: 2 · Stats: 1
-- Text: [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
+- Domäne: Fury · Kosten: 2 · Stats: 1
+- Text: [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) [Assault 2] (+2 :rb_might: while I'm an attacker.)
 
 ### Jayce, Man of Progress (SFD-84)
 - Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
@@ -606,10 +616,15 @@ Anzahl Karten: 148
 - Domäne: Fury · Kosten: 5 · Stats: 5
 - Text: Units can't move to base.
 
+### Mischievous Marai (UNL-3)
+- Besitz: 9 · Im Deck: 0 · Max. zusätzlich: 3
+- Domäne: Fury · Kosten: 2 · Stats: 2
+- Text: [Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me to a battlefield, deal 2 to an enemy unit here.
+
 ### Oasis Raider (VEN-6)
 - Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
-- Domäne: Order · Kosten: 4 · Stats: 2
-- Text: :rb_exhaust:: [Reaction] — [Add] :rb_energy_2:. Spend this Energy only to play spells.
+- Domäne: Fury · Kosten: 4 · Stats: 4
+- Text: If you control fewer runes than an opponent at the start of your Beginning Phase, give me +2 :rb_might: and [Ganking] this turn. (I can move from battlefield to battlefield.)
 
 ### Ornn, Forge God (SFD-85)
 - Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
@@ -641,6 +656,11 @@ Anzahl Karten: 148
 - Domäne: Mind · Kosten: 2 · Stats: 2
 - Text: When I conquer, play a Gold gear token exhausted.
 
+### Prepared Neophyte (UNL-4)
+- Besitz: 11 · Im Deck: 0 · Max. zusätzlich: 3
+- Domäne: Fury · Kosten: 3 · Stats: 1
+- Text: If you've spent :rb_energy_4: or more to play a spell this turn, I have +4 :rb_might:.
+
 ### Prize of Progress (SFD-75)
 - Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
 - Domäne: Mind · Kosten: 4 · Stats: 3/1
@@ -671,6 +691,11 @@ Anzahl Karten: 148
 - Domäne: Fury · Kosten: 4 · Stats: 4/1
 - Text: [Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.) [Assault 2] (+2 :rb_might: while I'm an attacker.) [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) [Ganking] (I can move from battlefield to battlefield.)
 
+### Revna the Lorekeeper (UNL-5)
+- Besitz: 9 · Im Deck: 0 · Max. zusätzlich: 3
+- Domäne: Fury · Kosten: 7 · Stats: 7/1
+- Text: [Ganking] (I can move from battlefield to battlefield.) When you play a spell, if you spent :rb_energy_4: or more, ready me.
+
 ### Ruined Rex (UNL-67)
 - Besitz: 10 · Im Deck: 0 · Max. zusätzlich: 3
 - Domäne: Mind · Kosten: 6 · Stats: 6/1
@@ -695,6 +720,11 @@ Anzahl Karten: 148
 - Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
 - Domäne: Fury · Kosten: 2 · Stats: 2
 - Text: [Empower] :rb_energy_2::rb_rune_fury: (:rb_energy_2::rb_rune_fury:: Empower me. Use only if not Empowered.) [Empowered][>] I have [Assault 3]. (+3 :rb_might: while I'm an attacker.)
+
+### Sharkling (UNL-6)
+- Besitz: 11 · Im Deck: 0 · Max. zusätzlich: 3
+- Domäne: Fury · Kosten: 3 · Stats: 1
+- Text: [Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.) [Assault 4] (+4 :rb_might: while I'm an attacker.)
 
 ### Soul Shepherd (UNL-77)
 - Besitz: 3 · Im Deck: 0 · Max. zusätzlich: 3

@@ -123,49 +123,37 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 ## Rune (12)
 
 ### 1× Calm Rune (VEN-2)
-- Typ: Unit · Domäne: Fury · Kosten: 4 · Stats: 4
-- Text: The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)
+Rune – Basisressource (Domäne: Calm), kein Kartentext
 
 ### 1× Calm Rune (VEN-2)
-- Typ: Unit · Domäne: Fury · Kosten: 4 · Stats: 4
-- Text: The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)
+Rune – Basisressource (Domäne: Calm), kein Kartentext
 
 ### 1× Calm Rune (VEN-2)
-- Typ: Unit · Domäne: Fury · Kosten: 4 · Stats: 4
-- Text: The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)
+Rune – Basisressource (Domäne: Calm), kein Kartentext
 
 ### 1× Calm Rune (VEN-2)
-- Typ: Unit · Domäne: Fury · Kosten: 4 · Stats: 4
-- Text: The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)
+Rune – Basisressource (Domäne: Calm), kein Kartentext
 
 ### 1× Calm Rune (VEN-2)
-- Typ: Unit · Domäne: Fury · Kosten: 4 · Stats: 4
-- Text: The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)
+Rune – Basisressource (Domäne: Calm), kein Kartentext
 
 ### 1× Calm Rune (VEN-2)
-- Typ: Unit · Domäne: Fury · Kosten: 4 · Stats: 4
-- Text: The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)
+Rune – Basisressource (Domäne: Calm), kein Kartentext
 
 ### 1× Chaos Rune (VEN-5)
-- Typ: Rune · Domäne: Chaos · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Chaos), kein Kartentext
 
 ### 1× Chaos Rune (VEN-5)
-- Typ: Rune · Domäne: Chaos · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Chaos), kein Kartentext
 
 ### 1× Chaos Rune (VEN-5)
-- Typ: Rune · Domäne: Chaos · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Chaos), kein Kartentext
 
 ### 1× Chaos Rune (VEN-5)
-- Typ: Rune · Domäne: Chaos · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Chaos), kein Kartentext
 
 ### 1× Chaos Rune (VEN-5)
-- Typ: Rune · Domäne: Chaos · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Chaos), kein Kartentext
 
 ### 1× Chaos Rune (VEN-5)
-- Typ: Rune · Domäne: Chaos · Kosten: ? · Stats: -
-- Text: [TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]
+Rune – Basisressource (Domäne: Chaos), kein Kartentext
