@@ -122,38 +122,8 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 
 ## Rune (12)
 
-### 1× Calm Rune (VEN-2)
+### 6× Calm Rune (VEN-2)
 Rune – Basisressource (Domäne: Calm), kein Kartentext
 
-### 1× Calm Rune (VEN-2)
-Rune – Basisressource (Domäne: Calm), kein Kartentext
-
-### 1× Calm Rune (VEN-2)
-Rune – Basisressource (Domäne: Calm), kein Kartentext
-
-### 1× Calm Rune (VEN-2)
-Rune – Basisressource (Domäne: Calm), kein Kartentext
-
-### 1× Calm Rune (VEN-2)
-Rune – Basisressource (Domäne: Calm), kein Kartentext
-
-### 1× Calm Rune (VEN-2)
-Rune – Basisressource (Domäne: Calm), kein Kartentext
-
-### 1× Chaos Rune (VEN-5)
-Rune – Basisressource (Domäne: Chaos), kein Kartentext
-
-### 1× Chaos Rune (VEN-5)
-Rune – Basisressource (Domäne: Chaos), kein Kartentext
-
-### 1× Chaos Rune (VEN-5)
-Rune – Basisressource (Domäne: Chaos), kein Kartentext
-
-### 1× Chaos Rune (VEN-5)
-Rune – Basisressource (Domäne: Chaos), kein Kartentext
-
-### 1× Chaos Rune (VEN-5)
-Rune – Basisressource (Domäne: Chaos), kein Kartentext
-
-### 1× Chaos Rune (VEN-5)
+### 6× Chaos Rune (VEN-5)
 Rune – Basisressource (Domäne: Chaos), kein Kartentext
