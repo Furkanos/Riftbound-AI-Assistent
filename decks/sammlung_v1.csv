@@ -24,7 +24,11 @@ Anzahl;Name;Set;Nummer;Bereich
 1;Abandoned Hall;UNL;205;Battlefield
 1;Sunken Temple;SFD;218;Battlefield
 1;Star Spring;UNL;215;Battlefield
-6;Calm Rune;VEN;2;Rune
-6;Chaos Rune;VEN;5;Rune
+1000;Calm Rune;VEN;2;Rune
+1000;Chaos Rune;VEN;5;Rune
 3;Abandon;UNL;131;Sideboard
 2;Gust Monk;VEN;101;Sideboard
+1000;Fury Rune;VEN;1;Rune
+1000;Mind Rune;VEN;3;Rune
+1000;Body Rune;VEN;4;Rune
+1000;Order Rune;VEN;6;Rune
