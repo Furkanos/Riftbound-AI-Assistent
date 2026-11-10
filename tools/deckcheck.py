@@ -9,6 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 AREAS={'Legende','Champion','Main','Battlefield','Rune','Sideboard'}
 AREA_ALIASES={'Runen':'Rune','Battlefields':'Battlefield'}
 LEGAL={'OGS','OGN','SFD','UNL','VEN','RAD'}
+AREA_ORDER=('Legende','Champion','Main','Sideboard','Battlefield','Rune')
 
 def norm(s):
  s=unicodedata.normalize('NFKD',str(s or '')).encode('ascii','ignore').decode().casefold()
@@ -29,6 +30,15 @@ def dec(x):
 def arr(s):
  try: return json.loads(s) if str(s or '').strip().startswith('[') else []
  except Exception: return []
+def pick(r,*names,anytext=False):
+ for n in names:
+  v=r.get(n)
+  if v not in (None,''): return ' '.join(str(v).split())
+ if anytext:
+  for k,v in r.items():
+   if k and 'text' in k.casefold() and v: return ' '.join(str(v).split())
+ return ''
+
 def main():
  invs=sorted((ROOT/'wissen').glob('*Karten (Karten)*.csv')); cats=sorted((ROOT/'wissen').glob('*Kartenkatalog*.csv'))
  if not invs or not cats: raise SystemExit('Inventar oder Kartenkatalog fehlt in wissen/.')
@@ -43,6 +53,21 @@ def main():
  for r in readcsv(cats[0]):
   nm=r.get('Name') or r.get('Spielkartenname') or ''; k=(r.get('SetCode','').strip().upper(),num(r.get('Kartennummer')))
   if nm: ckey[k].append(r); cname[norm(nm)].append(r)
+ # Card texts from 03_kartenpool.csv (primary source), catalog as fallback.
+ pkey={}; pname={}
+ pool=ROOT/'wissen/03_kartenpool.csv'
+ if pool.exists():
+  for r in readcsv(pool):
+   k=(str(r.get('Set') or '').strip().upper(),num(r.get('Nummer')))
+   pkey.setdefault(k,r); pname.setdefault(norm(r.get('Name')),r)
+ def info(k,nm,cat):
+  p=pkey.get(k) or pname.get(norm(nm)) or {}; cat=cat or {}
+  text=pick(p,'Kartentext','Text',anytext=True) or pick(cat,'Kartentext','Text','Regeltext','Effekt','Effekttext','Beschreibung',anytext=True)
+  typ=pick(p,'Typ') or pick(cat,'Typ','Kartentyp')
+  dom=pick(p,'Domäne','Domaene','Domänen') or ', '.join(str(d) for d in arr(cat.get('Domaenen')))
+  cost=pick(p,'Kosten') or pick(cat,'Kosten','Energie')
+  stats=pick(p,'Stats') or pick(cat,'Might','Stats')
+  return typ,dom,cost,stats,text
  fmt=(ROOT/'wissen/02_format.md').read_text(encoding='utf-8'); bans=set(); table=False
  for line in fmt.splitlines():
   if 'Bannliste Standard' in line: table=True; continue
@@ -128,4 +153,36 @@ def main():
    if not costok: f.write('\nPreise für fehlende Exemplare sind im Inventar nicht verfügbar; entsprechende Kosten bleiben leer.\n')
    if incomplete: f.write('\nDie Liste ist als unvollständig markiert.\n')
    f.write(f'\nBenötigt **{need}** · Besitz **{owned}** · Fehlend **{missing}** · Kosten **{f"€{costs:.2f}" if costok else "nicht vollständig bestimmbar"}**.\n')
+  # Zusatzdatei 1: vollständige Kartentexte aller Deckkarten.
+  deckq=defaultdict(int)
+  for c in cards: deckq[norm(c['name'])]+=c['q']
+  with (outdir/f'{p.stem}_kartentexte.md').open('w',encoding='utf-8') as f:
+   f.write(f'# Kartentexte: {p.stem}\n\nQuelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt – nicht von Hand ändern.\n')
+   for a in AREA_ORDER:
+    sel=[c for c in cards if c['area']==a]
+    if not sel: continue
+    f.write(f'\n## {a} ({sum(c["q"] for c in sel)})\n')
+    for c in sel:
+     typ,dom,cost,stats,text=info(c['key'],c['name'],c['cat'])
+     f.write(f"\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\n- Typ: {typ or '?'} · Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\n- Text: {text or '[TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]'}\n")
+  # Zusatzdatei 2: legale Alternativen aus der Sammlung, passend zur Legendenidentität.
+  alts=[]; seen=set()
+  for k,v in invkey.items():
+   if v['owned']<=0 or k[0] not in LEGAL or not ckey.get(k): continue
+   cat=ckey[k][0]; nm=cat.get('Name') or cat.get('Spielkartenname') or ''; n=norm(nm)
+   if not nm or n in seen or n in bans: continue
+   doms={str(d).casefold() for d in arr(cat.get('Domaenen'))}-{'colorless'}
+   if not identity or not doms<=identity: continue
+   typ,dom,cost,stats,text=info(k,nm,cat); t=typ.casefold()
+   if 'legend' in t or 'rune' in t or 'token' in t: continue
+   seen.add(n); own=invname[n]['owned'] or v['owned']; used=deckq.get(n,0)
+   frei=max(own-used,0); maxadd=frei if 'battlefield' in t else max(min(frei,3-used),0)
+   alts.append((typ or '?',nm,k,own,used,maxadd,dom,cost,stats,text))
+  alts.sort(key=lambda x:(x[0].casefold(),x[1].casefold()))
+  with (outdir/f'{p.stem}_alternativen.md').open('w',encoding='utf-8') as f:
+   f.write(f'# Alternativen aus der Sammlung: {p.stem}\n\nAlle Karten aus der Sammlung, die legal sind (Set legal, nicht gebannt) und zur Domänenidentität **{", ".join(sorted(identity)) or "unbekannt"}** passen. Ohne Legenden, Runen und Tokens. Automatisch erzeugt.\n\n- **Besitz** = Exemplare in der Sammlung (alle Drucke)\n- **Im Deck** = bereits in diesem Deck (alle Bereiche)\n- **Max. zusätzlich** = so viele dürfen noch dazu (Besitz und 3er-Limit berücksichtigt)\n\nAnzahl Karten: {len(alts)}\n')
+   cur=None
+   for typ,nm,k,own,used,maxadd,dom,cost,stats,text in alts:
+    if typ!=cur: cur=typ; f.write(f'\n## {typ}\n')
+    f.write(f"\n### {nm} ({k[0]}-{k[1]})\n- Besitz: {own} · Im Deck: {used} · Max. zusätzlich: {maxadd}\n- Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\n- Text: {text or '[TEXT FEHLT IN DEN DATEN]'}\n")
 if __name__=='__main__': main()
