@@ -24,12 +24,8 @@ Main;Spirit Wheel;SFD;144;1;1;0;0.16;0.00
 Battlefield;Abandoned Hall;UNL;205;1;1;0;0.12;0.00
 Battlefield;Sunken Temple;SFD;218;1;1;0;0.16;0.00
 Battlefield;Star Spring;UNL;215;1;1;0;0.13;0.00
-Rune;Calm Rune;VEN;2;1000;1000;0;0.00;0.00
-Rune;Chaos Rune;VEN;5;1000;1000;0;0.00;0.00
+Rune;Calm Rune;VEN;2;6;6;0;0.00;0.00
+Rune;Chaos Rune;VEN;5;6;6;0;0.00;0.00
 Sideboard;Abandon;UNL;131;3;3;0;2.47;0.00
 Sideboard;Gust Monk;VEN;101;2;2;0;0.12;0.00
-Rune;Fury Rune;VEN;1;1000;1000;0;0.00;0.00
-Rune;Mind Rune;VEN;3;1000;1000;0;0.00;0.00
-Rune;Body Rune;VEN;4;1000;1000;0;0.00;0.00
-Rune;Order Rune;VEN;6;1000;1000;0;0.00;0.00
-SUMME;;;;6049;6049;0;;0.00
+SUMME;;;;61;61;0;;0.00
