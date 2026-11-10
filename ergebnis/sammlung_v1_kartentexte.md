@@ -120,10 +120,22 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Battlefield · Domäne: Colorless · Kosten: ? · Stats: -
 - Text: The first time a player plays a non-token unit here each turn, they may move another unit they control here to its base.
 
-## Rune (12)
+## Rune (6000)
 
-### 6× Calm Rune (VEN-2)
+### 1000× Calm Rune (VEN-2)
 Rune – Basisressource (Domäne: Calm), kein Kartentext
 
-### 6× Chaos Rune (VEN-5)
+### 1000× Chaos Rune (VEN-5)
 Rune – Basisressource (Domäne: Chaos), kein Kartentext
+
+### 1000× Fury Rune (VEN-1)
+Rune – Basisressource (Domäne: Fury), kein Kartentext
+
+### 1000× Mind Rune (VEN-3)
+Rune – Basisressource (Domäne: Mind), kein Kartentext
+
+### 1000× Body Rune (VEN-4)
+Rune – Basisressource (Domäne: Body), kein Kartentext
+
+### 1000× Order Rune (VEN-6)
+Rune – Basisressource (Domäne: Order), kein Kartentext
