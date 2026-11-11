@@ -1,5 +1,5 @@
-# Meta-Anpassung: Disarming Rake (SFD-32) ist eine besessene Alternative und bietet eine Antwort auf Gear-Bedrohungen wie die in Riven- und Akali-Beobachtungen genannte Zhonya’s Hourglass; keine Aussage, dass dies allein Ausrüstungsträger entfernt.
-# Meta-Anpassung: Blast Cone (UNL-133) ist eine besessene Alternative für flexiblen Unit-Druck; bewegt eine gegnerische Unit und kann sie danach stunnen. Riven-Listenbedrohungen umfassen wiederholte Units; konkrete Schlüsselwerte laut Meta-Bericht [NICHT GEFUNDEN].
+# Tausch: -1 Scuttle Crab (UNL-53) +1 Disarming Rake (SFD-32); Rake ist laut Besitzdatei vorhanden und ergänzt die Antwort auf Gear.
+# Tausch: -1 Feral Strength (SFD-34) +1 Blast Cone (UNL-133); Cone ist laut Besitzdatei vorhanden und bietet Unit-Bewegung mit möglichem Stun.
 Anzahl;Name;Set;Nummer;Bereich
 1;Irelia - Blade Dancer;SFD;195;Legende
 1;Irelia - Fervent;SFD;57;Champion
