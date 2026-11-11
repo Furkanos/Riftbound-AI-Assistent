@@ -64,17 +64,13 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Spell · Domäne: Calm · Kosten: 2 · Stats: -
 - Text: [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest.
 
-### 2× Skyward Strike (UNL-38)
+### 3× Skyward Strike (UNL-38)
 - Typ: Spell · Domäne: Calm · Kosten: 2 · Stats: 1
 - Text: Move an enemy unit. [Level 6][>] [Stun] an enemy unit. (While you have 6+ XP, get the effect. A stunned unit doesn't deal combat damage this turn.)
 
 ### 1× Existential Dread (UNL-134)
 - Typ: Spell · Domäne: Chaos · Kosten: 1 · Stats: 1
 - Text: [Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) [Stun] an attacking enemy unit. If it's already stunned, return it to its owner's hand instead. (A stunned unit doesn't deal combat damage this turn.)
-
-### 1× Irelia - Fervent (SFD-57)
-- Typ: Unit · Domäne: Calm · Kosten: 5 · Stats: 4
-- Text: [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When you choose or ready me, give me +1 :rb_might: this turn.
 
 ### 1× Resonating Strike (VEN-34)
 - Typ: Spell · Domäne: Calm · Kosten: 2 · Stats: 1

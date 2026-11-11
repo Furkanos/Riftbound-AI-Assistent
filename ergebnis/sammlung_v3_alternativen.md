@@ -350,7 +350,7 @@ Anzahl Karten: 157
 - Text: Return up to 2 units from trashes to their owners' hands.
 
 ### Skyward Strike (UNL-38)
-- Besitz: 9 · Im Deck: 2 · Max. zusätzlich: 1
+- Besitz: 9 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Calm · Kosten: 2 · Stats: 1
 - Text: Move an enemy unit. [Level 6][>] [Stun] an enemy unit. (While you have 6+ XP, get the effect. A stunned unit doesn't deal combat damage this turn.)
 
@@ -542,7 +542,7 @@ Anzahl Karten: 157
 - Text: When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card and draw 1.
 
 ### Irelia, Fervent (SFD-57)
-- Besitz: 2 · Im Deck: 2 · Max. zusätzlich: 0
+- Besitz: 2 · Im Deck: 1 · Max. zusätzlich: 1
 - Domäne: Calm · Kosten: 5 · Stats: 4
 - Text: [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When you choose or ready me, give me +1 :rb_might: this turn.
 
