@@ -1,5 +1,6 @@
 # Tausch: -1 Scuttle Crab (UNL-53) +1 Disarming Rake (SFD-32); Rake ist laut Besitzdatei vorhanden und ergänzt die Antwort auf Gear.
 # Tausch: -1 Feral Strength (SFD-34) +1 Blast Cone (UNL-133); Cone ist laut Besitzdatei vorhanden und bietet Unit-Bewegung mit möglichem Stun.
+# Korrektur: Chosen Champion Irelia - Fervent wird genau einmal gezählt; die frei werdende Hauptdeckkarte wird als zusätzliche Skyward Strike geführt (in v2 vorhanden, Besitz und Dreierlimit geprüft).
 Anzahl;Name;Set;Nummer;Bereich
 1;Irelia - Blade Dancer;SFD;195;Legende
 1;Irelia - Fervent;SFD;57;Champion
@@ -15,9 +16,8 @@ Anzahl;Name;Set;Nummer;Bereich
 3;Back Off;UNL;42;Main
 2;Isolate;UNL;124;Main
 2;Double Trouble;UNL;32;Main
-2;Skyward Strike;UNL;38;Main
+3;Skyward Strike;UNL;38;Main
 1;Existential Dread;UNL;134;Main
-1;Irelia - Fervent;SFD;57;Main
 1;Resonating Strike;VEN;34;Main
 2;Boots of Swiftness;SFD;133;Main
 2;Guardian Angel;SFD;51;Main
