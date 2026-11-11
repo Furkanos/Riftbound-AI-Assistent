@@ -163,7 +163,7 @@ Anzahl Karten: 157
 ## Gear
 
 ### Blast Cone (UNL-133)
-- Besitz: 5 · Im Deck: 1 · Max. zusätzlich: 2
+- Besitz: 5 · Im Deck: 0 · Max. zusätzlich: 3
 - Domäne: Chaos · Kosten: 4 · Stats: 1
 - Text: When you play this, you may move an enemy unit. When you move an enemy unit, you may exhaust this to [Stun] it. (It doesn't deal combat damage this turn.)
 
@@ -238,7 +238,7 @@ Anzahl Karten: 157
 - Text: [Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.) [Level 3][>] I have an additional +1 :rb_might:. (While you have 3+ XP, get the effect.)
 
 ### Spirit Wheel (SFD-144)
-- Besitz: 1 · Im Deck: 1 · Max. zusätzlich: 0
+- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
 - Domäne: Chaos · Kosten: 2 · Stats: -
 - Text: When you choose a friendly unit, you may pay :rb_energy_1: and exhaust this to draw 1.
 
@@ -280,7 +280,7 @@ Anzahl Karten: 157
 - Text: [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Play a 2 :rb_might: Sand Soldier unit token.
 
 ### Double Trouble (UNL-32)
-- Besitz: 9 · Im Deck: 2 · Max. zusätzlich: 1
+- Besitz: 9 · Im Deck: 1 · Max. zusätzlich: 2
 - Domäne: Calm · Kosten: 2 · Stats: -
 - Text: [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest.
 
@@ -300,7 +300,7 @@ Anzahl Karten: 157
 - Text: [Action] (Play on your turn or in showdowns.) Return a gear to its owner's hand.
 
 ### Feral Strength (SFD-34)
-- Besitz: 4 · Im Deck: 1 · Max. zusätzlich: 2
+- Besitz: 4 · Im Deck: 2 · Max. zusätzlich: 1
 - Domäne: Calm · Kosten: 2 · Stats: -
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Give a unit +2 :rb_might: this turn.
 
@@ -350,7 +350,7 @@ Anzahl Karten: 157
 - Text: Return up to 2 units from trashes to their owners' hands.
 
 ### Skyward Strike (UNL-38)
-- Besitz: 9 · Im Deck: 3 · Max. zusätzlich: 0
+- Besitz: 9 · Im Deck: 2 · Max. zusätzlich: 1
 - Domäne: Calm · Kosten: 2 · Stats: 1
 - Text: Move an enemy unit. [Level 6][>] [Stun] an enemy unit. (While you have 6+ XP, get the effect. A stunned unit doesn't deal combat damage this turn.)
 
@@ -457,7 +457,7 @@ Anzahl Karten: 157
 - Text: If you've played a spell this turn, you may pay :rb_rune_chaos: as an additional cost to play me. If you do, I enter ready.
 
 ### Disarming Rake (SFD-32)
-- Besitz: 1 · Im Deck: 1 · Max. zusätzlich: 0
+- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
 - Domäne: Calm · Kosten: 3 · Stats: 2/1
 - Text: When you play me, you may kill a gear.
 
@@ -542,7 +542,7 @@ Anzahl Karten: 157
 - Text: When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card and draw 1.
 
 ### Irelia, Fervent (SFD-57)
-- Besitz: 2 · Im Deck: 1 · Max. zusätzlich: 1
+- Besitz: 2 · Im Deck: 2 · Max. zusätzlich: 0
 - Domäne: Calm · Kosten: 5 · Stats: 4
 - Text: [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When you choose or ready me, give me +1 :rb_might: this turn.
 
@@ -552,7 +552,7 @@ Anzahl Karten: 157
 - Text: Your spells that choose me cost :rb_energy_1: or :rb_rune_rainbow: less.
 
 ### Ivern, Nurturer (UNL-51)
-- Besitz: 2 · Im Deck: 0 · Max. zusätzlich: 2
+- Besitz: 2 · Im Deck: 1 · Max. zusätzlich: 1
 - Domäne: Calm · Kosten: 5 · Stats: 4/1
 - Text: When you play me or when I hold, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. Then if you revealed a Bird, Cat, Dog, or Poro, do this: [Buff] a friendly unit. (Give it a +1 :rb_might: buff if it doesn't have one.)
 
@@ -587,7 +587,7 @@ Anzahl Karten: 157
 - Text: When you play a token unit, give me +1 :rb_might: this turn. Your token units have [Tank]. (They must be assigned combat damage first.)
 
 ### Lonely Poro (SFD-36)
-- Besitz: 4 · Im Deck: 3 · Max. zusätzlich: 0
+- Besitz: 4 · Im Deck: 2 · Max. zusätzlich: 1
 - Domäne: Calm · Kosten: 2 · Stats: 2
 - Text: [Deathknell] — If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)
 
@@ -622,7 +622,7 @@ Anzahl Karten: 157
 - Text: If an opponent controls a stunned unit, I cost :rb_energy_2: less and enter ready.
 
 ### Mosstomper (UNL-47)
-- Besitz: 2 · Im Deck: 0 · Max. zusätzlich: 2
+- Besitz: 2 · Im Deck: 1 · Max. zusätzlich: 1
 - Domäne: Calm · Kosten: 3 · Stats: 3/1
 - Text: [Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 3][>] I have +1 :rb_might: and [Deflect]. (While you have 3+ XP, get the effect. Opponents must pay :rb_rune_rainbow: to choose a [Deflect] unit with a spell or ability.)
 
@@ -637,7 +637,7 @@ Anzahl Karten: 157
 - Text: [Shield 2] (+2 :rb_might: while I'm a defender.) [Tank] (I must be assigned combat damage first.)
 
 ### Nami, Headstrong (UNL-52)
-- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
+- Besitz: 1 · Im Deck: 1 · Max. zusätzlich: 0
 - Domäne: Calm · Kosten: 3 · Stats: 3
 - Text: You may pay :rb_rune_calm: as an additional cost to play me. When you play me, if you paid the additional cost, [Stun] an enemy unit. (It doesn't deal combat damage this turn.) When I hold, the next time you play a unit this turn, ready it and [Buff] it.
 
@@ -682,7 +682,7 @@ Anzahl Karten: 157
 - Text: When you play me, ready or exhaust a legend.
 
 ### Scuttle Crab (UNL-53)
-- Besitz: 2 · Im Deck: 1 · Max. zusätzlich: 1
+- Besitz: 2 · Im Deck: 2 · Max. zusätzlich: 0
 - Domäne: Calm · Kosten: 2 · Stats: 0
 - Text: (Units with 0 :rb_might: can conquer and hold.) When you play me, draw 1. [Deathknell][>] Choose an opponent. They reveal their hand. You can look at their facedown cards this turn. Gain 1 XP. (When I die, get the effects.)
 

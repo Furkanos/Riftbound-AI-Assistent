@@ -24,13 +24,17 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Unit · Domäne: Calm · Kosten: 4 · Stats: 3
 - Text: When I move, draw 1.
 
-### 1× Scuttle Crab (UNL-53)
+### 2× Scuttle Crab (UNL-53)
 - Typ: Unit · Domäne: Calm · Kosten: 2 · Stats: 0
 - Text: (Units with 0 :rb_might: can conquer and hold.) When you play me, draw 1. [Deathknell][>] Choose an opponent. They reveal their hand. You can look at their facedown cards this turn. Gain 1 XP. (When I die, get the effects.)
 
-### 3× Lonely Poro (SFD-36)
+### 2× Lonely Poro (SFD-36)
 - Typ: Unit · Domäne: Calm · Kosten: 2 · Stats: 2
 - Text: [Deathknell] — If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)
+
+### 1× Mosstomper (UNL-47)
+- Typ: Unit · Domäne: Calm · Kosten: 3 · Stats: 3/1
+- Text: [Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 3][>] I have +1 :rb_might: and [Deflect]. (While you have 3+ XP, get the effect. Opponents must pay :rb_rune_rainbow: to choose a [Deflect] unit with a spell or ability.)
 
 ### 3× Wuju Apprentice (UNL-40)
 - Typ: Unit · Domäne: Calm · Kosten: 2 · Stats: 2
@@ -60,17 +64,25 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Spell · Domäne: Chaos · Kosten: 2 · Stats: -
 - Text: Move an enemy unit from a battlefield to its base. Then, if there's an enemy unit alone at that battlefield, draw 1.
 
-### 2× Double Trouble (UNL-32)
+### 1× Double Trouble (UNL-32)
 - Typ: Spell · Domäne: Calm · Kosten: 2 · Stats: -
 - Text: [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest.
 
-### 3× Skyward Strike (UNL-38)
+### 1× Nami, Headstrong (UNL-52)
+- Typ: Unit · Domäne: Calm · Kosten: 3 · Stats: 3
+- Text: You may pay :rb_rune_calm: as an additional cost to play me. When you play me, if you paid the additional cost, [Stun] an enemy unit. (It doesn't deal combat damage this turn.) When I hold, the next time you play a unit this turn, ready it and [Buff] it.
+
+### 2× Skyward Strike (UNL-38)
 - Typ: Spell · Domäne: Calm · Kosten: 2 · Stats: 1
 - Text: Move an enemy unit. [Level 6][>] [Stun] an enemy unit. (While you have 6+ XP, get the effect. A stunned unit doesn't deal combat damage this turn.)
 
 ### 1× Existential Dread (UNL-134)
 - Typ: Spell · Domäne: Chaos · Kosten: 1 · Stats: 1
 - Text: [Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) [Stun] an attacking enemy unit. If it's already stunned, return it to its owner's hand instead. (A stunned unit doesn't deal combat damage this turn.)
+
+### 1× Irelia - Fervent (SFD-57)
+- Typ: Unit · Domäne: Calm · Kosten: 5 · Stats: 4
+- Text: [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When you choose or ready me, give me +1 :rb_might: this turn.
 
 ### 1× Resonating Strike (VEN-34)
 - Typ: Spell · Domäne: Calm · Kosten: 2 · Stats: 1
@@ -84,21 +96,13 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Gear · Domäne: Calm · Kosten: 2 · Stats: -
 - Text: [Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.) If I would die, kill Guardian Angel instead. Heal me, exhaust me, and recall me.
 
-### 1× Feral Strength (SFD-34)
+### 2× Feral Strength (SFD-34)
 - Typ: Spell · Domäne: Calm · Kosten: 2 · Stats: -
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Give a unit +2 :rb_might: this turn.
 
-### 1× Spirit Wheel (SFD-144)
-- Typ: Gear · Domäne: Chaos · Kosten: 2 · Stats: -
-- Text: When you choose a friendly unit, you may pay :rb_energy_1: and exhaust this to draw 1.
-
-### 1× Disarming Rake (SFD-32)
-- Typ: Unit · Domäne: Calm · Kosten: 3 · Stats: 2/1
-- Text: When you play me, you may kill a gear.
-
-### 1× Blast Cone (UNL-133)
-- Typ: Gear · Domäne: Chaos · Kosten: 4 · Stats: 1
-- Text: When you play this, you may move an enemy unit. When you move an enemy unit, you may exhaust this to [Stun] it. (It doesn't deal combat damage this turn.)
+### 1× Ivern, Nurturer (UNL-51)
+- Typ: Unit · Domäne: Calm · Kosten: 5 · Stats: 4/1
+- Text: When you play me or when I hold, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. Then if you revealed a Bird, Cat, Dog, or Poro, do this: [Buff] a friendly unit. (Give it a +1 :rb_might: buff if it doesn't have one.)
 
 ## Sideboard (10)
 
