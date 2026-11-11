@@ -1,16 +1,21 @@
 # Neues Deck prüfen in 3 Klicks
 
+## 0. Meta aktualisieren (alle 2–4 Wochen)
+1. In Mammouth "Rift-Meta" (Websuche aktiviert) schreiben: *"Erstelle den aktuellen Meta-Bericht nach deinem Format."*
+2. Die Ausgabe als `wissen/04_meta_bericht.md` ins Repo legen (alte Version überschreiben).
+3. Rift-Builder baut damit **gegen** die Meta aus deiner Sammlung – er baut keine Top-Decks nach.
+
 ## 1. Deckdatei anlegen
 Im Repository `decks/` die Datei `VORLAGE.csv` kopieren, z. B. als `decks/mein-deck.csv`. CSV-Trennzeichen ist Semikolon; Überschrift und Beispiel:
 
 ```csv
-Bereich;Anzahl;Name;Set;Nummer
-Legende;1;Kai'Sa, Daughter of the Void;OGN;247
-Champion;1;Kai'Sa, Survivor;OGN;39
-Main;3;Beispielkarte;OGN;1
-Rune;12;Fury Rune;OGN;7
-Battlefield;1;Beispiel-Schlachtfeld;OGN;1
-Sideboard;1;Beispielkarte;OGN;1
+Anzahl;Name;Set;Nummer;Bereich
+1;Kai'Sa, Daughter of the Void;OGN;247;Legende
+1;Kai'Sa, Survivor;OGN;39;Champion
+3;Beispielkarte;OGN;1;Main
+12;Fury Rune;OGN;7;Rune
+1;Beispiel-Schlachtfeld;OGN;1;Battlefield
+1;Beispielkarte;OGN;1;Sideboard
 ```
 
 Zulässige Bereiche: Legende, Champion, Main, Rune/Runen, Battlefield/Battlefields und Sideboard. Verwende pro Zeile Kartenname und nach Möglichkeit Set und Nummer aus dem Katalog. Schreibe `# UNVOLLSTÄNDIG` in eine eigene Zeile ganz oben, wenn die Liste nicht vollständig bestätigt ist. Unbekannte Karten erscheinen als Fehler und führen zu NICHT BESTANDEN; sie werden nicht verworfen.
