@@ -1,9 +1,9 @@
-# V1-Entwurf; gegengeprüft mit wissen/02_format.md, 03_kartenpool.csv und Inventar-Export 2026-11-09. Meta-Antworten und bekannte Lücken siehe lokalen Auditbericht.
+# Anti-Meta v1; Standard Constructed; Kartenbesitz und Seitenplan auf Grundlage der Sammlung; Details zur Hidden-Regel in wissen/01_regeln_core.md.
 Anzahl;Name;Set;Nummer;Bereich
 1;Kennen, Heart of the Tempest;VEN;155;Legende
 1;Kennen, Keeper of Balance;VEN;135;Champion
 3;Black Market Broker;SFD;121;Main
-2;Kennen, Keeper of Balance;VEN;135;Main
+1;Kennen, Keeper of Balance;VEN;135;Main
 2;Evelynn, Entrancing;UNL;141;Main
 1;Windsinger;SFD;138;Main
 2;Treasure Hunter;SFD;130;Main
@@ -28,8 +28,16 @@ Anzahl;Name;Set;Nummer;Bereich
 1;Lacerate;VEN;127;Main
 1;Hard Bargain;SFD;136;Main
 1;Shadow's Call;UNL;165;Main
+1;Keeper of Law;VEN;119;Main
 1;Abandoned Hall;UNL;205;Battlefield
 1;Altar of Blood;UNL;206;Battlefield
 1;Amateur Recital;UNL;207;Battlefield
 6;Order Rune;OGN;214;Rune
 6;Chaos Rune;OGN;166;Rune
+1;Abandon;UNL;131;Sideboard
+1;Zaun Punk;SFD;160;Sideboard
+1;Sandshifter;SFD;158;Sideboard
+2;Soul Harvest;UNL;159;Sideboard
+2;Heroic Charge;UNL;155;Sideboard
+1;Star-Crossed;UNL;128;Sideboard
+1;Wind and Ghosts;VEN;106;Sideboard

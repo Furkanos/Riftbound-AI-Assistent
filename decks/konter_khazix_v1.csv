@@ -1,4 +1,4 @@
-# V1-Entwurf; gegengeprüft mit wissen/02_format.md, 03_kartenpool.csv und Inventar-Export 2026-11-09. Meta-Antworten und bekannte Lücken siehe lokalen Auditbericht.
+# Anti-Meta v1; Standard Constructed; Sammlungsliste mit Sideboard für Spell- und Gear-Matchups.
 Anzahl;Name;Set;Nummer;Bereich
 1;Kha'Zix, Voidreaver;UNL;201;Legende
 1;Kha'Zix, Mutating Horror;UNL;143;Champion
@@ -30,3 +30,5 @@ Anzahl;Name;Set;Nummer;Bereich
 1;Amateur Recital;UNL;207;Battlefield
 6;Body Rune;OGN;126;Rune
 6;Chaos Rune;OGN;166;Rune
+2;Abandon;UNL;131;Sideboard
+1;Hard Bargain;SFD;136;Sideboard
