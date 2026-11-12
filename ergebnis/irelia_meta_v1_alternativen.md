@@ -163,7 +163,7 @@ Anzahl Karten: 157
 ## Gear
 
 ### Blast Cone (UNL-133)
-- Besitz: 5 · Im Deck: 0 · Max. zusätzlich: 3
+- Besitz: 5 · Im Deck: 2 · Max. zusätzlich: 1
 - Domäne: Chaos · Kosten: 4 · Stats: 1
 - Text: When you play this, you may move an enemy unit. When you move an enemy unit, you may exhaust this to [Stun] it. (It doesn't deal combat damage this turn.)
 
@@ -255,7 +255,7 @@ Anzahl Karten: 157
 ## Spell
 
 ### Abandon (UNL-131)
-- Besitz: 4 · Im Deck: 0 · Max. zusätzlich: 3
+- Besitz: 4 · Im Deck: 2 · Max. zusätzlich: 1
 - Domäne: Chaos · Kosten: 2 · Stats: -
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
 
@@ -270,7 +270,7 @@ Anzahl Karten: 157
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) Give a unit +1 :rb_might: this turn. [Level 6][>] Give it +3 :rb_might: this turn instead. (While you have 6+ XP, get the effect.)
 
 ### Conscription (UNL-140)
-- Besitz: 5 · Im Deck: 0 · Max. zusätzlich: 3
+- Besitz: 5 · Im Deck: 1 · Max. zusätzlich: 2
 - Domäne: Chaos · Kosten: 5 · Stats: 2
 - Text: You may spend 5 XP as an additional cost to play this. Choose an enemy unit at a battlefield with 3 :rb_might: or less. If you paid the additional cost, choose any enemy unit at a battlefield instead. Take control of it, exhaust it, and recall it.
 
@@ -295,7 +295,7 @@ Anzahl Karten: 157
 - Text: [Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) [Stun] an attacking enemy unit. If it's already stunned, return it to its owner's hand instead. (A stunned unit doesn't deal combat damage this turn.)
 
 ### Factory Recall (SFD-135)
-- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
+- Besitz: 1 · Im Deck: 1 · Max. zusätzlich: 0
 - Domäne: Chaos · Kosten: 1 · Stats: -
 - Text: [Action] (Play on your turn or in showdowns.) Return a gear to its owner's hand.
 
@@ -305,7 +305,7 @@ Anzahl Karten: 157
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Give a unit +2 :rb_might: this turn.
 
 ### Flurry of Feathers (UNL-44)
-- Besitz: 2 · Im Deck: 0 · Max. zusätzlich: 2
+- Besitz: 2 · Im Deck: 2 · Max. zusätzlich: 0
 - Domäne: Calm · Kosten: 4 · Stats: 2
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) Choose one —Counter a spell.Play four 1 :rb_might: Bird unit tokens with [Deflect]. (Opponents must pay :rb_rune_rainbow: to choose them with a spell or ability.)
 
@@ -325,7 +325,7 @@ Anzahl Karten: 157
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, kill a friendly unit. Play a unit from your trash that costs no more Energy and no more Power than the killed unit, ignoring its cost.
 
 ### Isolate (UNL-124)
-- Besitz: 8 · Im Deck: 1 · Max. zusätzlich: 2
+- Besitz: 8 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Chaos · Kosten: 2 · Stats: -
 - Text: Move an enemy unit from a battlefield to its base. Then, if there's an enemy unit alone at that battlefield, draw 1.
 

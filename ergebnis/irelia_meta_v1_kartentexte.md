@@ -112,6 +112,32 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Spell · Domäne: Chaos · Kosten: 2 · Stats: 1
 - Text: Move a unit with 3 :rb_might: or less. [Flow] :rb_energy_4::rb_rune_chaos: (You may play this from your trash for its Flow cost. Then banish it.)
 
+## Sideboard (10)
+
+### 1× Factory Recall (SFD-135)
+- Typ: Spell · Domäne: Chaos · Kosten: 1 · Stats: -
+- Text: [Action] (Play on your turn or in showdowns.) Return a gear to its owner's hand.
+
+### 2× Abandon (UNL-131)
+- Typ: Spell · Domäne: Chaos · Kosten: 2 · Stats: -
+- Text: [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
+
+### 2× Isolate (UNL-124)
+- Typ: Spell · Domäne: Chaos · Kosten: 2 · Stats: -
+- Text: Move an enemy unit from a battlefield to its base. Then, if there's an enemy unit alone at that battlefield, draw 1.
+
+### 2× Flurry of Feathers (UNL-44)
+- Typ: Spell · Domäne: Calm · Kosten: 4 · Stats: 2
+- Text: [Reaction] (Play any time, even before spells and abilities resolve.) Choose one —Counter a spell.Play four 1 :rb_might: Bird unit tokens with [Deflect]. (Opponents must pay :rb_rune_rainbow: to choose them with a spell or ability.)
+
+### 2× Blast Cone (UNL-133)
+- Typ: Gear · Domäne: Chaos · Kosten: 4 · Stats: 1
+- Text: When you play this, you may move an enemy unit. When you move an enemy unit, you may exhaust this to [Stun] it. (It doesn't deal combat damage this turn.)
+
+### 1× Conscription (UNL-140)
+- Typ: Spell · Domäne: Chaos · Kosten: 5 · Stats: 2
+- Text: You may spend 5 XP as an additional cost to play this. Choose an enemy unit at a battlefield with 3 :rb_might: or less. If you paid the additional cost, choose any enemy unit at a battlefield instead. Take control of it, exhaust it, and recall it.
+
 ## Battlefield (3)
 
 ### 1× Abandoned Hall (UNL-205)
