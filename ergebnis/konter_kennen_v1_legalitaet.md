@@ -7,7 +7,7 @@
 | Main | 39 |
 | Rune | 12 |
 | Battlefield | 3 |
-| Sideboard | 0 |
+| Sideboard | 9 |
 
 **Deckliste: vollständig markiert.**
 
@@ -21,7 +21,7 @@
 | Max. 3 Exemplare je Name (Main + Sideboard) | BESTANDEN | keine Überschreitung |
 | Alle Karten Set/Nummer im Katalog | BESTANDEN | Katalogabgleich |
 | Keine gebannte Karte | BESTANDEN | Bannliste aus wissen/02_format.md |
-| Sideboard höchstens 10 | BESTANDEN | 0/10 |
+| Sideboard höchstens 10 | BESTANDEN | 9/10 |
 | Alle Domains entsprechen Legendenidentität | BESTANDEN | keine Fremd-Domains; Identität chaos, order |
 | Runen-Domains entsprechen Legendenidentität | BESTANDEN | Runen passen zu chaos, order |
 | Chosen Champion Tag passt zur Legende | BESTANDEN | Legend: ['Kennen']; Champion: ['Yordle', 'Ionia', 'Kennen'] |
@@ -33,4 +33,4 @@ Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Se
 
 Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.
 
-Benötigt **56** · Besitz **54** · Fehlend **2** · Kosten **€2.81**.
+Benötigt **65** · Besitz **64** · Fehlend **1** · Kosten **€0.15**.

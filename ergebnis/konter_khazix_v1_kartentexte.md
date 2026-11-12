@@ -108,6 +108,16 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Spell · Domäne: Chaos · Kosten: 1 · Stats: -
 - Text: [Action] (Play on your turn or in showdowns.) Return a gear to its owner's hand.
 
+## Sideboard (3)
+
+### 2× Abandon (UNL-131)
+- Typ: Spell · Domäne: Chaos · Kosten: 2 · Stats: -
+- Text: [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
+
+### 1× Hard Bargain (SFD-136)
+- Typ: Spell · Domäne: Chaos · Kosten: 2 · Stats: -
+- Text: [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Counter a spell unless its controller pays :rb_energy_2:.
+
 ## Battlefield (3)
 
 ### 1× Abandoned Hall (UNL-205)

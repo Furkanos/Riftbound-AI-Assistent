@@ -265,7 +265,7 @@ Anzahl Karten: 155
 ## Spell
 
 ### Abandon (UNL-131)
-- Besitz: 4 · Im Deck: 1 · Max. zusätzlich: 2
+- Besitz: 4 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Chaos · Kosten: 2 · Stats: -
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
 
@@ -315,7 +315,7 @@ Anzahl Karten: 155
 - Text: [Action] (Play on your turn or in showdowns.) Give a unit +2 :rb_might: this turn. If it's [Empowered], give it +4 :rb_might: this turn instead.
 
 ### Hard Bargain (SFD-136)
-- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
+- Besitz: 1 · Im Deck: 1 · Max. zusätzlich: 0
 - Domäne: Chaos · Kosten: 2 · Stats: -
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Counter a spell unless its controller pays :rb_energy_2:.
 

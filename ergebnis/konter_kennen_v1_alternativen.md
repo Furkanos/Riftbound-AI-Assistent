@@ -245,7 +245,7 @@ Anzahl Karten: 155
 ## Spell
 
 ### Abandon (UNL-131)
-- Besitz: 4 · Im Deck: 2 · Max. zusätzlich: 1
+- Besitz: 4 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Chaos · Kosten: 2 · Stats: -
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
 
@@ -305,7 +305,7 @@ Anzahl Karten: 155
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, kill a friendly unit. Play a unit from your trash that costs no more Energy and no more Power than the killed unit, ignoring its cost.
 
 ### Heroic Charge (UNL-155)
-- Besitz: 10 · Im Deck: 1 · Max. zusätzlich: 2
+- Besitz: 10 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Order · Kosten: 3 · Stats: -
 - Text: [Action] (Play on your turn or in showdowns.) Give a friendly unit +1 :rb_might: this turn and [Stun] an enemy unit at its location. (A stunned unit doesn't deal combat damage this turn.)
 
@@ -350,12 +350,12 @@ Anzahl Karten: 155
 - Text: Return up to 2 units from trashes to their owners' hands.
 
 ### Soul Harvest (UNL-159)
-- Besitz: 10 · Im Deck: 1 · Max. zusätzlich: 2
+- Besitz: 10 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Order · Kosten: 2 · Stats: 1
 - Text: Kill a unit at a battlefield with 3 :rb_might: or less.
 
 ### Star-Crossed (UNL-128)
-- Besitz: 10 · Im Deck: 2 · Max. zusätzlich: 1
+- Besitz: 10 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Chaos · Kosten: 3 · Stats: 1
 - Text: [Reaction] (Play any time, even before spells and abilities resolve.) Return a friendly unit and an enemy unit to their owners' hands.
 
@@ -385,7 +385,7 @@ Anzahl Karten: 155
 - Text: Play two 1 :rb_might: Tentacle unit tokens from Bilgewater. [Flow] :rb_energy_3: (You may play this from your trash for its Flow cost. Then banish it.)
 
 ### Wind and Ghosts (VEN-106)
-- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
+- Besitz: 1 · Im Deck: 1 · Max. zusätzlich: 0
 - Domäne: Chaos · Kosten: 3 · Stats: 1
 - Text: [Action] (Play on your turn or in showdowns.) Choose a unit at a battlefield. If it has 3 :rb_might: or less, banish it. Otherwise, return it to its owner's hand.
 
@@ -542,12 +542,12 @@ Anzahl Karten: 155
 - Text: As you play me, choose Bird, Cat, Dog, or Poro. I gain that tag. When I conquer or hold, score 1 point if your units have all of the following tags among them — Bird, Cat, Dog, and Poro.
 
 ### Keeper of Law (VEN-119)
-- Besitz: 1 · Im Deck: 0 · Max. zusätzlich: 1
+- Besitz: 1 · Im Deck: 1 · Max. zusätzlich: 0
 - Domäne: Order · Kosten: 5 · Stats: 5/1
 - Text: I cost :rb_energy_2::rb_rune_order: less if you control a battlefield with exactly two units there.
 
 ### Kennen, Keeper of Balance (VEN-135)
-- Besitz: 2 · Im Deck: 3 · Max. zusätzlich: 0
+- Besitz: 2 · Im Deck: 2 · Max. zusätzlich: 0
 - Domäne: Order · Kosten: 3 · Stats: 2
 - Text: [Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me or I attack, you may pay :rb_energy_2: to [Stun] a unit. (It doesn't deal combat damage this turn.) While there's a stunned enemy unit here, I have +2 :rb_might:.
 
@@ -657,7 +657,7 @@ Anzahl Karten: 155
 - Text: You may spend 3 XP as an additional cost to play me. When you play me, each player must kill one of their units. If you paid my additional cost, you don't kill a unit this way.
 
 ### Sandshifter (SFD-158)
-- Besitz: 3 · Im Deck: 2 · Max. zusätzlich: 1
+- Besitz: 3 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Order · Kosten: 5 · Stats: 6/2
 - Text: When you play me, kill an enemy unit with 3 :rb_might: or less.
 
@@ -787,6 +787,6 @@ Anzahl Karten: 155
 - Text: [Tank] (I must be assigned combat damage first.) I enter ready if you have two or more other units in your base.
 
 ### Zaun Punk (SFD-160)
-- Besitz: 4 · Im Deck: 2 · Max. zusätzlich: 1
+- Besitz: 4 · Im Deck: 3 · Max. zusätzlich: 0
 - Domäne: Order · Kosten: 3 · Stats: 3
 - Text: You may kill a friendly gear as an additional cost to play me. When you play me, if you paid the additional cost, kill a gear.

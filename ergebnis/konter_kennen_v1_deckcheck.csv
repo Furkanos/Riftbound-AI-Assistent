@@ -2,7 +2,7 @@
 Legende;Kennen, Heart of the Tempest;VEN;155;1;0;1;0.15;0.15
 Champion;Kennen, Keeper of Balance;VEN;135;1;1;0;2.66;0.00
 Main;Black Market Broker;SFD;121;3;3;0;0.12;0.00
-Main;Kennen, Keeper of Balance;VEN;135;2;1;1;2.66;2.66
+Main;Kennen, Keeper of Balance;VEN;135;1;1;0;2.66;0.00
 Main;Evelynn, Entrancing;UNL;141;2;2;0;0.77;0.00
 Main;Windsinger;SFD;138;1;1;0;0.14;0.00
 Main;Treasure Hunter;SFD;130;2;2;0;0.16;0.00
@@ -27,9 +27,17 @@ Main;Blood Money;SFD;162;1;1;0;0.12;0.00
 Main;Lacerate;VEN;127;1;1;0;0.10;0.00
 Main;Hard Bargain;SFD;136;1;1;0;0.65;0.00
 Main;Shadow's Call;UNL;165;1;1;0;0.35;0.00
+Main;Keeper of Law;VEN;119;1;1;0;0.04;0.00
 Battlefield;Abandoned Hall;UNL;205;1;1;0;0.12;0.00
 Battlefield;Altar of Blood;UNL;206;1;1;0;0.05;0.00
 Battlefield;Amateur Recital;UNL;207;1;1;0;0.10;0.00
 Rune;Order Rune;OGN;214;6;6;0;0.00;0.00
 Rune;Chaos Rune;OGN;166;6;6;0;0.00;0.00
-SUMME;;;;56;54;2;;2.81
+Sideboard;Abandon;UNL;131;1;1;0;2.47;0.00
+Sideboard;Zaun Punk;SFD;160;1;1;0;0.04;0.00
+Sideboard;Sandshifter;SFD;158;1;1;0;0.04;0.00
+Sideboard;Soul Harvest;UNL;159;2;2;0;0.04;0.00
+Sideboard;Heroic Charge;UNL;155;2;2;0;0.18;0.00
+Sideboard;Star-Crossed;UNL;128;1;1;0;0.89;0.00
+Sideboard;Wind and Ghosts;VEN;106;1;1;0;0.09;0.00
+SUMME;;;;65;64;1;;0.15

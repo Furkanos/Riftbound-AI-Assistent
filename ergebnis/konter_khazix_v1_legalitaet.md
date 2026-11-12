@@ -7,7 +7,7 @@
 | Main | 39 |
 | Rune | 12 |
 | Battlefield | 3 |
-| Sideboard | 0 |
+| Sideboard | 3 |
 
 **Deckliste: vollständig markiert.**
 
@@ -21,7 +21,7 @@
 | Max. 3 Exemplare je Name (Main + Sideboard) | BESTANDEN | keine Überschreitung |
 | Alle Karten Set/Nummer im Katalog | BESTANDEN | Katalogabgleich |
 | Keine gebannte Karte | BESTANDEN | Bannliste aus wissen/02_format.md |
-| Sideboard höchstens 10 | BESTANDEN | 0/10 |
+| Sideboard höchstens 10 | BESTANDEN | 3/10 |
 | Alle Domains entsprechen Legendenidentität | BESTANDEN | keine Fremd-Domains; Identität body, chaos |
 | Runen-Domains entsprechen Legendenidentität | BESTANDEN | Runen passen zu body, chaos |
 | Chosen Champion Tag passt zur Legende | BESTANDEN | Legend: ["Kha'Zix"]; Champion: ["Kha'Zix", 'The Void'] |
@@ -33,4 +33,4 @@ Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Se
 
 Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.
 
-Benötigt **56** · Besitz **56** · Fehlend **0** · Kosten **€0.00**.
+Benötigt **59** · Besitz **59** · Fehlend **0** · Kosten **€0.00**.

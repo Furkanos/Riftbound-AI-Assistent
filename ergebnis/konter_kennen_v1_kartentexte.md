@@ -20,7 +20,7 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 - Typ: Unit · Domäne: Chaos · Kosten: 3 · Stats: 3
 - Text: When you play a card from face down, play a Gold gear token exhausted.
 
-### 2× Kennen, Keeper of Balance (VEN-135)
+### 1× Kennen, Keeper of Balance (VEN-135)
 - Typ: Unit · Domäne: Order · Kosten: 3 · Stats: 2
 - Text: [Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me or I attack, you may pay :rb_energy_2: to [Stun] a unit. (It doesn't deal combat damage this turn.) While there's a stunned enemy unit here, I have +2 :rb_might:.
 
@@ -119,6 +119,40 @@ Quelle: wissen/03_kartenpool.csv (Fallback: Kartenkatalog). Automatisch erzeugt 
 ### 1× Shadow's Call (UNL-165)
 - Typ: Spell · Domäne: Order · Kosten: 2 · Stats: -
 - Text: Choose a friendly unit without [Temporary]. Give it [Temporary]. Draw 2. (Kill it at the start of its controller's Beginning Phase, before scoring.)
+
+### 1× Keeper of Law (VEN-119)
+- Typ: Unit · Domäne: Order · Kosten: 5 · Stats: 5/1
+- Text: I cost :rb_energy_2::rb_rune_order: less if you control a battlefield with exactly two units there.
+
+## Sideboard (9)
+
+### 1× Abandon (UNL-131)
+- Typ: Spell · Domäne: Chaos · Kosten: 2 · Stats: -
+- Text: [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
+
+### 1× Zaun Punk (SFD-160)
+- Typ: Unit · Domäne: Order · Kosten: 3 · Stats: 3
+- Text: You may kill a friendly gear as an additional cost to play me. When you play me, if you paid the additional cost, kill a gear.
+
+### 1× Sandshifter (SFD-158)
+- Typ: Unit · Domäne: Order · Kosten: 5 · Stats: 6/2
+- Text: When you play me, kill an enemy unit with 3 :rb_might: or less.
+
+### 2× Soul Harvest (UNL-159)
+- Typ: Spell · Domäne: Order · Kosten: 2 · Stats: 1
+- Text: Kill a unit at a battlefield with 3 :rb_might: or less.
+
+### 2× Heroic Charge (UNL-155)
+- Typ: Spell · Domäne: Order · Kosten: 3 · Stats: -
+- Text: [Action] (Play on your turn or in showdowns.) Give a friendly unit +1 :rb_might: this turn and [Stun] an enemy unit at its location. (A stunned unit doesn't deal combat damage this turn.)
+
+### 1× Star-Crossed (UNL-128)
+- Typ: Spell · Domäne: Chaos · Kosten: 3 · Stats: 1
+- Text: [Reaction] (Play any time, even before spells and abilities resolve.) Return a friendly unit and an enemy unit to their owners' hands.
+
+### 1× Wind and Ghosts (VEN-106)
+- Typ: Spell · Domäne: Chaos · Kosten: 3 · Stats: 1
+- Text: [Action] (Play on your turn or in showdowns.) Choose a unit at a battlefield. If it has 3 :rb_might: or less, banish it. Otherwise, return it to its owner's hand.
 
 ## Battlefield (3)
 
