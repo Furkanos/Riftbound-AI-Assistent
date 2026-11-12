@@ -33,4 +33,4 @@ Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Se
 
 Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.
 
-Benötigt **65** · Besitz **64** · Fehlend **1** · Kosten **€0.15**.
+Benötigt **65** · Besitz **65** · Fehlend **0** · Kosten **€0.00**.

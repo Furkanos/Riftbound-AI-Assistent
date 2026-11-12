@@ -1,5 +1,5 @@
 ﻿Bereich;Karte;Set;Nummer;Benötigt;Besitz;Fehlend;Preis_€;Kosten_Fehlend_€
-Legende;Kennen, Heart of the Tempest;VEN;155;1;0;1;0.15;0.15
+Legende;Kennen, Heart of the Tempest;VEN;155;1;1;0;0.15;0.00
 Champion;Kennen, Keeper of Balance;VEN;135;1;1;0;2.66;0.00
 Main;Black Market Broker;SFD;121;3;3;0;0.12;0.00
 Main;Kennen, Keeper of Balance;VEN;135;1;1;0;2.66;0.00
@@ -40,4 +40,4 @@ Sideboard;Soul Harvest;UNL;159;2;2;0;0.04;0.00
 Sideboard;Heroic Charge;UNL;155;2;2;0;0.18;0.00
 Sideboard;Star-Crossed;UNL;128;1;1;0;0.89;0.00
 Sideboard;Wind and Ghosts;VEN;106;1;1;0;0.09;0.00
-SUMME;;;;65;64;1;;0.15
+SUMME;;;;65;65;0;;0.00
