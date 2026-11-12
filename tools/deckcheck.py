@@ -43,12 +43,13 @@ def main():
  invs=sorted((ROOT/'wissen').glob('*Karten (Karten)*.csv')); cats=sorted((ROOT/'wissen').glob('*Kartenkatalog*.csv'))
  if not invs or not cats: raise SystemExit('Inventar oder Kartenkatalog fehlt in wissen/.')
  # Aggregate owned copies and market price by exact set+number and normalized title.
- invkey=defaultdict(lambda:{'owned':0,'prices':[]}); invname=defaultdict(lambda:{'owned':0,'prices':[]})
+ invkey=defaultdict(lambda:{'owned':0,'prices':[]}); invname=defaultdict(lambda:{'owned':0,'prices':[]}); invkey_names=defaultdict(lambda:defaultdict(int))
  for r in readcsv(invs[0]):
   nm=r.get('Titel',''); k=(r.get('SetCode','').strip().upper(),num(r.get('Kartennummer'))); q=int(dec(r.get('Owned'))); price=dec(r.get('PriceEUR'))
   for d,key in ((invkey,k),(invname,norm(nm))):
    d[key]['owned']+=q
    if price>0: d[key]['prices'].append((price,max(q,1)))
+  invkey_names[k][norm(nm)]+=q
  ckey=defaultdict(list); cname=defaultdict(list)
  for r in readcsv(cats[0]):
   nm=r.get('Name') or r.get('Spielkartenname') or ''; k=(r.get('SetCode','').strip().upper(),num(r.get('Kartennummer')))
@@ -100,6 +101,26 @@ def main():
    if norm(c['name']) in bans: issues.append(f"Gebannt: **{c['name']}** steht auf der Bannliste.")
   # Ownership is allocated once per physical copy across duplicate deck rows.
   remaining_key={k:v['owned'] for k,v in invkey.items()}; remaining_name={k:v['owned'] for k,v in invname.items()}
+  remaining_key_names={k:dict(v) for k,v in invkey_names.items()}
+  def consume_key(key,quantity):
+   """Allocate copies from one printing and synchronize its inventory-title aliases."""
+   taken=min(quantity,remaining_key.get(key,0)); remaining_key[key]=remaining_key.get(key,0)-taken
+   left=taken
+   for alias in sorted(remaining_key_names.get(key,{})):
+    amount=min(left,remaining_key_names[key][alias]); remaining_key_names[key][alias]-=amount
+    remaining_name[alias]=max(remaining_name.get(alias,0)-amount,0); left-=amount
+    if left==0: break
+   return taken
+  def consume_name(name,quantity):
+   """Allocate by inventory name and release matching keyed copies, when known."""
+   taken=min(quantity,remaining_name.get(name,0)); remaining_name[name]=remaining_name.get(name,0)-taken
+   left=taken
+   for key in sorted(remaining_key_names):
+    amount=min(left,remaining_key_names[key].get(name,0))
+    if amount:
+     remaining_key_names[key][name]-=amount; remaining_key[key]=max(remaining_key.get(key,0)-amount,0); left-=amount
+    if left==0: break
+   return taken
   results=[]; need=owned=missing=0; costs=Decimal(0); costok=True; counts=defaultdict(int); areas=defaultdict(int)
   for c in cards:
    n=norm(c['name']); q=c['q']; k=c['key']; stock=invkey.get(k) if c['set'] and c['no'] else None; matched='Set+Nummer'
@@ -111,12 +132,17 @@ def main():
    if is_rune:
     have=q; miss=0; price=Decimal(0); cost=Decimal(0)
    else:
-    # Consume by exact key when available; fallback pool is separately de-duplicated.
-    name_avail=remaining_name.get(n,0)
-    avail=min(remaining_key.get(k,0),name_avail) if matched=='Set+Nummer' else name_avail
-    have=min(q,avail)
-    remaining_name[n]=name_avail-have
-    if matched=='Set+Nummer': remaining_key[k]=remaining_key.get(k,0)-have
+    # A validated exact catalog key wins; name-only rows consume that same keyed pool.
+    if matched=='Set+Nummer' and c['cat']:
+     have=consume_key(k,q)
+    elif cname.get(n):
+     candidate_keys=sorted({(str(row.get('SetCode') or '').strip().upper(),num(row.get('Kartennummer'))) for row in cname.get(n,[])})
+     have=0
+     for candidate_key in candidate_keys:
+      used=consume_key(candidate_key,q-have); have+=used
+      if have==q: break
+    else:
+     have=consume_name(n,q)
     miss=q-have; prices=stock['prices']; price=sum((v*w for v,w in prices),Decimal(0))/sum(w for _,w in prices) if prices else None
     cost=price*miss if price is not None else None
    if miss and cost is None: costok=False
