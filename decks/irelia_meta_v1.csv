@@ -1,4 +1,4 @@
-# Irelia choose/ready tempo package: friendly-unit choices/readying and mobile interaction; no off-domain inclusions.
+# Irelia choose/ready tempo package: friendly-unit choices/readying and mobile interaction; no off-domain inclusions. Sideboard: Factory Recall answers opposing gear; Abandon/Flurry of Feathers cover spells; Isolate/Blast Cone/Conscription add enemy-unit interaction.
 Anzahl;Name;Set;Nummer;Bereich
 1;Irelia, Blade Dancer;SFD;195;Legende
 1;Irelia, Fervent;SFD;57;Champion
@@ -31,3 +31,9 @@ Anzahl;Name;Set;Nummer;Bereich
 1;Abandoned Hall;UNL;205;Battlefield
 1;Sunken Temple;SFD;218;Battlefield
 1;Star Spring;UNL;215;Battlefield
+1;Factory Recall;SFD;135;Sideboard
+2;Abandon;UNL;131;Sideboard
+2;Isolate;UNL;124;Sideboard
+2;Flurry of Feathers;UNL;44;Sideboard
+2;Blast Cone;UNL;133;Sideboard
+1;Conscription;UNL;140;Sideboard
