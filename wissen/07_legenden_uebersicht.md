@@ -7,9 +7,9 @@
 
 Sammlungszeilen wurden per Setcode und normalisierter Kartennummer (führende Nullen und Alternate-Art-Suffix berücksichtigt) eindeutig `03_kartenpool.csv` zugeordnet; Mehrfachtreffer wurden anhand des Kartentyps aufgelöst. Die Sammlung enthält 468 zugeordnete Zeilen und keine offenen Zuordnungen. Besitz mehrerer Drucke wird je Kartenpool-Kartenname summiert.
 
-Abschnitt 3 zählt ausschließlich besessene Unit-, Spell- und Gear-Namen aus OGS, OGN, SFD, UNL, VEN/Ven und RAD; Legends, Runes und Battlefields sind keine Main-Deck-Karten. Die Bannliste „Offizielle Bannliste Standard Constructed“ aus `02_format.md` ist ausgeschlossen. Die Domänenspalte des Kartenpools wurde als Slash-getrennte Liste gelesen (z. B. `Fury / Order` = beide Domänen). Eine Karte zählt nur, wenn **alle** ihre Domänen in der Identität der Legende liegen. Farblose/domainlose Karten (`Colorless`) zählen für alle Identitäten und werden zusätzlich in der letzten Spalte als Zahl verschiedener Namen ausgewiesen. „Kopien roh“ summiert Besitz über Drucke; „Kopien (max 3/Name)“ summiert je Kartenname höchstens drei. Bannliste und Regeldefinitionen stammen aus `02_format.md`.
+Abschnitt 3 zählt ausschließlich besessene Unit-, Spell- und Gear-Namen aus OGS, OGN, SFD, UNL, VEN/Ven und RAD; Legends, Runes und Battlefields sind keine Main-Deck-Karten. Die Bannliste „Offizielle Bannliste Standard Constructed“ aus `02_format.md` ist ausgeschlossen. Die Domänenspalte des Kartenpools wurde als Slash-getrennte Liste gelesen (z. B. `Fury / Order` = beide Domänen). Eine Karte zählt nur, wenn **alle** ihre Domänen in der Identität der Legende liegen. Domainlose/farblose Karten (`Colorless`) zählen für alle Identitäten und werden zusätzlich in der letzten Spalte als Zahl verschiedener Namen ausgewiesen. „Kopien roh“ summiert Besitz über Drucke; „Kopien (max 3/Name)“ summiert je Kartenname höchstens drei. Bannliste und Regeldefinitionen stammen aus `02_format.md`.
 
-Plausibilitätsprüfung des gesamten legalen, besessenen Main-Deck-Pools: **384 verschiedene Namen** und **1.250 Kopien roh**; je Einzeldomäne Body 62, Calm 65, Chaos 62, Fury 62, Mind 62 und Order 63; zusätzlich 8 Mehrdomänen-Namen und **0** domainlose/farblose Namen. Die Einzeldomänenzählung ist disjunkt; Mehrdomänenkarten werden separat gezählt. Die Größenordnung von rund 124–130 Namen je Legende ist mit zwei Domänen pro Identität (je etwa 62–65 Einzeldomänennamen plus zulässige Mehrdomänenkarten) vereinbar; sie wurde nicht durch ein fehlerhaftes Trennzeichenparsing erzeugt.
+Plausibilitätsprüfung des gesamten legalen, besessenen Main-Deck-Pools: **384 verschiedene Namen** und **1.250 Kopien roh**; je Einzeldomäne Body 62, Calm 65, Chaos 62, Fury 62, Mind 62 und Order 63; zusätzlich 8 Mehrdomänen-Namen und **0** domainlose/farblose Namen. Die Einzeldomänenzählung ist disjunkt; Mehrdomänenkarten werden separat gezählt. Die Größenordnung von rund 124–130 Namen je Legende (je etwa 62–65 Einzeldomänennamen plus zulässige Mehrdomänenkarten) ist mit zwei Domänen pro Identität vereinbar; sie wurde nicht durch ein fehlerhaftes Trennzeichenparsing erzeugt.
 
 Chosen-Champion-Regel (wörtlich aus `02_format.md`):
 > - **Chosen Champion:** Eine Champion Unit mit Champion Tag passend zum Tag der Champion Legend. Sie zählt als eine der genau 40 Main-Deck-Karten (Constructed), obwohl sie zu Spielbeginn in der Champion Zone liegt; sie unterliegt dem Kopienlimit. (CR 103.3, 103.3.a.1–103.3.a.2, 103.3.b.1; TR 402.1)
@@ -154,6 +154,10 @@ I can be played to a battlefield you're attacking.“
 [Ganking] (I can move from battlefield to battlefield.)“
 
 ### Jhin, Virtuoso (UNL/181)
+
+- Jhin, Murderous Artist (UNL/22): 3 Kopie(n). Kartentext (03_kartenpool.csv): „[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
+[Ganking] (I can move from battlefield to battlefield.)
+When I move, [Add] :rb_energy_1::rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)“
 
 ### Ivern, Green Father (UNL/195)
 
