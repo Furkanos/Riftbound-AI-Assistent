@@ -88,107 +88,105 @@ When I die in combat, choose an opponent. They score 1 point.“
 
 ### LeBlanc, Deceiver (UNL/199)
 
-- LeBlanc, Stalking (UNL/54): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)“
+- LeBlanc, Fragmented (UNL/172): 2 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault] (+1 :rb_might: while I'm an attacker.)
+[Deathknell][>] Draw 1. If it's your Beginning Phase, draw 2 instead. (When I die, get the effect.)“
 
 ### Ornn, Fire Below the Mountain (SFD/189)
 
-- Ornn, Quicksmith (SFD/31): 1 Kopie(n). Kartentext (03_kartenpool.csv): „When I conquer, you may play a gear from your hand with cost no more than :rb_energy_3:, ignoring its Energy cost. (You must still pay its Power cost.)
-[Assault 2] (+2 :rb_might: while I'm an attacker.)“
-- Ornn, Warmaster (SFD/62): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)“
+- Ornn, Forge God (SFD/85): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Deflect 2] (Opponents must pay :rb_rune_rainbow::rb_rune_rainbow: to choose me with a spell or ability.)
+[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)
+I have +1 :rb_might: for each friendly gear.“
 
 ### Master Yi, Wuju Master (UNL/191)
 
-- Master Yi, Disciplined (UNL/24): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)“
+- Master Yi, Tempered (UNL/113): 4 Kopie(n). Kartentext (03_kartenpool.csv): „[Hunt 2] (When I conquer or hold, gain 2 XP.)
+[Level 6][>] I have [Deflect] and [Ganking]. (While you have 6+ XP, opponents must pay :rb_rune_rainbow: to choose me with a spell or ability and I can move from battlefield to battlefield.)“
 
 ### Rek'sai, Void Burrower (SFD/187)
 
-- Rek'Sai, Terrifying (SFD/65): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)“
+- Rek'Sai, Swarm Queen (SFD/170): 1 Kopie(n). Kartentext (03_kartenpool.csv): „When I attack, you may reveal the top 2 cards of your Main Deck. You may play one. Then recycle the rest. If the played card is a unit, you may play it here.“
 
 ### Sivir, Battle Mistress (SFD/203)
 
-- Sivir, Bold (SFD/73): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)“
+- Sivir, Mercenary (SFD/143): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Accelerate] (You may pay :rb_energy_1::rb_rune_chaos: as an additional cost to have me enter ready.)
+If you've spent at least :rb_rune_rainbow::rb_rune_rainbow: this turn, I have +2 :rb_might: and [Ganking]. (I can move from battlefield to battlefield.)“
 
 ### Poppy, Keeper of the Hammer (UNL/203)
 
-- Poppy, Whimsical (UNL/63): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Tank] (I must be assigned combat damage first.)
-While I'm holding a battlefield, your other friendly units here have +1 :rb_might:."
+- Poppy, Paragon (UNL/116): 2 Kopie(n). Kartentext (03_kartenpool.csv): „[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
+When you play me, if an opponent's score is within 3 points of the Victory Score, ready me and gain 3 XP.“
 
 ### Lucian, Purifier (SFD/183)
 
-- Lucian, Vengeful (SFD/29): 2 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)"
+- Lucian, Merciless (SFD/113): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)
+The first time I conquer each turn, ready me.“
 
 ### Fiora, Grand Duelist (SFD/205)
 
-- Fiora, God-Willow's Favor (SFD/75): 3 Kopie(n). Kartentext (03_kartenpool.csv): „When you conquer, play a Golden Aegis gear token at your base. This turn, it has "[Reaction][>] :rb_exhaust:, [Kill] this: [Buff] a unit."
+- Fiora, Peerless (SFD/110): 1 Kopie(n). Kartentext (03_kartenpool.csv): „When I attack or defend one on one, double my Might this combat.“
 
 ### Renata Glasc, Chem-Baroness (SFD/201)
 
-- Renata Glasc, Chem-Queen (SFD/84): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.)
-When you play me, return a spell from your trash to your hand."
+- Renata Glasc, Industrialist (SFD/171): 2 Kopie(n). Kartentext (03_kartenpool.csv): „Your tokens enter ready.“
 
 ### Ezreal, Prodigal Explorer (SFD/199)
 
-- Ezreal, Savvy Sleuth (SFD/80): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.)
-When you play me, return a spell from your trash to your hand."
+- kein Champion im Besitz.
 
 ### Pyke, Bloodharbor Ripper (UNL/185)
 
-- Pyke, Bloodharbor Ripper (UNL/173): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)"
+- Pyke, Dockside Butcher (UNL/28): 2 Kopie(n). Kartentext (03_kartenpool.csv): „[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)
+[Ganking] (I can move from battlefield to battlefield.)
+You may pay :rb_rune_fury: as an additional cost to play me.
+When you play me, if you paid the additional cost, ready me and give me +2 :rb_might: this turn.“
+- Pyke, Returned (UNL/145): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)
+[Backline] (I must be assigned combat damage last.)
+Once each turn, when an enemy unit dies while I'm at a battlefield, play a Gold gear token exhausted. (It has "[Reaction][>] Kill this, :rb_exhaust:: [Add] :rb_rune_rainbow:. ")“
 
 ### Rengar, Pridestalker (UNL/183)
 
-- Rengar, Unseen Predator (UNL/172): 1 Kopie(n). Kartentext (03_kartenpool.csv): „When you choose a friendly unit, you may give it [Assault 2]. (+2 :rb_might: while it's an attacker.)"
+- Rengar, Pouncing (SFD/25): 2 Kopie(n). Kartentext (03_kartenpool.csv): „[Reaction] (Play any time, even before spells and abilities resolve, including to a battlefield you control.)
+[Assault 2] (+2 :rb_might: while I'm an attacker.)
+I can be played to a battlefield you're attacking.“
+- Rengar, Unseen (UNL/24): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)
+[Assault 2] (+2 :rb_might: while I'm an attacker.)
+[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
+[Ganking] (I can move from battlefield to battlefield.)“
 
 ### Jhin, Virtuoso (UNL/181)
 
-- Jhin, Patient One (UNL/29): 3 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault 2] (+2 :rb_might: while I'm an attacker.)
-[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)“
-- Jhin, Murderous Artist (UNL/22): 3 Kopie(n). Kartentext (03_kartenpool.csv): „[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
-[Ganking] (I can move from battlefield to battlefield.)
-When I move, [Add] :rb_energy_1::rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)"
-
 ### Ivern, Green Father (UNL/195)
 
-- Ivern, Friend to All (UNL/177): 1 Kopie(n). Kartentext (03_kartenpool.csv): „As you play me, choose Bird, Cat, Dog, or Poro. I gain that tag.
-When I conquer or hold, score 1 point if your units have all of the following tags among them — Bird, Cat, Dog, and Poro."
-- Ivern, Nurturer (UNL/51): 2 Kopie(n). Kartentext (03_kartenpool.csv): „When you play me or when I hold, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. Then if you revealed a Bird, Cat, Dog, or Poro, do this: [Buff] a friendly unit. (Give it a +1 :rb_might: buff if it doesn't have one.)"
+- Ivern, Verdant Caretaker (UNL/1): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault] (+1 :rb_might: while I'm an attacker.)
+[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)“
 
 ### Vi, Piltover Enforcer (UNL/187)
 
-- Vi, Hotheaded (UNL/30): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
-:rb_energy_2::rb_rune_fury:: Double my Might this turn.“
-- Vi, Peacekeeper (UNL/176): 2 Kopie(n). Kartentext (03_kartenpool.csv): „[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)
-When I attack, [Stun] an enemy unit here. (It doesn't deal combat damage this turn.)"
+- Vi, Vaultbreaker (UNL/146): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Assault] (+1 :rb_might: while I'm an attacker.)
+[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
+[Hunt 2] (When I conquer or hold, gain 2 XP.)“
 
 ### Kennen, Heart of the Tempest (VEN/155)
 
-- Fizz, Trickster (SFD/140): 1 Kopie(n). Kartentext (03_kartenpool.csv): „When you play me, you may play a spell from your trash with Energy cost no more than :rb_energy_3:, ignoring its Energy cost. Recycle that spell after you play it. (You must still pay its Power cost.)"
 - Kennen, Keeper of Balance (VEN/135): 2 Kopie(n). Kartentext (03_kartenpool.csv): „[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)
 When you play me or I attack, you may pay :rb_energy_2: to [Stun] a unit. (It doesn't deal combat damage this turn.)
-While there's a stunned enemy unit here, I have +2 :rb_might:."
+While there's a stunned enemy unit here, I have +2 :rb_might:.“
 
 ### Vex, Gloomist (UNL/193)
 
 - Vex, Mocking (UNL/55): 1 Kopie(n). Kartentext (03_kartenpool.csv): „[Shield] (+1 :rb_might: while I'm a defender.)
 [Tank] (I must be assigned combat damage first.)
-When you [Stun] an enemy unit at a battlefield, you may move me to that battlefield."
+When you [Stun] an enemy unit at a battlefield, you may move me to that battlefield.“
 
 ### Rumble, Mechanized Menace (SFD/181)
 
 - Rumble, Hotheaded (SFD/26): 1 Kopie(n). Kartentext (03_kartenpool.csv): „Your Mechs each have [Assault]. (+1 :rb_might: while we're attackers.)
-When I conquer, you may recycle another friendly unit to play a Mech from your trash. Reduce its Energy cost by the Might of the unit you recycled."
+When I conquer, you may recycle another friendly unit to play a Mech from your trash. Reduce its Energy cost by the Might of the unit you recycled.“
 
 ### Kha'Zix, Voidreaver (UNL/201)
 
 - Kha'Zix, Mutating Horror (UNL/143): 4 Kopie(n). Kartentext (03_kartenpool.csv): „[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)
-When I attack or defend, if an enemy unit is alone here, give me +2 :rb_might: this turn and gain 2 XP."
+When I attack or defend, if an enemy unit is alone here, give me +2 :rb_might: this turn and gain 2 XP.“
 
 ## Main-Deck-Bestand nach Legenden
 
