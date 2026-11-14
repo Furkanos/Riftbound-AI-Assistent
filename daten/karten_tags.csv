@@ -110,7 +110,6 @@ Guardian Angel;Gear;Calm;2;2;equipment;auto;[equip]
 Guardian Angel;Gear;Calm;2;2;waehlt_eigene_einheit;auto;a unit you control
 Guardian of the Passage;Unit;Calm;6;2;gear_antwort;auto;return a unit or gear
 Guards!;Spell;Order;3;3;nicht_aus_hand;auto;[hidden]
-Gust Monk;Unit;Chaos;2;2;removal;auto;banish a card from any trash to give a unit
 Gust Monk;Unit;Chaos;2;2;waehlt_eigene_einheit;auto;give a unit
 Gustwalker;Unit;Mind;3;3;xp_quelle;auto;[hunt
 Guttural Roar;Spell;Body;2;1;waehlt_eigene_einheit;auto;give a unit
