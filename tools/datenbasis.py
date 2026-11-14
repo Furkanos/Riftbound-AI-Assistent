@@ -15,13 +15,16 @@ ROOT = Path(__file__).resolve().parents[1]
 DATEN = ROOT / 'daten'
 
 # Automatische Tag-Regeln (Entwurf). Treffer werden mit Textstelle belegt.
+# Removal: verlangt eine gegnerische Einheit oder eine gegnerische Einheit
+# als explizites Ziel. Selbstopfer-/Zusatzkosten auf freundlichen Einheiten
+# zählen nicht als Removal; keine unscharfe Suche über Satzgrenzen hinweg.
 TAG_REGELN = [
-    ('removal', r"\b(kill|banish)\b[^.]{0,30}\bunit|\bdeal \d+\b[^.]{0,30}\benemy unit|\[stun\]|\bstun\b[^.]{0,20}\bunit|return an enemy unit"),
-    ('gear_antwort', r"\b(kill|banish|destroy|return)\b[^.]{0,20}\bgear\b"),
+    ('removal', r"\b(kill|banish)\b[^.!?]{0,40}\bunit\b(?![^.!?]{0,60}\b(?:friendly|you control|one of their)\b)|\bdeal \d+\b[^.!?]{0,60}\bto an enemy unit\b|\[stun\]|\bstun\b[^.!?]{0,30}\bunit\b|\breturn an enemy unit\b"),
+    ('gear_antwort', r"\b(kill|banish|destroy|return)\b[^.!?]{0,30}\bgear\b"),
     ('konter', r"\bcounter\b[^.]{0,25}\bspell"),
     ('xp_quelle', r"\bgain \d+ xp\b|\[hunt"),
     ('nicht_aus_hand', r"\[hidden\]|\bplay\b[^.]{0,40}\bfrom (your|the) (trash|deck|top)|you may play this from"),
-    ('equipment', r"\[equip\]"),
+    ('equipment', r"\[equip\]|\battach this to a unit\b|\bpay the cost: attach this\b"),
     ('waehlt_eigene_einheit', r"\bchoose a (friendly )?unit\b|\ba unit you control\b|\bgive (a|another) (friendly )?unit\b|\bchoose a unit at\b"),
     ('temporary', r"\[temporary\]"),
     ('mech', r"\bmechs?\b"),
@@ -116,21 +119,26 @@ def main():
         w.writerow(['Inventarname', 'Set', 'Nummer', 'Besitz', 'Pool-Kandidaten', 'Aktion'])
         w.writerows(offen)
 
-    # Tags: automatisch, dann manuelle Uebersteuerung
+    # Tags: automatische Regeln, danach manuelle Eintraege als letzte Instanz.
+    # Manuelle Werte 0 entfernen den Tag; jeder andere Wert setzt/ueberschreibt ihn.
     tags = {}
     for z in zeilen:
         t = z['Text'].casefold()
         for tag, rx in TAG_REGELN:
             m = re.search(rx, t)
+            if tag == 'equipment' and z['Typ'].casefold() != 'gear':
+                continue
             if m:
                 tags[(norm(z['Name']), tag)] = ('auto', m.group(0))
     mp = DATEN / 'tags_manuell.csv'
     if mp.exists():
         for r in readcsv(mp):
             key = (norm(r.get('Name')), (r.get('Tag') or '').strip())
+            if not key[0] or not key[1]:
+                continue
             if (r.get('Wert') or '').strip() == '0':
                 tags.pop(key, None)
-            elif key[0] and key[1]:
+            else:
                 tags[key] = ('manuell', (r.get('Beleg') or '').strip())
     info = {norm(z['Name']): z for z in zeilen}
     with (DATEN / 'karten_tags.csv').open('w', encoding='utf-8-sig', newline='') as f:
