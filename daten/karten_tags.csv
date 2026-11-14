@@ -36,6 +36,7 @@ Brutalizer;Gear;Calm;2;1;equipment;auto;[equip]
 Brutalizer;Gear;Calm;2;1;waehlt_eigene_einheit;auto;a unit you control
 Bubble Bot;Unit;Mind;3;2;mech;auto;mech
 Buhru Captain;Unit;Body;3;3;karten_ziehen;auto;draw 1
+Bushwhack;Spell;Fury;2;3;nicht_aus_hand;auto;[hidden]
 Call to Battle;Spell;Body;3;3;waehlt_eigene_einheit;auto;a unit you control
 Cloth Armor;Gear;Mind;1;3;equipment;auto;[equip]
 Cloth Armor;Gear;Mind;1;3;waehlt_eigene_einheit;auto;a unit you control
