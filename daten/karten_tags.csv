@@ -9,7 +9,6 @@ Angle Shot;Spell;Fury;2;2;waehlt_eigene_einheit;auto;choose a unit
 Arachnoid Horror;Unit;Body;6;3;xp_quelle;auto;[hunt
 Arena Kingpin;Unit;Fury;5;3;waehlt_eigene_einheit;auto;give a unit
 Aspiring Engineer;Unit;Mind;3;3;gear_antwort;auto;return a gear
-Aspiring Engineer;Unit;Mind;3;3;nicht_aus_hand;auto;play me, return a gear from your trash
 Assembly Rig;Gear;Fury;4;1;mech;auto;mech
 Atakhan;Unit;Order;10;2;removal;auto;kill a friendly unit
 Azir, Ascendant;Unit;Calm;6;1;waehlt_eigene_einheit;auto;choose a unit
@@ -258,7 +257,6 @@ Square Up;Spell;Fury;4;2;waehlt_eigene_einheit;auto;give a unit
 Stare Down;Spell;Body;2;2;waehlt_eigene_einheit;auto;choose a friendly unit
 Stare Down;Spell;Body;2;2;xp_quelle;auto;gain 1 xp
 Stargazer;Unit;Chaos;5;2;nicht_aus_hand;auto;play from your trash
-Starhound;Unit;Order;5;3;nicht_aus_hand;auto;play me, return a bird, cat, dog, or poro from your trash
 Stellacorn Herder;Unit;Calm;4;2;karten_ziehen;auto;draw 1
 Sterak's Gage;Gear;Calm;3;1;equipment;auto;[equip]
 Sterak's Gage;Gear;Calm;3;1;waehlt_eigene_einheit;auto;a unit you control
