@@ -3,8 +3,11 @@ on:
   push:
     paths:
       - 'decks/**'
-      - 'tools/deckcheck.py'
+      - 'tools/**'
       - 'wissen/**'
+      - 'daten/namens_alias.csv'
+      - 'daten/tags_manuell.csv'
+      - 'daten/legenden_engine.csv'
       - '.github/workflows/deckcheck.yml'
   workflow_dispatch:
 permissions:
@@ -17,13 +20,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - name: Datenbasis erzeugen
+        run: python tools/datenbasis.py
       - name: Decks prüfen und Ergebnisse erstellen
         run: python tools/deckcheck.py
+      - name: Deckqualität
+        run: python tools/deckqualitaet.py
       - name: Ergebnisse committen
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add ergebnis/
+          git add ergebnis/ daten/
           if ! git diff --cached --quiet; then
             git commit -m 'Automated deckcheck results [skip ci]'
             git push

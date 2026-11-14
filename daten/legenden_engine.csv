@@ -1,0 +1,8 @@
+Legende_Prefix;Engine_Tag;Legendentext_Kern;Status
+Irelia;waehlt_eigene_einheit;When you choose a friendly unit, you may exhaust me and pay [rainbow] to ready it. (CR 355.10);bestaetigt
+Kennen;nicht_aus_hand;When you play a card from anywhere other than your hand, empower me. (CR 811.1.c.3, 108.3.d);bestaetigt
+Master Yi;xp_quelle;Level-Effekte haengen an XP (CR 823.1.c.1 Hunt);bestaetigt
+Azir;equipment;Use only if you've played an Equipment this turn. (CR 150.1);bestaetigt
+Lucian;equipment;Your Equipment each give [Assault].;bestaetigt
+Lillia;temporary;costs 1 less for each friendly unit with [Temporary];bestaetigt
+Rumble;mech;Your Mechs have [Shield].;bestaetigt
