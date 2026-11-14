@@ -1,0 +1,437 @@
+﻿Name;Drucke;Typ;Domaene;Kosten;Stats;Besitz;Spielbar;Legal;Text
+Abandon;UNL-131;Spell;Chaos;2;;4;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
+Abandoned Hall;UNL-205;Battlefield;Colorless;;;7;3;ja;When a player plays a spell, they may give a unit they control here +1 :rb_might: this turn.
+Affectionate Poro;VEN-24;Unit;Calm;3;3;1;1;ja;When a combat that I was in ends, if I haven't been dealt damage this turn, draw 1.
+Against the Odds;SFD-1;Spell;Fury;2;;4;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Give a friendly unit at a battlefield +2 :rb_might: this turn for each enemy unit there.
+Akali, Silent;VEN-38;Unit;Calm;4;4/1;1;1;ja;I can't be chosen by enemy spells and abilities unless I'm in combat. When I move to a battlefield, give me +2 :rb_might: this turn.
+Allay, Eager Admirer;UNL-41;Unit;Calm;3;3;5;3;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) While I'm at a battlefield, your other units here have [Deflect].
+Altar of Blood;UNL-206;Battlefield;Colorless;;;10;3;ja;If a unit here would die during combat, its controller may pay :rb_rune_rainbow::rb_rune_rainbow::rb_rune_rainbow: to heal it, exhaust it, and recall it instead.
+Altar of Memories;SFD-169;Gear;Order;2;;1;1;ja;When a friendly unit dies, you may exhaust me to draw 1, then put a card from your hand on the top or bottom of your Main Deck.
+Amateur Recital;UNL-207;Battlefield;Colorless;;;5;3;ja;When you hold here, you may move a unit at a battlefield to its base.
+Ancient Warmonger;SFD-131;Unit;Chaos;5;4;1;1;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_chaos: as an additional cost to have me enter ready.) I have [Assault] equal to the number of enemy units here. (+1 :rb_might: while I'm an attacker for each instance of Assault.)
+Angle Shot;SFD-11;Spell;Fury;2;;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit and an Equipment with the same controller. Attach that Equipment to that unit or detach that Equipment from that unit. Draw 1.
+Angler Beast;UNL-132;Unit;Chaos;5;5/1;2;2;ja;When you play me, return all units with 2 :rb_might: or less to their owners' hands.
+Aphelios, Exalted;SFD-49;Unit;Calm;4;4/1;1;1;ja;When you attach an Equipment to me, choose one that hasn't been chosen this turn —Ready 2 runes.Channel 1 rune exhausted.Buff a friendly unit.
+Applied Researchers;VEN-55;Unit;Mind;4;4;1;1;ja;[Empower] :rb_energy_3: (:rb_energy_3:: Empower me. Use only if not Empowered.) [Empowered][>] Your spells cost :rb_energy_1::rb_rune_rainbow: less, to a minimum of :rb_energy_1:.
+Apprentice Mage;VEN-47;Unit;Mind;3;3;1;1;ja;[Empower] :rb_energy_2: (:rb_energy_2:: Empower me. Use only if not Empowered.) When I become [Empowered], [Predict 2]. (Look at the top 2 cards of your Main Deck. Recycle any of them and put the rest back in any order.) [Empowered][>] I have +1 :rb_might:.
+Apprentice Smith;SFD-41;Unit;Calm;2;2;1;1;ja;When I move, reveal the top card of your Main Deck. If it's a gear, draw it. Otherwise, recycle it.
+Arachnoid Horror;UNL-117;Unit;Body;6;6/1;3;3;ja;[Hunt 2] (When I conquer or hold, gain 2 XP.) I can be played to an occupied battlefield if an enemy unit is alone there. Friendly units can be played to an occupied battlefield if an enemy unit is alone there.
+Arena Kingpin;UNL-1;Unit;Fury;5;3;10;3;ja;I enter ready. :rb_exhaust:: Give a unit +3 :rb_might: this turn.
+Arise!;SFD-198;Spell;Calm / Order;6;1;1;1;ja;Play a 2 :rb_might: Sand Soldier unit token for each Equipment you control. Then ready two of them.
+Armed Assailant;SFD-2;Unit;Fury;6;6/1;4;3;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.) [Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)
+Ashe, Focused;UNL-169;Unit;Order;5;4/1;2;2;ja;When you play me, choose an opponent. They reveal their hand. Choose a card revealed this way and banish it. When they hold, return it to their hand (even if I'm no longer on the board).
+Aspiring Engineer;SFD-61;Unit;Mind;3;3/1;6;3;ja;When you play me, return a gear from your trash to your hand.
+Assembly Rig;SFD-19;Gear;Fury;4;;1;1;ja;:rb_energy_1::rb_rune_fury:, Recycle a unit from your trash, :rb_exhaust:: Play a 3 :rb_might: Mech unit token to your base.
+Atakhan;UNL-170;Unit;Order;10;7/3;2;2;ja;You may kill a friendly unit as an additional cost to play me. If you do, I cost :rb_energy_1: less for each Energy it costs and :rb_rune_order: less for each Power it costs. [Ganking] (I can move from battlefield to battlefield.) When I attack, the defender must kill one of their units here.
+Azir, Ascendant;SFD-50;Unit;Calm;6;6/1;1;1;ja;:rb_rune_calm:: [Action] — Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn.
+Azir, Emperor of the Sands;SFD-197;Legend;Calm / Order;;;1;1;ja;Your Sand Soldiers have [Weaponmaster]. :rb_energy_1:, :rb_exhaust:: Play a 2 :rb_might: Sand Soldier unit token to your base. Use only if you've played an Equipment this turn.
+B.F. Sword;SFD-161;Gear;Order;4;;1;1;ja;[Equip] :rb_rune_order: (:rb_rune_order:: Attach this to a unit you control.)
+Baccai Witherclaw;VEN-78;Unit;Body;4;4;1;1;ja;[Empower] :rb_energy_1::rb_rune_rainbow::rb_rune_rainbow: (:rb_energy_1::rb_rune_rainbow::rb_rune_rainbow:: Empower me. Use only if not Empowered.) [Empowered][>] I have +2 :rb_might:. [Empowered][>][>>][Deathknell][>] Channel 2 runes exhausted. (When I die while Empowered, get the effect.)
+Back Off;UNL-42;Spell;Calm;3;;3;3;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Action] (Play on your turn or in showdowns.) [Stun] a unit. (It doesn't deal combat damage this turn.) If you played this from your hand, draw 1.
+Bandle Soldier;UNL-151;Unit;Order;4;5/1;9;3;ja;[Level 3][>] I enter ready. (While you have 3+ XP, get the effect.)
+Bard, Mercurial;SFD-79;Unit;Mind;4;4/1;1;1;ja;You may exhaust your legend as an additional cost to play me. When you play me, if you paid the additional cost, move any number of your units to an open battlefield.
+Battering Ram;SFD-12;Unit;Fury;5;5;2;2;ja;I cost :rb_energy_1: less for each card you've played this turn, to a minimum of :rb_energy_1:.
+Beast Below;SFD-132;Unit;Chaos;7;8/2;1;1;ja;When you play me, return another friendly unit and an enemy unit to their owners' hands.
+Bellows Breath;SFD-80;Spell;Mind;1;1;1;1;ja;[Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_1::rb_rune_mind: (You may pay the additional cost to repeat this spell's effect.) Deal 1 to up to three units at the same location.
+Bewitching Spirit;UNL-121;Unit;Chaos;3;2;9;3;ja;When you play me, choose a player. They discard 1.
+Black Flame Altar;UNL-208;Battlefield;Colorless;;;3;3;ja;Units here with [Temporary] have [Shield]. (+1 :rb_might: while they're defenders.)
+Black Market Broker;SFD-121;Unit;Chaos;3;3;3;3;ja;When you play a card from face down, play a Gold gear token exhausted.
+Black Rose Dignitary;UNL-152;Unit;Order;3;2;11;3;ja;[Assault] (+1 :rb_might: while I'm an attacker.) [Deathknell][>] Channel 1 rune exhausted. (When I die, get the effect.)
+Blade Twirler;VEN-2;Unit;Fury;4;4;1;1;ja;The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)
+Blast Cone;UNL-133;Gear;Chaos;4;1;5;3;ja;When you play this, you may move an enemy unit. When you move an enemy unit, you may exhaust this to [Stun] it. (It doesn't deal combat damage this turn.)
+Blast Corps Cadet;SFD-13;Unit;Fury;2;2;1;1;ja;You may pay :rb_energy_1::rb_rune_fury: as an additional cost to play me. When you play me, if you paid the additional cost, deal 2 to a unit at a battlefield.
+Blighted Battleaxe;UNL-19;Gear;Fury;4;;1;1;ja;[Equip] :rb_energy_1::rb_rune_fury: (:rb_energy_1::rb_rune_fury:: Attach this to a unit you control.) At the end of your turn, if I didn't conquer this turn, unattach this and deal 4 to me.
+Blood Money;SFD-162;Spell;Order;2;;2;2;ja;[Action] (Play on your turn or in showdowns.) Kill a unit at a battlefield with 2 :rb_might: or less. If it was an enemy unit, play a Gold gear token exhausted. If it was a friendly unit, play two Gold gear tokens exhausted.
+Blood Rose;UNL-109;Gear;Body;1;;1;1;ja;When you play a unit, you may pay :rb_energy_1: to gain 1 XP. Spend 3 XP, :rb_exhaust:: Ready a unit.
+Blood Rush;SFD-3;Spell;Fury;1;;2;2;ja;[Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_1: (You may pay the additional cost to repeat this spell's effect.) Give a unit [Assault 2]. (+2 :rb_might: while it's an attacker.)
+Blue Sentinel;UNL-87;Unit;Mind;4;4/1;2;2;ja;[Shield 2] (+2 :rb_might: while I'm a defender.) Your hold effects for holding here trigger an additional time. When I hold, [Add] :rb_rune_rainbow: at the start of your next Main Phase. (Abilities that add resources can't be reacted to.)
+Bonds of Strength;SFD-151;Spell;Order;2;;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Give two friendly units each +1 :rb_might: this turn.
+Boots of Swiftness;SFD-133;Gear;Chaos;3;;2;2;ja;[Equip] :rb_rune_chaos: (:rb_rune_chaos:: Attach this to a unit you control.) [Ganking] (I can move from battlefield to battlefield.)
+Breakneck Mech;SFD-71;Unit;Mind;8;7/2;2;2;ja;Your Mechs have [Deflect] and [Ganking]. (Opponents must pay :rb_rune_rainbow: to choose us with a spell or ability. We can move from battlefield to battlefield.) I enter ready if you control another Mech.
+Brittle Steel;VEN-3;Spell;Fury;2;1;1;1;ja;Kill a gear. [Flow] :rb_energy_4::rb_rune_fury: (You may play this from your trash for its Flow cost. Then banish it.)
+Brutalizer;SFD-42;Gear;Calm;2;;1;1;ja;[Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.) If this was attached to me this turn, I have an additional +2 :rb_might:.
+Bubble Bot;SFD-62;Unit;Mind;3;3;2;2;ja;When you play me, ready another friendly Mech.
+Buhru Captain;SFD-91;Unit;Body;3;3/1;3;3;ja;When you play me, you may draw 1 or buff me. (To buff a unit, give it a +1 :rb_might: buff if it doesn't already have one.)
+Call to Battle;UNL-101;Spell;Body;3;;5;3;ja;Move a unit you control to a battlefield you control. Then, choose an opponent. They move a unit they control to the same battlefield.
+Called Shot;SFD-122;Spell;Chaos;0;1;3;0;nein;[Action] (Play on your turn or in showdowns.) [Repeat] :rb_rune_chaos: (You may pay the additional cost to repeat this spell's effect.) Look at the top 2 cards of your Main Deck. Draw one and recycle the other.
+Card Sharp;SFD-81;Unit;Mind;3;3;1;1;ja;When you play me, you and each opponent may play a Gold gear token exhausted. For each opponent who did, you play a Gold gear token exhausted.
+Carrion Dredger;UNL-153;Unit;Order;2;1;12;3;ja;[Deathknell][>] Play a 1 :rb_might: Bird unit token with [Deflect] to your base. (When I die, get the effect. Opponents must pay :rb_rune_rainbow: to choose a [Deflect] unit with a spell or ability.)
+Chakram Dancer;UNL-71;Unit;Mind;3;3;5;3;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When you play me, give your other units here [Shield] this turn. (+1 :rb_might: while they're defenders.)
+Chemtech Cask;SFD-63;Gear;Mind;1;;3;3;ja;When you play a spell on an opponent's turn, you may exhaust me to play a Gold gear token exhausted.
+Clash of Giants;UNL-110;Spell;Body;6;2;4;3;ja;Choose two units. They deal damage equal to their Mights to each other.
+Cloth Armor;SFD-64;Gear;Mind;1;;4;3;ja;[Quick-Draw] (This has [Reaction]. When you play it, attach it to a unit you control.) [Equip] :rb_rune_mind: (:rb_rune_mind:: Attach this to a unit you control.) [Shield 2] (+2 :rb_might: while I'm a defender.)
+Cloud Drake;VEN-48;Unit;Mind;6;5;1;1;ja;When you play me, draw 1.
+Combat Chef;SFD-92;Unit;Body;5;5;5;3;ja;[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)
+Combat Experience;UNL-31;Spell;Calm;1;;8;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit +1 :rb_might: this turn. [Level 6][>] Give it +3 :rb_might: this turn instead. (While you have 6+ XP, get the effect.)
+Concentrate;UNL-91;Spell;Body;5;;10;3;ja;Draw 2. [Level 6][>] This costs :rb_energy_2: less. (While you have 6+ XP, get the effect.) [Level 11][>] This costs :rb_energy_4: less instead.
+Conscription;UNL-140;Spell;Chaos;5;2;5;3;ja;You may spend 5 XP as an additional cost to play this. Choose an enemy unit at a battlefield with 3 :rb_might: or less. If you paid the additional cost, choose any enemy unit at a battlefield instead. Take control of it, exhaust it, and recall it.
+Corrupt Enforcer;SFD-123;Unit;Chaos;3;4/1;4;3;ja;When I move to a battlefield, discard 1. When I win a combat, draw 1.
+Covert Informant;VEN-57;Unit;Mind;3;4/1;1;1;ja;[Empower] :rb_energy_3: (:rb_energy_3:: Empower me. Use only if not Empowered.) [Empowered][>] When I move, draw 1.
+Crescent Guardian;UNL-122;Unit;Chaos;4;4;10;3;ja;If you've played a spell this turn, you may pay :rb_rune_chaos: as an additional cost to play me. If you do, I enter ready.
+Crescent Strike;UNL-72;Spell;Mind;3;1;5;3;ja;[Action] (Play on your turn or in showdowns.) Choose a battlefield and an enemy unit there. Deal 4 to that unit and 1 to each other enemy unit there.
+Crimson Pigeons;UNL-154;Unit;Order;3;3;10;3;ja;I have +2 :rb_might: while I'm attacking with another unit.
+Crowd Favorite;UNL-102;Unit;Body;3;3;5;3;ja;[Hunt] (When I conquer or hold, gain 1 XP.) Spend 2 XP: [Buff] me. (Give me a +1 :rb_might: buff if I don't have one.)
+Cull;SFD-134;Gear;Chaos;1;;2;2;ja;[Equip] :rb_rune_chaos: (:rb_rune_chaos:: Attach this to a unit you control.) When I conquer, play a Gold gear token exhausted.
+Cull the Weak;OGN-209;Spell;Order;2;1;1;1;ja;Each player kills one of their units.
+Daisy!;UNL-196;Unit;Calm / Order;9;8/2;2;2;ja;I enter ready. Reduce my cost by :rb_energy_1: for each of the following tags among your units — Bird, Cat, Dog, and Poro. When I attack while your units have all 4 tags, [Stun] an enemy unit here. (It doesn't deal combat damage this turn.)
+Dancing Grenade;UNL-20;Spell;Fury;2;1;2;2;ja;Deal 2 to a unit. Its controller may play this spell again for :rb_rune_rainbow:. If they do, this deals 1 additional Bonus Damage for each time this spell has dealt damage this turn.
+Dauntless Vanguard;SFD-93;Unit;Body;4;4/1;4;3;ja;You may play me to an occupied enemy battlefield.
+Deadly Flourish;UNL-73;Spell;Mind;4;;3;3;ja;"Deal 3 to an enemy unit. When it dies this turn, play a Gold gear token exhausted. (It has ""[Reaction][>] Kill this, :rb_exhaust:: [Add] :rb_rune_rainbow:."""")"""
+Deathgrip;SFD-163;Spell;Order;2;;1;1;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Kill a friendly unit to give +:rb_might: equal to its Might to another friendly unit this turn. Draw 1.
+Demacian Diplomat;UNL-92;Unit;Body;2;2;10;3;ja;When you play me, gain 1 XP.
+Desert's Call;SFD-31;Spell;Calm;2;;2;2;ja;[Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Play a 2 :rb_might: Sand Soldier unit token.
+Determined Sentry;UNL-111;Unit;Body;1;1;2;2;ja;I can't move to base.
+Detonate;SFD-5;Spell;Fury;1;1;4;3;ja;Kill a gear. Its controller draws 2.
+Diana, Lunari;UNL-79;Unit;Mind;3;3;2;2;ja;When a showdown begins here, you may pay :rb_energy_1:. If you do, [Predict], then reveal the top card of your Main Deck. If it's a spell, draw it. (To Predict, look at the top card of your Main Deck. You may recycle it.)
+Diana, Scorn of the Moon;UNL-197 UNL-234;Legend;Mind / Chaos;;;5;3;ja;[Reaction][>] :rb_exhaust:: [Add] :rb_energy_1:. Spend this Energy only during showdowns.
+Direwing;SFD-94;Unit;Body;7;7;2;2;ja;I enter ready if you control another Dragon.
+Disarming Rake;SFD-32;Unit;Calm;3;2/1;1;1;ja;When you play me, you may kill a gear.
+Disciple of Shen;VEN-117;Unit;Order;2;1;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) I have [Shield 3] while I'm at a battlefield with exactly one other unit you control. (+3 :rb_might: while I'm a defender.)
+Disposal Order;UNL-103;Spell;Body;2;;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose one —Choose up to 3 cards from opponents' trashes. Their owners recycle them.Draw 1.
+Divining Shells;UNL-161;Gear;Order;2;;2;2;ja;[Vision] (When you play this, look at the top card of your Main Deck. You may recycle it.) [Action][>] Kill this, :rb_exhaust:: Give a unit +2 :rb_might: this turn.
+Doran's Blade;SFD-95;Gear;Body;2;;4;3;ja;[Equip] :rb_rune_body: (:rb_rune_body:: Attach this to a unit you control.)
+Doran's Ring;SFD-124;Gear;Chaos;1;;5;3;ja;[Equip] :rb_rune_chaos: (:rb_rune_chaos:: Attach this to a unit you control.) When I conquer, discard 1, then draw 1.
+Doran's Shield;SFD-33;Gear;Calm;1;;4;3;ja;[Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.) [Tank] (I must be assigned combat damage first.)
+Double Trouble;UNL-32;Spell;Calm;2;;9;3;ja;[Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest.
+Downstage Dramatics;UNL-61;Spell;Mind;2;;11;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Draw 1.
+Drag Under;SFD-164;Spell;Order;5;1;1;1;ja;[Action] (Play on your turn or in showdowns.) I cost :rb_energy_2: less to play from anywhere other than your hand. Kill a unit at a battlefield.
+Dragon Roost;VEN-157;Battlefield;Colorless;;;3;3;ja;Any player may pay :rb_rune_rainbow::rb_rune_rainbow: as an additional cost to play a Dragon. If they do, they play it to this battlefield.
+Dragonsoul Sage;UNL-93;Unit;Body;2;1;9;3;ja;[Reaction][>] :rb_exhaust:: [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to.)
+Dramatic Visionary;UNL-62;Unit;Mind;4;4;8;3;ja;[Deathknell][>] [Predict 2]. (When I die, look at the top two cards of your Main Deck. Recycle any of them and put the rest back in any order.)
+Draven, Audacious;SFD-148;Unit;Chaos;6;6/1;1;1;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) The first time I win a combat each turn, you score 1 point. When I die in combat, choose an opponent. They score 1 point.
+Draven, Glorious Executioner;SFD-185;Legend;Fury / Chaos;;;1;1;ja;When you win a combat, draw 1. (You win if only your units remain after combat.)
+Dredge Up;VEN-49;Spell;Mind;2;;1;1;ja;Draw 1. [Flow] :rb_energy_2: (You may play this from your trash for its Flow cost. Then banish it.)
+Dropboarder;SFD-72;Unit;Mind;4;4;1;1;ja;When you play me, if you control two or more gear, ready me.
+Dusk Rose Lab;UNL-209;Battlefield;Colorless;;;8;3;ja;At the start of your Beginning Phase, you may kill a unit you control here to draw 1. (This happens before scoring.)
+Eager Drakehound;SFD-6;Unit;Fury;3;3/1;3;3;ja;I enter ready.
+Eclipse;UNL-63;Spell;Mind;3;;9;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit -4 :rb_might: this turn. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
+Edge of Night;SFD-139;Gear;Chaos;3;;2;2;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play this from face down, attach it to a unit you control here. [Equip] :rb_rune_chaos: (:rb_rune_chaos:: Attach this to a unit you control.)
+Eminent Benefactor;SFD-152;Unit;Order;6;5;3;3;ja;When I hold, play two Gold gear tokens exhausted.
+Emperor's Dais;SFD-207;Battlefield;Colorless;;;1;1;ja;When you conquer here, you may pay :rb_energy_1: and return a unit you control here to its owner's hand. If you do, play a 2 :rb_might: Sand Soldier unit token here.
+Enthralling Protector;UNL-162;Unit;Order;2;2;4;3;ja;[Hunt] (When I conquer or hold, gain 1 XP.) Spend 2 XP: [Buff] me. (Give me a +1 :rb_might: buff if I don't have one.)
+Enthusiastic Promoter;UNL-43;Unit;Calm;3;2;2;2;ja;[Backline] (I must be assigned combat damage last.) When I hold, [Buff] all units here. (Give each a +1 :rb_might: buff if it doesn't have one.)
+Esteemed Hierophant;VEN-25;Unit;Calm;5;5;1;1;ja;While you control 7 or more runes, prevent all damage that enemy spells and abilities would deal to me.
+Evelynn, Entrancing;UNL-141;Unit;Chaos;2;2;2;2;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Backline] (I must be assigned combat damage last.) When you play me from face down on your turn, you may move an enemy unit at a different location to my battlefield.
+Evershade Stalker;UNL-123;Unit;Chaos;3;3;9;3;ja;When you play me, discard 1, then draw 1.
+Existential Dread;UNL-134;Spell;Chaos;1;1;2;2;ja;[Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) [Stun] an attacking enemy unit. If it's already stunned, return it to its owner's hand instead. (A stunned unit doesn't deal combat damage this turn.)
+Experimental Hexplate;SFD-73;Gear;Mind;1;;2;2;ja;[Equip] :rb_rune_mind: (:rb_rune_mind:: Attach this to a unit you control.) I am a Mech.
+Eye of the Herald;SFD-153;Gear;Order;1;;3;3;ja;[Equip] :rb_rune_order: (:rb_rune_order:: Attach this to a unit you control.) When I move, play a 1 :rb_might: Recruit unit token here.
+Ezreal, Prodigal Explorer;SFD-199;Legend;Mind / Chaos;;;1;1;ja;:rb_exhaust:: [Reaction] — Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities.
+Factory Recall;SFD-135;Spell;Chaos;1;;1;1;ja;[Action] (Play on your turn or in showdowns.) Return a gear to its owner's hand.
+Fae Dragon;SFD-101;Unit;Body;7;7/1;1;1;ja;When you play me, buff up to four friendly units. (Give each a +1 :rb_might: buff if it doesn't have one.) When you spend a buff, play a Gold gear token exhausted.
+Fae Porter;SFD-125;Unit;Chaos;4;4;5;3;ja;When I move to a battlefield, you may pay :rb_rune_chaos: to move a unit you control to the same battlefield.
+Fate Weaver;UNL-64;Unit;Mind;5;4;11;3;ja;When you play me, look at the top 4 cards of your Main Deck. You may reveal a spell with Energy cost :rb_energy_4: or more from among them and draw it. Recycle the rest.
+Feral Strength;SFD-34;Spell;Calm;2;;4;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Give a unit +2 :rb_might: this turn.
+Ferrous Forerunner;SFD-21;Unit;Fury;6;6/1;1;1;ja;[Deathknell] — Play two 3 :rb_might: Mech unit tokens to your base. (When I die, get the effect.)
+Field Musicians;VEN-26;Unit;Calm;4;3;1;1;ja;When you play me, give a unit +3 :rb_might: this turn.
+Fiora, Grand Duelist;SFD-205;Legend;Body / Order;;;3;3;ja;When one of your units becomes [Mighty], you may exhaust me to channel 1 rune exhausted. (A unit is Mighty while it has 5+ :rb_might:.)
+Fiora, Peerless;SFD-110;Unit;Body;3;3/1;1;1;ja;When I attack or defend one on one, double my Might this combat.
+Fizz, Trickster;SFD-140;Unit;Chaos;3;3/1;1;1;ja;When you play me, you may play a spell from your trash with Energy cost no more than :rb_energy_3:, ignoring its Energy cost. Recycle that spell after you play it. (You must still pay its Power cost.)
+Flurry of Feathers;UNL-44;Spell;Calm;4;2;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose one —Counter a spell.Play four 1 :rb_might: Bird unit tokens with [Deflect]. (Opponents must pay :rb_rune_rainbow: to choose them with a spell or ability.)
+Forbidding Waste;UNL-210;Battlefield;Colorless;;;5;3;ja;While a unit here is defending alone, it has -2 :rb_might:. (It's alone if there are no other friendly units here.)
+Forecaster;SFD-65;Unit;Mind;2;2;4;3;ja;Your Mechs have [Vision]. (When you play us, look at the top card of your Main Deck. You may recycle it.)
+Forgotten Library;UNL-211;Battlefield;Colorless;;;3;3;ja;While you control this battlefield, when you play a spell, if you spent :rb_energy_4: or more, [Predict]. (Look at the top card of your Main Deck. You may recycle it.)
+Forgotten Monument;SFD-209;Battlefield;Colorless;;;1;1;ja;Players can't score here until their third turn.
+Forgotten Relic;VEN-108;Gear;Chaos;5;;1;1;ja;When you play this or at the start of your Beginning Phase, [Burn 1]. When you burn a unit this way, do this: Give a friendly unit +:rb_might: equal to the burned card's Might this turn. (To Burn 1, put the top card of your Main Deck into your trash.)
+Forgotten Signpost;UNL-45;Gear;Calm;2;;3;3;ja;[Action][>] Exhaust a unit you control, :rb_exhaust:: Move a different unit you control to the location of the unit you exhausted to pay for this ability.
+Forsaken Baccai;VEN-5;Unit;Fury;2;2;1;1;ja;If you control fewer runes than an opponent at the start of your Beginning Phase, give me +1 :rb_might: this turn.
+Fresh Beans;UNL-11;Gear;Fury;2;;7;3;ja;When you play a unit during a showdown, you may exhaust this to draw 1.
+Fretful Feline;VEN-71;Unit;Body;6;5;1;1;ja;When I become ready, give me +2 :rb_might: this turn.
+Friendship;UNL-46;Spell;Calm;1;;3;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit. Give it +1 :rb_might: this turn for each of the following tags among your units — Bird, Cat, Dog, and Poro.
+Frigid Jewel;UNL-74;Gear;Mind;2;;2;2;ja;When you draw your second card each turn, give a friendly unit +2 :rb_might: this turn.
+Frigid Touch;SFD-66;Spell;Mind;2;;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Give a unit -2 :rb_might: this turn.
+Frisky Hunter;UNL-33;Unit;Calm;4;3;9;3;ja;When you play me, play a 1 :rb_might: Bird unit token with [Deflect] here. (Opponents must pay :rb_rune_rainbow: to choose it with a spell or ability.)
+Frostcoat Cub;SFD-67;Unit;Mind;3;3;5;3;ja;You may pay :rb_rune_mind: as an additional cost to play me. When you play me, if you paid the additional cost, give a unit -2 :rb_might: this turn.
+Frostcoat Mother;VEN-32;Unit;Calm;3;3;1;1;ja;[Empower] :rb_energy_12:. This ability costs :rb_energy_1: less for each rune you control. (Pay the cost: Empower me. Use only if not Empowered.) [Empowered][>] I have +3 :rb_might:.
+Frozen Fortress;UNL-212;Battlefield;Colorless;;;4;3;ja;At the start of each player's Beginning Phase, deal 1 to each unit here. (This happens before scoring.)
+Galio, Indefatigable;UNL-171;Unit;Order;3;6/1;4;3;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) [Tank] (I must be assigned combat damage first.) I don't deal combat damage.
+Gangplank, Naval;VEN-86;Unit;Body;6;6;1;1;ja;[Empower] :rb_rune_body::rb_rune_body: (:rb_rune_body::rb_rune_body:: Empower me. Use only if not Empowered.) [Empowered][>] If a spell or ability that chooses me would stun me, give me -:rb_might:, or return me to hand, give me +3 :rb_might: instead.
+Gardens of Becoming;UNL-213;Battlefield;Colorless;;;8;3;ja;"Units here have "":rb_exhaust:: Gain 1 XP."""""""
+Gearhead;SFD-68;Unit;Mind;5;3;3;3;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.) Each Equipment attached to me gives double its base Might bonus.
+Gem Jammer;SFD-7;Unit;Fury;2;2;6;3;ja;When you play me, give a unit [Ganking] this turn. (It can move from battlefield to battlefield.)
+Gemhand Hunter;UNL-94;Unit;Body;2;2;8;3;ja;[Hunt] (When I conquer or hold, gain 1 XP.) [Level 6][>] I have +1 :rb_might:. (While you have 6+ XP, get the effect.)
+Gentle Gemdragon;UNL-104;Unit;Body;8;8;7;3;ja;When you play me or another Dragon, ready up to 2 runes.
+Glasc Mixologist;SFD-165;Unit;Order;5;5/1;1;1;ja;[Deathknell] — You may play a unit with cost no more than :rb_energy_3: and no more than :rb_rune_rainbow: from your trash, ignoring its cost. (When I die, get the effect.)
+Grim Apothecary;UNL-21;Unit;Fury;3;3;3;3;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When you play me, you may return a friendly unit at a battlefield to its owner's hand.
+Grim Resolve;UNL-95;Spell;Body;2;;11;3;ja;[Action] (Play on your turn or in showdowns.) Give a friendly unit +3 :rb_might: this turn. When it wins a combat this turn, gain 2 XP.
+Guardian Angel;SFD-51;Gear;Calm;2;;2;2;ja;[Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.) If I would die, kill Guardian Angel instead. Heal me, exhaust me, and recall me.
+Guardian of the Passage;SFD-35;Unit;Calm;6;6;2;2;ja;When I hold, you may return a unit or gear from your trash to your hand.
+Guards!;SFD-154;Spell;Order;3;;5;3;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) Play a 2 :rb_might: Sand Soldier unit token. You may pay :rb_rune_order: to ready it.
+Gust Monk;VEN-101;Unit;Chaos;2;2;2;2;ja;You may pay :rb_energy_1: as an additional cost to play me. When you play me, if you paid the additional cost, banish a card from any trash to give a unit [Assault 2] this turn. (+2 :rb_might: while it's an attacker.)
+Gustwalker;UNL-75;Unit;Mind;3;3/1;4;3;ja;[Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 3][>] I have +1 :rb_might: and [Ganking]. (While you have 3+ XP, get the effect. A [Ganking] unit can move from battlefield to battlefield.)
+Guttural Roar;VEN-72;Spell;Body;2;;1;1;ja;[Action] (Play on your turn or in showdowns.) Give a unit +2 :rb_might: this turn. If it's [Empowered], give it +4 :rb_might: this turn instead.
+Hall of Legends;SFD-210;Battlefield;Colorless;;;1;1;ja;When you conquer here, you may pay :rb_energy_1: to ready your legend.
+Hand Hammer;VEN-27;Gear;Calm;2;;1;1;ja;[Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.) I have +2 :rb_might: while I'm at a battlefield with exactly one other unit you control.
+Hard Bargain;SFD-136;Spell;Chaos;2;;1;1;ja;[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Counter a spell unless its controller pays :rb_energy_2:.
+Harpoon Squad;SFD-137;Unit;Chaos;4;4;1;1;ja;When I move from a battlefield, give me +2 :rb_might: this turn.
+Heedless Resurrection;UNL-142;Spell;Chaos;2;1;1;1;ja;[Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, kill a friendly unit. Play a unit from your trash that costs no more Energy and no more Power than the killed unit, ignoring its cost.
+Herald of Spring;UNL-34;Unit;Calm;4;4/1;9;3;ja;[Hunt] (When I conquer or hold, gain 1 XP.) When you play me, gain 2 XP.
+Here to Help;SFD-111;Spell;Body;2;1;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Action] (Play on your turn or in showdowns.) You may play a unit from hand to a battlefield you control, reducing its cost by :rb_energy_3:.
+Heroic Charge;UNL-155;Spell;Order;3;;10;3;ja;[Action] (Play on your turn or in showdowns.) Give a friendly unit +1 :rb_might: this turn and [Stun] an enemy unit at its location. (A stunned unit doesn't deal combat damage this turn.)
+Hexdrinker;SFD-102;Gear;Body;2;;2;2;ja;[Equip] :rb_rune_body: (:rb_rune_body:: Attach this to a unit you control.) [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
+Hextech Anomaly;SFD-83;Gear;Mind;3;1;1;1;ja;:rb_exhaust:: [Reaction] — Pay any amount of :rb_rune_rainbow: to [Add] that much Energy. (Abilities that add resources can't be reacted to.)
+Hextech Disc;VEN-87;Gear;Body;4;1;1;1;ja;[Empower] — :rb_exhaust: (Pay the cost: Empower this. Use only if not Empowered.) Disempower this, :rb_energy_1:, :rb_exhaust:: Play a 3 :rb_might: Mech unit token to your base.
+Hextech Gauntlets;UNL-188;Gear;Fury / Order;3;;1;1;ja;[Equip] :rb_energy_3::rb_rune_rainbow:. This ability's Energy cost is reduced by the Might of the unit you choose. (Pay the cost: Attach this to a unit you control.) When I conquer, if you assigned 3 or more excess damage, draw 1.
+Honest Broker;SFD-155;Unit;Order;2;2;5;3;ja;[Deathknell] — Play a Gold gear token exhausted. (When I die, get the effect.)
+Honeyfruit;UNL-49;Gear;Calm;2;;2;2;ja;This enters exhausted. [Reaction][>] :rb_exhaust:: [Add] :rb_rune_rainbow:. (Abilities that add resources can't be reacted to.) [Level 6][>] [>>][Reaction][>] :rb_exhaust:: [Add] :rb_energy_1::rb_rune_rainbow:. (Use this ability only while you have 6+ XP.)
+Horns of the Dragon;VEN-118;Unit;Order;6;6;1;1;ja;[Tank] (I must be assigned combat damage first.)
+Hostile Takeover;SFD-202;Spell;Mind / Order;5;2;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) Take control of an enemy unit at a battlefield. Ready it. (Start a combat if other enemies are there. Otherwise, conquer.) Lose control of that unit and recall it at end of turn. (Send it to base. This isn't a move.)
+Hunter's Machete;UNL-96;Gear;Body;3;;10;3;ja;[Equip] :rb_rune_body: (:rb_rune_body:: Attach this to a unit you control.) [Hunt] (When I conquer or hold, gain 1 XP.)
+Hwei, Brooding Painter;UNL-80;Unit;Mind;5;5/1;2;2;ja;When I move, draw 1, then discard 1. Then, do the following based on the discarded card's type:Spell — Draw 1.Gear — Ready up to 2 runes.Unit — Give me +3 :rb_might: this turn.
+Iascylla;UNL-50;Unit;Calm;7;6/1;3;3;ja;When I hold, at the start of your next Main Phase, you may move an enemy unit to this battlefield.
+Icevale Archer;UNL-65;Unit;Mind;2;2;10;3;ja;When I attack, you may pay :rb_energy_1: to give a unit here -1 :rb_might: this turn.
+Imposing Challenger;UNL-105;Unit;Body;5;5;4;3;ja;When I move, you may move an enemy unit here with less Might than me to a different battlefield.
+Inferna;UNL-2;Unit;Fury;2;1;11;3;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) [Assault 2] (+2 :rb_might: while I'm an attacker.)
+Insightful Investigator;UNL-135;Unit;Chaos;3;3;3;3;ja;When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card and draw 1.
+Irelia, Blade Dancer;SFD-195;Legend;Calm / Chaos;;;2;2;ja;When you choose a friendly unit, you may exhaust me and pay :rb_rune_rainbow: to ready it. When you conquer, you may pay :rb_energy_1: to ready me.
+Irelia, Fervent;SFD-57;Unit;Calm;5;4;2;2;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When you choose or ready me, give me +1 :rb_might: this turn.
+Irelia, Graceful;SFD-141;Unit;Chaos;4;4/1;1;1;ja;Your spells that choose me cost :rb_energy_1: or :rb_rune_rainbow: less.
+Irresistible Faefolk;UNL-112;Unit;Body;2;1;1;1;ja;When I move to a battlefield, you may move an enemy unit to that battlefield.
+Isolate;UNL-124;Spell;Chaos;2;;8;3;ja;Move an enemy unit from a battlefield to its base. Then, if there's an enemy unit alone at that battlefield, draw 1.
+Iterative Design;VEN-51;Spell;Mind;4;;2;2;ja;Play a 3 :rb_might: Mech unit token. [Flow] :rb_energy_2::rb_rune_mind: (You may play this from your trash for its Flow cost. Then banish it.)
+Ivern, Friend to All;UNL-177;Unit;Order;6;6;1;1;ja;As you play me, choose Bird, Cat, Dog, or Poro. I gain that tag. When I conquer or hold, score 1 point if your units have all of the following tags among them — Bird, Cat, Dog, and Poro.
+Ivern, Green Father;UNL-195;Legend;Calm / Order;;;2;2;ja;When you conquer or hold, you may exhaust me to replace that battlefield with a Brush battlefield token. (Bird, Cat, Dog, Poro, and Ivern units have +1 :rb_might: in Brush. It can be swapped back when scored.)
+Ivern, Nurturer;UNL-51;Unit;Calm;5;4/1;2;2;ja;When you play me or when I hold, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. Then if you revealed a Bird, Cat, Dog, or Poro, do this: [Buff] a friendly unit. (Give it a +1 :rb_might: buff if it doesn't have one.)
+Jagged Cutlass;VEN-73;Gear;Body;3;;1;1;ja;Equip :rb_rune_body: (:rb_rune_body:: Attach this to a unit you control.) I can't be moved by enemy spells and abilities.
+Janna, Savior;SFD-53;Unit;Calm;3;3/1;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve, including to a battlefield you control.) When you play me, heal your units here, then move an enemy unit from here to its base.
+Jaull-Fish;SFD-103;Unit;Body;7;6/2;1;1;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_body: as an additional cost to have me enter ready.) I cost :rb_energy_2: less for each of your [Mighty] units. (A unit is Mighty while it has 5+ :rb_might:.)
+Jax, Unmatched;SFD-54;Unit;Calm;5;5/1;2;2;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) Each Equipment in your hand has [Quick-Draw]. (It gains [Reaction]. When you play it, attach it to a unit you control.)
+Jayce, Man of Progress;SFD-84;Unit;Mind;4;4;1;1;ja;When you play me, you may kill a friendly gear. If you do, you may play a gear with Energy cost no more than :rb_energy_7: from hand this turn, ignoring its Energy cost. (You must still pay its Power cost.)
+Jhin, Murderous Artist;UNL-22;Unit;Fury;4;4/1;3;3;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) [Ganking] (I can move from battlefield to battlefield.) When I move, [Add] :rb_energy_1::rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)
+Jhin, Virtuoso;UNL-181;Legend;Fury / Mind;;;4;3;ja;When you play a spell, if you spent :rb_energy_4: or more, you may banish it. Then, if there are four spells banished with me, put each in its trash, channel 4 runes, and draw 1.
+Katarina, Reckless;UNL-23;Unit;Fury;5;5/1;2;2;ja;When you hide a card, ready me. When you play a card from face down, deal 2 to an enemy unit.
+Kato the Arm;SFD-112;Unit;Body;4;3/1;1;1;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When I move to a battlefield, give a friendly unit my keywords and +:rb_might: equal to my Might this turn.
+Keeper of Law;VEN-119;Unit;Order;5;5/1;1;1;ja;I cost :rb_energy_2::rb_rune_order: less if you control a battlefield with exactly two units there.
+Keeper of Masks;UNL-81;Unit;Mind;2;1;3;3;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Temporary] (Kill me at the start of my controller's Beginning Phase, before scoring.) When you play me, play two Reflection unit tokens here. They become copies of me.
+Kennen, Keeper of Balance;VEN-135;Unit;Order;3;2;2;2;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me or I attack, you may pay :rb_energy_2: to [Stun] a unit. (It doesn't deal combat damage this turn.) While there's a stunned enemy unit here, I have +2 :rb_might:.
+Kha'Zix, Mutating Horror;UNL-143;Unit;Chaos;4;4/1;4;3;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When I attack or defend, if an enemy unit is alone here, give me +2 :rb_might: this turn and gain 2 XP.
+Kha'Zix, Voidreaver;UNL-201;Legend;Body / Chaos;;;3;3;ja;When you win a combat, gain 1 XP. Spend 1 XP, :rb_exhaust:: [Buff] a unit. Spend 2 XP, :rb_exhaust:: Move an exhausted friendly unit from a battlefield to its base.
+Ki Barrier;VEN-126;Spell;Order;2;1;1;1;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit. Prevent the next 7 damage that would be dealt to it this turn. (Opponents can assign it extra combat damage to kill it.)
+Kinkou Initiate;UNL-97;Unit;Body;3;3;10;3;ja;When you play me, draw 1 if your other units have total Might 5 or more.
+Kinkou Lifeblade;VEN-93;Unit;Chaos;4;4;1;1;ja;[Empower] :rb_energy_2: (:rb_energy_2:: Empower me. Use only if not Empowered.) [Empowered][>] I have +1 :rb_might: and [Ganking]. (I can move from battlefield to battlefield.)
+Lacerate;VEN-127;Spell;Order;2;1;2;2;ja;Choose a unit. If it's [Empowered], disempower it. Then kill it if it has 3 :rb_might: or less. [Flow] :rb_energy_4::rb_rune_order::rb_rune_order: (You may play this from your trash for its Flow cost. Then banish it.)
+Laurent Bladekeeper;SFD-96;Unit;Body;3;3;3;3;ja;Ganking (I can move from battlefield to battlefield.)
+Laurent Duelist;SFD-156;Unit;Order;4;3;3;3;ja;[Assault 2] (+2 :rb_might: while I'm an attacker.)
+LeBlanc, Deceiver;UNL-199;Legend;Mind / Order;;;3;3;ja;When you conquer or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. It becomes a copy of another unit there. Give it [Temporary].
+LeBlanc, Fragmented;UNL-172;Unit;Order;3;3/1;2;2;ja;[Assault] (+1 :rb_might: while I'm an attacker.) [Deathknell][>] Draw 1. If it's your Beginning Phase, draw 2 instead. (When I die, get the effect.)
+Legion Marauder;VEN-74;Unit;Body;2;2;1;1;ja;[Empower] — :rb_energy_1: or :rb_rune_body: (Pay either cost: Empower me. Use only if not Empowered.) [Empowered][>] I have +1 :rb_might:.
+Legion Quartermaster;SFD-44;Unit;Calm;3;4;3;3;ja;As an additional cost to play me, return a friendly gear to its owner's hand.
+Lillia, Bashful Bloom;UNL-189;Legend;Calm / Mind;;;2;2;ja;:rb_energy_4:, :rb_exhaust:: Play a ready 3 :rb_might: Sprite unit token with [Temporary]. This ability costs :rb_energy_1: less for each friendly unit with [Temporary].
+Lillia, Fae Fawn;UNL-82;Unit;Mind;3;3;2;2;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.) When I move from a location, play a 3 :rb_might: Sprite unit token with [Temporary] there. (Kill it at the start of its controller's Beginning Phase, before scoring.)
+Lillia, Protector of Dreams;UNL-58;Unit;Calm;5;4;1;1;ja;When you play a token unit, give me +1 :rb_might: this turn. Your token units have [Tank]. (They must be assigned combat damage first.)
+Lonely Poro;SFD-36;Unit;Calm;2;2;4;3;ja;[Deathknell] — If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)
+Long Sword;SFD-22;Gear;Fury;2;1;1;1;ja;[Quick-Draw] (This has [Reaction]. When you play it, attach it to a unit you control.) [Equip] :rb_rune_fury: (:rb_rune_fury:: Attach this to a unit you control.)
+Lord Broadmane;UNL-12;Unit;Fury;5;5/1;2;2;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When you play me, give your other units here [Assault] this turn. (+1 :rb_might: while they're attackers.)
+Lotus Trap;UNL-13;Spell;Fury;2;;3;3;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit. Double all damage that would be dealt to it this turn.
+Loyal Poro;UNL-156;Unit;Order;3;3;8;3;ja;[Deathknell][>] If I didn't die alone, draw 1. (When I die, get the effect. I wasn't alone if there were other friendly units here.)
+Loyal Pup;SFD-126;Unit;Chaos;3;3;3;3;ja;When you defend at a battlefield, you may move me there.
+Lucian, Merciless;SFD-113;Unit;Body;3;3;1;1;ja;[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.) The first time I conquer each turn, ready me.
+Lucian, Purifier;SFD-183;Legend;Fury / Body;;;3;3;ja;Your Equipment each give [Assault]. (+1 :rb_might: while equipped unit is an attacker.)
+Lunar Boon;UNL-125;Spell;Chaos;3;;11;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Discard 1, then draw 2.
+Maduli the Gatekeeper;UNL-144;Unit;Chaos;7;6/1;3;3;ja;I can't be readied. :rb_rune_chaos:: Move me to an occupied enemy battlefield if my Might is greater than the total Might of enemy units there.
+Mageseeker Investigator;UNL-163;Unit;Order;4;4;3;3;ja;Opponents must pay :rb_rune_rainbow: for each unit beyond the first to move multiple units to my battlefield at the same time.
+Marai Spire;SFD-211;Battlefield;Colorless;;;1;1;ja;While you control this battlefield, friendly [Repeat] costs cost :rb_energy_1: less.
+Marching Orders;SFD-114;Spell;Body;3;;1;1;ja;[Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_3: (You may pay the additional cost to repeat this spell's effect.) Choose a friendly unit anywhere and an enemy unit at a battlefield. They deal damage equal to their Mights to each other.
+Masa, Crashing Thunder;VEN-120;Unit;Order;4;4;1;1;ja;You may pay :rb_rune_order: as an additional cost to play me. When you play me, if you paid the additional cost, [Stun] an enemy unit at a battlefield. (It doesn't deal combat damage this turn.)
+Master Bingwen;SFD-127;Unit;Chaos;6;6;5;3;ja;[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)
+Master Yi, Tempered;UNL-113;Unit;Body;4;4;4;3;ja;[Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 6][>] I have [Deflect] and [Ganking]. (While you have 6+ XP, opponents must pay :rb_rune_rainbow: to choose me with a spell or ability and I can move from battlefield to battlefield.)
+Master Yi, Wuju Master;UNL-191;Legend;Calm / Body;;;1;1;ja;[Level 6][>] Your units have +1 :rb_might:. (While you have 6+ XP, get the effect.) [Level 11][>] Your units enter ready.
+Megatusk;UNL-126;Unit;Chaos;6;6;9;3;ja;Spend 3 XP: Give your units here [Ganking] this turn. (We can move from battlefield to battlefield.)
+Minefield;SFD-212;Battlefield;Colorless;;;1;1;ja;When you conquer here, put the top 2 cards of your Main Deck into your trash.
+Minotaur Reckoner;SFD-14;Unit;Fury;5;5;3;3;ja;Units can't move to base.
+Mirror Image;UNL-200;Spell;Mind / Order;3;2;1;1;ja;Choose a unit. Play a ready Reflection unit token to your base. It becomes a copy of that unit. Give it [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)
+Mischievous Marai;UNL-3;Unit;Fury;2;2;9;3;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me to a battlefield, deal 2 to an enemy unit here.
+Mister Root;UNL-127;Unit;Chaos;2;1;10;3;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_chaos: as an additional cost to have me enter ready.) When I move to a battlefield, gain 2 XP.
+Monch;UNL-35;Unit;Calm;6;6;8;3;ja;If an opponent controls a stunned unit, I cost :rb_energy_2: less and enter ready.
+Monster Harpoon;UNL-14;Spell;Fury;1;1;2;2;ja;[Action] (Play on your turn or in showdowns.) Deal 2 to a unit at a battlefield. If you control a facedown card, deal 4 to it instead.
+Moonfall;UNL-198;Spell;Mind / Chaos;3;1;2;2;ja;[Action] (Play on your turn or in showdowns.) Choose a battlefield where you have units. You may move up to one enemy unit to that battlefield. Then give enemy units there -2 :rb_might: this turn.
+Moonlight Affliction;UNL-66;Spell;Mind;7;;11;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Give a unit -10 :rb_might: this turn.
+Mosstomper;UNL-47;Unit;Calm;3;3/1;2;2;ja;[Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 3][>] I have +1 :rb_might: and [Deflect]. (While you have 3+ XP, get the effect. Opponents must pay :rb_rune_rainbow: to choose a [Deflect] unit with a spell or ability.)
+Mournful Witness;VEN-28;Unit;Calm;2;2;1;1;ja;When a combat that I was in ends, empower me. (I become Empowered if I'm not already.) [Empowered][>] I have +2 :rb_might:.
+Mutated Mouser;UNL-36;Unit;Calm;2;1;11;3;ja;[Shield 2] (+2 :rb_might: while I'm a defender.) [Tank] (I must be assigned combat damage first.)
+Nami, Headstrong;UNL-52;Unit;Calm;3;3;1;1;ja;You may pay :rb_rune_calm: as an additional cost to play me. When you play me, if you paid the additional cost, [Stun] an enemy unit. (It doesn't deal combat damage this turn.) When I hold, the next time you play a unit this turn, ready it and [Buff] it.
+Navori Scout;SFD-37;Unit;Calm;4;4;4;3;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)
+Needlessly Large Yordle;SFD-55;Unit;Calm;10;5/3;2;2;ja;[Shield 5] (+5 :rb_might: while I'm a defender.) [Tank] (I must be assigned combat damage first.) I cost :rb_energy_2::rb_rune_calm: less for each point you scored from holding this turn.
+Nidalee, Cat Form;UNL-114;Unit;Body;3;4/1;1;1;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When I win a combat, draw 1. (I win if I remain after combat.)
+Nilah, Joyful Ascetic;UNL-115;Unit;Body;3;4/1;1;1;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_body: as an additional cost to have me enter ready.) [Ganking] (I can move from battlefield to battlefield.) When I move, gain 1 XP.
+Not So Fast;SFD-45;Spell;Calm;2;1;1;1;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Counter an enemy spell or ability that chooses a friendly unit or gear.
+Noxian Demolitionist;VEN-80;Unit;Body;2;1;1;1;ja;When I conquer, you may kill a gear with Energy cost no more than my Might.
+Oasis Raider;VEN-6;Unit;Fury;4;4;1;1;ja;If you control fewer runes than an opponent at the start of your Beginning Phase, give me +2 :rb_might: and [Ganking] this turn. (I can move from battlefield to battlefield.)
+Ocean Drake;VEN-115;Unit;Chaos;8;7/2;1;1;ja;You may play me to an open battlefield. When you play me, you may return a non-Dragon unit to its owner's hand.
+Ornn's Forge;SFD-213;Battlefield;Colorless;;;1;1;ja;While you control this battlefield, the first friendly non-token gear played each turn costs :rb_energy_1: less.
+Ornn, Fire Below the Mountain;SFD-189;Legend;Calm / Mind;;;2;2;ja;:rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)
+Ornn, Forge God;SFD-85;Unit;Mind;6;4;1;1;ja;[Deflect 2] (Opponents must pay :rb_rune_rainbow::rb_rune_rainbow: to choose me with a spell or ability.) [Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.) I have +1 :rb_might: for each friendly gear.
+Otterpus;VEN-53;Unit;Mind;2;2;1;1;ja;If a player would score 1 point from conquering or holding during their first or second turn, they draw 1 instead.
+Overzealous Fan;SFD-128;Unit;Chaos;2;2;3;3;ja;When I defend, you may kill me to move an attacking unit to its base.
+Pendulum Blade;VEN-11;Gear;Fury;3;;1;1;ja;[Equip] :rb_rune_fury: (:rb_rune_fury:: Attach this to a unit you control.) When I move to a battlefield, give me +2 :rb_might: this turn.
+Perched Grimwyrm;SFD-15;Unit;Fury;4;5;1;1;ja;Play me only to a battlefield you conquered this turn. (You can't play me anywhere else.)
+Petal Pixie;UNL-76;Unit;Mind;2;2;2;2;ja;I have +1 :rb_might: for each of your units with [Temporary] at my battlefield.
+Petricite Monument;SFD-104;Gear;Body;2;;1;1;ja;[Temporary] (Kill this at the start of its controller's Beginning Phase, before scoring.) Friendly units have [Deflect]. (Opponents must pay :rb_rune_rainbow: to choose them with a spell or ability.)
+Pickpocket;SFD-74;Unit;Mind;3;3;1;1;ja;When you play me, you may kill a gear with Energy cost no more than :rb_energy_1:. If you do, play a Gold gear token exhausted.
+Piercing Light;SFD-23;Spell;Fury;2;1;1;1;ja;[Repeat] :rb_energy_2::rb_rune_fury: (You may pay the additional cost to repeat this spell's effect.) Deal 2 to a unit at a battlefield, then deal 2 to up to one other unit.
+Platewyrm Egg;VEN-75;Gear;Body;3;;1;1;ja;This enters exhausted. [Empower] — :rb_energy_1:, :rb_exhaust: (Pay the cost: Empower this. Use only if not Empowered.) [Reaction][>] :rb_exhaust:: [Add] :rb_energy_1:. If this is [Empowered], [Add] :rb_energy_2: instead.
+Plundering Poro;SFD-69;Unit;Mind;2;2;1;1;ja;When I conquer, play a Gold gear token exhausted.
+Poppy, Keeper of the Hammer;UNL-203;Legend;Body / Order;;;4;3;ja;When you hold, gain 1 XP. Spend 3 XP, :rb_exhaust:: Draw 1.
+Poppy, Paragon;UNL-116;Unit;Body;5;5;2;2;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When you play me, if an opponent's score is within 3 points of the Victory Score, ready me and gain 3 XP.
+Poro Snax;SFD-46;Gear;Calm;1;1;2;2;ja;When you play this, draw 1. :rb_energy_1::rb_rune_calm:, :rb_exhaust:, Kill this: Draw 1.
+Power Nexus;SFD-214;Battlefield;Colorless;;;4;3;ja;When you hold here, you may pay :rb_rune_rainbow::rb_rune_rainbow::rb_rune_rainbow::rb_rune_rainbow: to score 1 point.
+Premonition;SFD-87;Spell;Mind;2;3;1;1;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Draw 3.
+Prepared Neophyte;UNL-4;Unit;Fury;3;1;11;3;ja;If you've spent :rb_energy_4: or more to play a spell this turn, I have +4 :rb_might:.
+Prize of Progress;SFD-75;Unit;Mind;4;3/1;1;1;ja;When you use an activated ability of a gear, give me +1 :rb_might: this turn.
+Production Surge;SFD-76;Spell;Mind;4;1;1;1;ja;This costs :rb_energy_2: less if you control a Mech. Play a 3 :rb_might: Mech unit token to your base. Draw 1.
+Punch First;SFD-97;Spell;Body;1;2;4;3;ja;[Action] (Play on your turn or in showdowns.) Give a unit +5 :rb_might: this turn.
+Punching Poro;VEN-7;Unit;Fury;2;2;1;1;ja;[Empower] — Discard 1 (Pay the cost: Empower me. Use only if not Empowered.) [Empowered][>] I have +1 :rb_might:.
+Pyke, Bloodharbor Ripper;UNL-185;Legend;Fury / Chaos;;;4;3;ja;":rb_energy_1:, :rb_exhaust:: Return a friendly unit at a battlefield to its owner's hand. Play a Gold gear token exhausted. (It has ""[Reaction][>] Kill this, :rb_exhaust:: [Add] :rb_rune_rainbow:."""")"""
+Pyke, Dockside Butcher;UNL-28;Unit;Fury;3;2;2;2;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Ganking] (I can move from battlefield to battlefield.) You may pay :rb_rune_fury: as an additional cost to play me. When you play me, if you paid the additional cost, ready me and give me +2 :rb_might: this turn.
+Pyke, Returned;UNL-145;Unit;Chaos;3;3;1;1;ja;"[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Backline] (I must be assigned combat damage last.) Once each turn, when an enemy unit dies while I'm at a battlefield, play a Gold gear token exhausted. (It has ""[Reaction][>] Kill this, :rb_exhaust:: [Add] :rb_rune_rainbow:."""")"""
+Questionable Tome;VEN-54;Gear;Mind;3;;1;1;ja;[Empower] — :rb_exhaust: (Pay the cost: Empower me. Use only if not Empowered.) Disempower this, :rb_energy_1:, :rb_exhaust:: Draw 1.
+Rage Amplifier;VEN-18;Gear;Fury;4;1;1;1;ja;[Empower] :rb_energy_6::rb_rune_fury: (:rb_energy_6::rb_rune_fury:: Empower this. Use only if not Empowered.) Your units have +1 :rb_might:. If I'm [Empowered], they have +2 :rb_might: instead.
+Rally the Troops;SFD-166;Spell;Order;2;;1;1;ja;[Action] (Play on your turn or in showdowns.) When a friendly unit is played this turn, buff it. (If it doesn't have a buff, it gets a +1 :rb_might: buff.) Draw 1.
+Ravenbloom Conservatory;SFD-215;Battlefield;Colorless;;;1;1;ja;When you defend here, reveal the top card of your Main Deck. If it's a spell, put it in your hand. Otherwise, recycle it.
+Recurve Bow;SFD-16;Gear;Fury;2;;1;1;ja;[Equip] :rb_rune_fury: (:rb_rune_fury:: Attach this to a unit you control.) When I attack or defend, deal 2 to an enemy unit here.
+Red Brambleback;UNL-29;Unit;Fury;4;4/1;1;1;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.) Your conquer effects for conquering here trigger an additional time. When I conquer, [Buff] a friendly unit. (Give it a +1 :rb_might: buff if it doesn't have one.)
+Rek'Sai, Swarm Queen;SFD-170;Unit;Order;5;5/1;1;1;ja;When I attack, you may reveal the top 2 cards of your Main Deck. You may play one. Then recycle the rest. If the played card is a unit, you may play it here.
+Rek'sai, Void Burrower;SFD-187;Legend;Fury / Order;;;2;2;ja;When you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may play one. Then recycle the rest.
+Reluctant Leader;VEN-121;Unit;Order;4;3/1;2;2;ja;When you play another unit, give me +2 :rb_might: this turn.
+Renata Glasc, Chem-Baroness;SFD-201;Legend;Mind / Order;;;1;1;ja;When you or an ally hold, you may exhaust me to play a Gold gear token exhausted. While your score is within 3 points of the Victory Score, your Gold [Add] an additional :rb_energy_1:.
+Renata Glasc, Industrialist;SFD-171;Unit;Order;4;4/1;2;2;ja;Your tokens enter ready.
+Renekton, Brute;VEN-92;Unit;Body;5;4;1;1;ja;:rb_energy_1:: Give me +1 :rb_might: this turn. When my Might becomes 10 or more, empower me. (I become Empowered if I'm not already.) [Empowered][>] I have [Deflect] and [Ganking]. (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability. I can move from battlefield to battlefield.)
+Rengar, Pouncing;SFD-25;Unit;Fury;3;3/1;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve, including to a battlefield you control.) [Assault 2] (+2 :rb_might: while I'm an attacker.) I can be played to a battlefield you're attacking.
+Rengar, Pridestalker;UNL-183;Legend;Fury / Body;;;2;2;ja;When you play a unit, give a unit +1 :rb_might: this turn.
+Rengar, Unseen;UNL-24;Unit;Fury;4;4/1;1;1;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.) [Assault 2] (+2 :rb_might: while I'm an attacker.) [Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) [Ganking] (I can move from battlefield to battlefield.)
+Repulse;UNL-106;Spell;Body;1;1;3;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose a friendly unit at a battlefield. Counter an enemy spell or ability that chooses it and no other friendly unit.
+Resonating Strike;VEN-34;Spell;Calm;2;1;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Reaction] (Play on your turn or in showdowns.) Choose a battlefield you control and a unit you control at a different location. Move that unit to that battlefield and give it +2 :rb_might: this turn.
+Revna the Lorekeeper;UNL-5;Unit;Fury;7;7/1;9;3;ja;[Ganking] (I can move from battlefield to battlefield.) When you play a spell, if you spent :rb_energy_4: or more, ready me.
+Ribbon Dancer;SFD-38;Unit;Calm;3;3;3;3;ja;When I move to a battlefield, give another friendly unit +1 :rb_might: this turn.
+Right of Conquest;UNL-15;Spell;Fury;3;1;4;3;ja;Draw 1, then draw 1 for each battlefield you or allies control.
+Ripper's Bay;UNL-214;Battlefield;Colorless;;;6;3;ja;When a unit here is returned to a player's hand, that player may pay :rb_energy_1: to channel 1 rune exhausted.
+Riven, Shattered;VEN-41;Unit;Calm;3;3/1;1;1;ja;[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.) When I attack, choose an enemy unit here. Deal 2 to it for each Equipment attached to me.
+Rocket Barrage;SFD-77;Spell;Mind;4;1;1;1;ja;[Repeat] :rb_energy_4::rb_rune_mind: (You may pay the additional cost to repeat this spell's effect, and may make different choices.) Choose one —Deal 4 to a unit in a base.Kill a gear.
+Rockfall Path;SFD-216;Battlefield;Colorless;;;2;2;ja;Units can't be played here.
+Royal Entourage;SFD-39;Unit;Calm;3;4/1;2;2;ja;When you play me, ready or exhaust a legend.
+Royal Guard;SFD-157;Unit;Order;4;2;4;3;ja;When you play me, play a 2 :rb_might: Sand Soldier unit token here.
+Ruin Runner;SFD-105;Unit;Body;6;5;2;2;ja;I can't be chosen by enemy spells and abilities.
+Ruined Rex;UNL-67;Unit;Mind;6;6/1;10;3;ja;[Deathknell][>] Deal 4 to an enemy unit. (When I die, get the effect.)
+Rumble, Hotheaded;SFD-26;Unit;Fury;4;4;1;1;ja;Your Mechs each have [Assault]. (+1 :rb_might: while we're attackers.) When I conquer, you may recycle another friendly unit to play a Mech from your trash. Reduce its Energy cost by the Might of the unit you recycled.
+Rumble, Mechanized Menace;SFD-181;Legend;Fury / Mind;;;1;1;ja;Your Mechs have [Shield]. (+1 :rb_might: while they're defenders.)
+Ruthless Strike;VEN-8;Spell;Fury;3;;1;1;ja;[Action] (Play on your turn or in showdowns.) As an additional cost to play this, you may discard 1. Deal 3 to a unit at a battlefield. If you paid the additional cost, deal 5 to it instead.
+Sacred Protector;VEN-129;Unit;Order;4;6/1;1;1;ja;I don't deal combat damage unless I'm at a battlefield with exactly one other unit you control.
+Sacred Shears;SFD-172;Gear;Order;2;1;1;1;ja;[Equip] :rb_rune_order: (:rb_rune_order:: Attach this to a unit you control.) [Deathknell] — Draw 1. (When I die, get the effect.)
+Sacrifice;UNL-173;Spell;Order;1;;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, kill a friendly [Mighty] unit. (A unit is Mighty while it has 5+ :rb_might:.) Draw 2 and channel 1 rune exhausted.
+Safety Inspector;UNL-164;Unit;Order;5;3/1;3;3;ja;You may spend 3 XP as an additional cost to play me. When you play me, each player must kill one of their units. If you paid my additional cost, you don't kill a unit this way.
+Sandshifter;SFD-158;Unit;Order;5;6/2;3;3;ja;When you play me, kill an enemy unit with 3 :rb_might: or less.
+Scorchclaw;UNL-16;Unit;Fury;3;3/1;6;3;ja;[Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 3][>] I have +1 :rb_might: and enter ready. (While you have 3+ XP, get the effect.)
+Scrutinizing Sergeant;UNL-157;Unit;Order;6;6;11;3;ja;When you play me, gain 1 XP for each friendly unit.
+Scryer's Bloom;UNL-136;Gear;Chaos;1;;6;3;ja;This enters exhausted. Kill this, :rb_energy_1:, :rb_exhaust:: [Predict 2], then draw 1. Gain 1 XP. (To Predict 2, look at the top two cards of your Main Deck. Recycle any of them and put the rest back in any order.)
+Scuttle Crab;UNL-53;Unit;Calm;2;0;2;2;ja;(Units with 0 :rb_might: can conquer and hold.) When you play me, draw 1. [Deathknell][>] Choose an opponent. They reveal their hand. You can look at their facedown cards this turn. Gain 1 XP. (When I die, get the effects.)
+Sea Monkey;SFD-98;Unit;Body;2;2;3;3;ja;You may pay :rb_energy_1: as an additional cost to play me. When you play me, if you paid the additional cost, buff me. (Give me a +1 :rb_might: buff if I don't already have one.)
+Seat of Power;SFD-217;Battlefield;Colorless;;;1;1;ja;When you conquer here, draw 1 for each other battlefield you or allies control.
+Sentinel Adept;SFD-8;Unit;Fury;3;3;3;3;ja;[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)
+Serene Ascetic;VEN-30;Unit;Calm;3;3;1;1;ja;[Empower] :rb_energy_3: (:rb_energy_3:: Empower me. Use only if not Empowered.) [Empowered][>] I have [Deflect] and [Shield 3]. (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.+3 :rb_might: while I'm a defender.)
+Serrated Dirk;SFD-9;Gear;Fury;1;;3;3;ja;[Equip] :rb_rune_fury: (:rb_rune_fury:: Attach this to a unit you control.) [Assault 2] (+2 :rb_might: while I'm an attacker.)
+Shadow Fiend;VEN-14;Unit;Fury;2;2;1;1;ja;[Empower] :rb_energy_2::rb_rune_fury: (:rb_energy_2::rb_rune_fury:: Empower me. Use only if not Empowered.) [Empowered][>] I have [Assault 3]. (+3 :rb_might: while I'm an attacker.)
+Shadow Order Disciple;VEN-95;Unit;Chaos;2;2;1;1;ja;When I move, you may [Burn 1] to give me +1 :rb_might: this turn. (To Burn 1, put the top card of your Main Deck into your trash.)
+Shadow Watcher;UNL-37;Unit;Calm;4;5/1;7;3;ja;If a friendly unit died during your Beginning Phase this turn, I enter ready.
+Shadow's Call;UNL-165;Spell;Order;2;;4;3;ja;Choose a friendly unit without [Temporary]. Give it [Temporary]. Draw 2. (Kill it at the start of its controller's Beginning Phase, before scoring.)
+Shadowblade Lurker;VEN-96;Unit;Chaos;5;5;1;1;ja;I cost :rb_energy_2: less for each card with my name in your trash.
+Shadows of the Past;VEN-103;Spell;Chaos;3;1;1;1;ja;Return up to 2 units from trashes to their owners' hands.
+Sharkling;UNL-6;Unit;Fury;3;1;11;3;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.) [Assault 4] (+4 :rb_might: while I'm an attacker.)
+Shepherd's Heirloom;UNL-158;Gear;Order;2;;9;3;ja;When you play this, gain 1 XP. [Equip] — Spend 1 XP (Pay the cost: Attach this to a unit you control.)
+Show of Strength;SFD-106;Spell;Body;2;1;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Draw 1 for each of your [Mighty] units. (A unit is Mighty while it has 5+ :rb_might:.)
+Simian Ancestor;SFD-47;Unit;Calm;5;5/1;1;1;ja;When you buff me, ready me.
+Sinister Poro;UNL-137;Unit;Chaos;2;1/1;1;1;ja;When I attack, you may pay :rb_energy_1: to move an enemy unit here to its base.
+Sivir, Battle Mistress;SFD-203;Legend;Body / Chaos;;;1;1;ja;When you recycle a rune, you may exhaust me to play a Gold gear token exhausted. When one or more enemy units die, ready me.
+Sivir, Mercenary;SFD-143;Unit;Chaos;4;4/1;1;1;ja;[Accelerate] (You may pay :rb_energy_1::rb_rune_chaos: as an additional cost to have me enter ready.) If you've spent at least :rb_rune_rainbow::rb_rune_rainbow: this turn, I have +2 :rb_might: and [Ganking]. (I can move from battlefield to battlefield.)
+Skyward Strike;UNL-38;Spell;Calm;2;1;9;3;ja;Move an enemy unit. [Level 6][>] [Stun] an enemy unit. (While you have 6+ XP, get the effect. A stunned unit doesn't deal combat damage this turn.)
+Smite;UNL-7;Spell;Fury;2;1;10;3;ja;[Action] (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield. If it would die this turn, banish it instead.
+Smoke and Mirrors;UNL-83;Spell;Mind;2;;2;2;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Action] (Play on your turn or in showdowns.) Choose a unit you control and another unit you control at a different location. If at least one of them has [Temporary], move each to the other's location. Draw 1.
+Solari Sunhawk;VEN-122;Unit;Order;3;3;1;1;ja;[Empower] :rb_energy_2: (:rb_energy_2:: Empower me. Use only if not Empowered.) [Empowered][>] I have +1 :rb_might: and [Deflect 2]. (Opponents must pay :rb_rune_rainbow::rb_rune_rainbow: to choose me with a spell or ability.)
+Soraka, Wanderer;SFD-173;Unit;Order;4;4/1;2;2;ja;I must be assigned combat damage last. If another unit you control here would die, if it has less Might than me, instead heal it, exhaust it, and recall it. (Send it to base. This isn't a move.)
+Soul Harvest;UNL-159;Spell;Order;2;1;10;3;ja;Kill a unit at a battlefield with 3 :rb_might: or less.
+Soul Shepherd;UNL-77;Unit;Mind;5;3;3;3;ja;Your token units have +1 :rb_might:.
+Soul Sword;UNL-39;Gear;Calm;1;;10;3;ja;[Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.) [Level 3][>] I have an additional +1 :rb_might:. (While you have 3+ XP, get the effect.)
+Soulspinner;VEN-123;Unit;Order;3;3;1;1;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)
+Spectral Centaur;UNL-68;Unit;Mind;6;5;8;3;ja;When another friendly unit dies, give me +2 :rb_might: this turn.
+Spiderling;VEN-97;Unit;Chaos;3;1;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) I have +1 :rb_might: for each other unit you control here with my name. Your deck can have any number of cards named Spiderling.
+Spirit Wheel;SFD-144;Gear;Chaos;2;;1;1;ja;When you choose a friendly unit, you may pay :rb_energy_1: and exhaust this to draw 1.
+Sprite Burst;UNL-69;Spell;Mind;5;;9;3;ja;Play two ready 3 :rb_might: Sprite unit tokens with [Temporary]. (Kill each at the start of its controller's Beginning Phase, before scoring.)
+Sprite Fountain;UNL-78;Gear;Mind;2;1;2;2;ja;[Temporary] (Kill this at the start of its controller's Beginning Phase, before scoring.) When you play this, play a ready 3 :rb_might: Sprite unit token with [Temporary] to your base. [Deathknell][>] Repeat this gear's play effect. (When this dies, get the effect.)
+Sprite Queen;UNL-84;Unit;Mind;7;6/1;1;1;ja;When you play me or at the start of your Beginning Phase, play a ready 3 :rb_might: Sprite unit token with [Temporary] to your base. (Kill them at the start of their controller's next Beginning Phase, before scoring.)
+Square Up;UNL-17;Spell;Fury;4;;2;2;ja;[Repeat] — Discard 1 (You may pay the additional cost to repeat this spell's effect.) Give a unit [Assault 4] this turn. (+4 :rb_might: while it's an attacker.)
+Stalking Wolf;UNL-166;Unit;Order;4;6/1;5;3;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) As an additional cost to play me, kill a Bird, Cat, Dog, or Poro you control. You may play me to its battlefield (even if you don't have other units there).
+Star Spring;UNL-215;Battlefield;Colorless;;;8;3;ja;The first time a player plays a non-token unit here each turn, they may move another unit they control here to its base.
+Star-Crossed;UNL-128;Spell;Chaos;3;1;10;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Return a friendly unit and an enemy unit to their owners' hands.
+Stare Down;UNL-107;Spell;Body;2;;2;2;ja;Choose a friendly unit and a battlefield. Move all enemy units at that battlefield with less Might than the chosen unit to their base. Gain 1 XP.
+Stargazer;VEN-98;Unit;Chaos;5;4;2;2;ja;Spells with [Flow] you play from your trash cost :rb_energy_2: less, to a minimum of :rb_energy_1:.
+Starhound;UNL-167;Unit;Order;5;6/1;3;3;ja;When you play me, return a Bird, Cat, Dog, or Poro from your trash to your hand.
+Steel Paws;VEN-43;Unit;Calm;1;0;1;1;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) [Empower] :rb_energy_7: (:rb_energy_7:: Empower me. Use only if not Empowered.) [Empowered][>] I have +7 :rb_might:.
+Stellacorn Herder;SFD-48;Unit;Calm;4;3;2;2;ja;When I move, draw 1.
+Sterak's Gage;SFD-56;Gear;Calm;3;2;1;1;ja;[Quick-Draw] (This has [Reaction]. When you play it, attach it to a unit you control.) [Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.)
+Strike Down;SFD-107;Spell;Body;3;1;2;2;ja;Choose an equipped friendly unit. It deals damage equal to its Might to an enemy unit. Then detach an Equipment from it.
+Sudden Storm;SFD-17;Spell;Fury;3;;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Action] (Play on your turn or in showdowns.) Deal 2 to a unit at a battlefield. If it's attacking, deal 4 to it instead.
+Sumpworks Map;UNL-85;Gear;Mind;2;;3;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) [Temporary] (Kill this at the start of its controller's Beginning Phase, before scoring.) When an opponent scores, draw 1.
+Sunken Temple;SFD-218;Battlefield;Colorless;;;2;2;ja;When you conquer here with one or more [Mighty] units, you may pay :rb_energy_1: to draw 1. (A unit is Mighty while it has 5+ :rb_might:.)
+Swain, Visionary;VEN-65;Unit;Mind;6;6/1;1;1;ja;[Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.) When I conquer, if you've played a non-token unit, a non-token gear, and a spell this turn, you score 1 point.
+Syndra, Transcendent;UNL-146;Unit;Chaos;6;6/1;2;2;ja;While I'm in a showdown, your spells have [Repeat] :rb_energy_2::rb_rune_chaos:. (You may pay the additional cost to repeat the spell's effect.)
+Tactical Retreat;UNL-175;Spell;Order;2;;3;3;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose a friendly unit. The next time it would die this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)
+Tail-Cloaked Matriarch;VEN-104;Unit;Chaos;4;4;1;1;ja;[Empower] :rb_energy_2::rb_rune_chaos: (:rb_energy_2::rb_rune_chaos:: Empower me. Use only if not Empowered.) When I become [Empowered], you may choose a unit in your trash with Energy cost no more than :rb_energy_3: and Power cost no more than :rb_rune_rainbow:. Play it to your base, ignoring its cost.
+Targonian Visionary;UNL-98;Unit;Body;6;6;9;3;ja;[Level 11][>] I have +4 :rb_might:. (While you have 11+ XP, get the effect.)
+Temporal Portal;SFD-78;Gear;Mind;3;;1;1;ja;:rb_rune_rainbow:, :rb_exhaust:: Give the next spell you play this turn [Repeat] equal to its cost. (You may pay the additional cost to repeat the spell's effect.)
+Temptation;SFD-129;Spell;Chaos;2;;3;3;ja;[Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Move an enemy unit to a location where there's a unit with the same controller.
+The Academy;UNL-216;Battlefield;Colorless;;;5;3;ja;When you hold here, give your next spell this turn [Repeat] equal to its base cost. (You may pay the additional cost to repeat the spell's effect.)
+The List;UNL-138;Gear;Chaos;1;;3;3;ja;As you play this, name a tag. (For example, Miss Fortune, Demacia, and Poro are tags.) :rb_exhaust:: Give a unit with the named tag -2 :rb_might: this turn.
+The Papertree;SFD-219;Battlefield;Colorless;;;1;1;ja;When you hold here, each player channels 1 rune exhausted.
+Thwonk!;SFD-40;Spell;Calm;2;;4;3;ja;[Action] (Play on your turn or in showdowns.) [Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Stun an attacking unit. (It doesn't deal combat damage this turn.)
+Tools of Empire;VEN-77;Gear;Body;4;;1;1;ja;[Empower] :rb_energy_2: (:rb_energy_2:: Empower this. Use only if not Empowered.) :rb_exhaust:: Give a unit +2 :rb_might: this turn. If this is [Empowered], give that unit +4 :rb_might: this turn instead.
+Tornado Warrior;VEN-99;Unit;Chaos;3;3;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me from face down, you may empower something here. Disempower it at end of turn.
+Towering Combatant;UNL-99;Unit;Body;4;3;8;3;ja;[Shield 2] (+2 :rb_might: while I'm a defender.) [Tank] (I must be assigned combat damage first.)
+Towering Pairofant;UNL-8;Unit;Fury;6;6;12;3;ja;[Assault] (+1 :rb_might: while I'm an attacker.) If a unit died this turn, I enter ready.
+Trapping Grounds;UNL-217;Battlefield;Colorless;;;8;3;ja;When you conquer here, if you assigned 3 or more excess damage, play a 1 :rb_might: Bird unit token with [Deflect].
+Treasure Hoard;SFD-220;Battlefield;Colorless;;;2;2;ja;When you conquer here, you may pay :rb_energy_1: to play a Gold gear token exhausted.
+Treasure Hunter;SFD-130;Unit;Chaos;2;1;4;3;ja;When I move, play a Gold gear token exhausted.
+Trevor Snoozebottom;UNL-48;Unit;Calm;3;3;5;3;ja;[Shield] (+1 :rb_might: while I'm a defender.) When I hold, play a ready 3 :rb_might: Sprite unit token with [Temporary] here. (Kill it at the start of its controller's next Beginning Phase, before scoring.)
+Tricksy Tentacles;UNL-54;Spell;Calm;4;1;1;1;ja;Move any number of enemy units with the same controller and a total Might of 8 or less to a single location.
+Trinity Force;SFD-115;Gear;Body;4;;1;1;ja;[Equip] :rb_rune_body: (:rb_rune_body:: Attach this to a unit you control.) When I hold, score 1 point.
+Trove Golem;SFD-174;Unit;Order;8;9/2;1;1;ja;When you play me, play four Gold gear tokens exhausted.
+Trusty Ramhound;SFD-159;Unit;Order;2;2;4;3;ja;While you have another unit here, I have +1 :rb_might:.
+Turn to Dust;UNL-70;Spell;Mind;2;;9;3;ja;Give a gear [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)
+Twilight Step;VEN-105;Spell;Chaos;2;1;1;1;ja;Move a unit with 3 :rb_might: or less. [Flow] :rb_energy_4::rb_rune_chaos: (You may play this from your trash for its Flow cost. Then banish it.)
+Ultrasoft Poro;UNL-160;Unit;Order;5;5;7;3;ja;:rb_exhaust:: Play two 1 :rb_might: Bird unit tokens with [Deflect]. Use this ability only while I'm at a battlefield. (Opponents must pay :rb_rune_rainbow: to choose a [Deflect] unit with a spell or ability.)
+Undying Legion;UNL-25;Unit;Fury;3;3;4;3;ja;[Legion][>] You may play me from your trash for :rb_energy_3::rb_rune_fury:. (Get the effect if you've played another card this turn.)
+Undying Loyalty;UNL-168;Spell;Order;2;1;3;3;ja;This costs :rb_energy_2: less if you choose a Bird, Cat, Dog, or Poro. Play a unit with cost no more than :rb_energy_2: and no more than :rb_rune_rainbow: from your trash, ignoring its cost.
+Unsung Hero;SFD-167;Unit;Order;2;2;2;2;ja;[Deathknell] — If I was [Mighty], draw 2. (When I die, get the effect. I'm Mighty while I have 5+ :rb_might:.)
+Up from the Deep;VEN-100;Spell;Chaos;3;;1;1;ja;Play two 1 :rb_might: Tentacle unit tokens from Bilgewater. [Flow] :rb_energy_3: (You may play this from your trash for its Flow cost. Then banish it.)
+Upstage Comedy;UNL-9;Spell;Fury;2;;8;3;ja;[Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.) Ready a unit.
+Valley of Idols;UNL-218;Battlefield;Colorless;;;6;3;ja;When a player plays a unit here, they may pay :rb_energy_1: to [Buff] it. (Give it a +1 :rb_might: buff if it doesn't have one.)
+Vanguard Armory;SFD-168;Gear;Order;7;1;2;2;ja;:rb_exhaust:: Play three 1 :rb_might: Recruit unit tokens. (You may play them to different locations.)
+Vault Breaker;UNL-10;Spell;Fury;1;1;8;3;ja;[Action] (Play on your turn or in showdowns.) Give a unit [Assault 2] and [Ganking] this turn. (+2 :rb_might: while it's an attacker. It can move from battlefield to battlefield.)
+Vaults of Helia;UNL-219;Battlefield;Colorless;;;4;3;ja;When you hold here, your non-token units cost :rb_energy_1: more to play this turn.
+Veiled Temple;SFD-221;Battlefield;Colorless;;;2;2;ja;When you conquer here, you may ready a friendly gear. If it's an Equipment, you may detach it.
+Veteran Poro;SFD-99;Unit;Body;2;2;2;2;ja;[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)
+Vex, Gloomist;UNL-193;Legend;Calm / Chaos;;;2;2;ja;When you or an ally hold, you may exhaust me to draw 1.
+Vex, Mocking;UNL-55;Unit;Calm;5;5/1;1;1;ja;[Shield] (+1 :rb_might: while I'm a defender.) [Tank] (I must be assigned combat damage first.) When you [Stun] an enemy unit at a battlefield, you may move me to that battlefield.
+Vi, Hotheaded;UNL-30;Unit;Fury;4;3;1;1;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) :rb_energy_2::rb_rune_fury:: Double my Might this turn.
+Vi, Peacekeeper;UNL-176;Unit;Order;5;5/1;2;2;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When I attack, [Stun] an enemy unit here. (It doesn't deal combat damage this turn.)
+Vi, Piltover Enforcer;UNL-187;Legend;Fury / Order;;;2;2;ja;When you conquer, if you assigned 3 or more excess damage, you may exhaust me to ready a unit.
+Vicious Snapjaws;UNL-129;Unit;Chaos;5;5;10;3;ja;When another friendly unit dies, gain 1 XP.
+Vilemaw;UNL-60;Unit;Calm;8;8/2;1;1;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) Enemy units here with less Might than me don't deal combat damage. When I hold, draw 1.
+Void Assault;UNL-202;Spell;Body / Chaos;2;1;1;1;ja;Move a friendly unit, then move an enemy unit. (If they both move to a battlefield you don't control, you're the attacker.)
+Void Drone;SFD-10;Unit;Fury;3;3;2;2;ja;I cost :rb_energy_2: less to play from anywhere other than your hand.
+Void Hatchling;SFD-18;Unit;Fury;2;2;1;1;ja;If you would reveal cards from a deck, look at the top card first. You may recycle it. Then reveal those cards.
+Void Rush;SFD-188;Spell;Fury / Order;2;1;1;1;ja;Reveal the top 2 cards of your Main Deck. You may play one of them, reducing its cost by :rb_energy_2:. Draw any you did not play this way.
+Voracious Gromp;UNL-100;Unit;Body;5;5;10;3;ja;[Hunt 3] (When I conquer or hold, gain 3 XP.)
+Wages of Pain;SFD-70;Spell;Mind;3;;3;3;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Action] (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield. Play a Gold gear token exhausted.
+Walking Roost;UNL-130;Unit;Chaos;5;6;7;3;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When you play me, choose an opponent. They play a 1 :rb_might: Bird unit token with [Deflect].
+Warmog's Armor;SFD-108;Gear;Body;1;;1;1;ja;[Equip] :rb_rune_body: (:rb_rune_body:: Attach this to a unit you control.) When I conquer, buff me. (If I don't have a buff, I get a +1 :rb_might: buff.)
+Wily Newtfish;UNL-108;Unit;Body;4;4;2;2;ja;If you've gained XP this turn, I have +1 :rb_might: and [Ganking]. (I can move from battlefield to battlefield.)
+Wind and Ghosts;VEN-106;Spell;Chaos;3;1;1;1;ja;[Action] (Play on your turn or in showdowns.) Choose a unit at a battlefield. If it has 3 :rb_might: or less, banish it. Otherwise, return it to its owner's hand.
+Windsinger;SFD-138;Unit;Chaos;2;1;1;1;ja;Hidden (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me, you may return another unit at a battlefield with 3 :rb_might: or less to its owner's hand.
+World Atlas;SFD-86;Gear;Mind;3;;1;1;ja;[Equip] :rb_rune_mind: (:rb_rune_mind:: Attach this to a unit you control.) When I hold, play two Gold gear tokens exhausted.
+Wuju Apprentice;UNL-40;Unit;Calm;2;2;9;3;ja;[Hunt] (When I conquer or hold, gain 1 XP.) [Level 6][>] When you play me, draw 1. (While you have 6+ XP, get the effect.)
+Xerath, Freed;UNL-26;Unit;Fury;5;5;2;2;ja;:rb_rune_fury:, :rb_exhaust:: Deal 3 to a unit. Use this ability only while I'm at a battlefield.
+Xin Zhao, Vigilant;SFD-176;Unit;Order;3;4/1;2;2;ja;[Tank] (I must be assigned combat damage first.) I enter ready if you have two or more other units in your base.
+Yeti Brawler;UNL-18;Unit;Fury;6;6;3;3;ja;"When I conquer, if you assigned 3 or more excess damage, play two Gold gear tokens exhausted. (They have ""[Reaction][>] Kill this, :rb_exhaust:: [Add] :rb_rune_rainbow:."""")"""
+Yordle Explorer;SFD-100;Unit;Body;4;4;3;3;ja;When you play a card with Power cost :rb_rune_rainbow::rb_rune_rainbow: or more, draw 1.
+Yuumi, Magical Cat;UNL-56;Unit;Calm;3;1/1;4;3;ja;When I attack or defend, give one of your other units here +3 :rb_might: and [Tank] this turn. (It must be assigned combat damage first.)
+Zaun Punk;SFD-160;Unit;Order;3;3;4;3;ja;You may kill a friendly gear as an additional cost to play me. When you play me, if you paid the additional cost, kill a gear.
+Zilean, Time Mage;UNL-86;Unit;Mind;5;5/1;2;2;ja;Once each turn, if you would play a token unit while I'm at a battlefield, you may play that token and an additional copy of it instead.
