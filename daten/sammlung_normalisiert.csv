@@ -85,7 +85,7 @@ Detonate;SFD-5;Spell;Fury;1;1;4;3;ja;Kill a gear. Its controller draws 2.
 Diana, Lunari;UNL-79;Unit;Mind;3;3;2;2;ja;When a showdown begins here, you may pay :rb_energy_1:. If you do, [Predict], then reveal the top card of your Main Deck. If it's a spell, draw it. (To Predict, look at the top card of your Main Deck. You may recycle it.)
 Diana, Scorn of the Moon;UNL-197 UNL-234;Legend;Mind / Chaos;;;5;3;ja;[Reaction][>] :rb_exhaust:: [Add] :rb_energy_1:. Spend this Energy only during showdowns.
 Direwing;SFD-94;Unit;Body;7;7;2;2;ja;I enter ready if you control another Dragon.
-Disarming Rake;SFD-32;Unit;Calm;3;2/1;1;1;ja;When you play me, you may kill a gear.
+Disarming Rake;SFD-32;Unit;Calm;3;2/1;4;3;ja;When you play me, you may kill a gear.
 Disciple of Shen;VEN-117;Unit;Order;2;1;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) I have [Shield 3] while I'm at a battlefield with exactly one other unit you control. (+3 :rb_might: while I'm a defender.)
 Disposal Order;UNL-103;Spell;Body;2;;2;2;ja;[Reaction] (Play any time, even before spells and abilities resolve.) Choose one —Choose up to 3 cards from opponents' trashes. Their owners recycle them.Draw 1.
 Divining Shells;UNL-161;Gear;Order;2;;2;2;ja;[Vision] (When you play this, look at the top card of your Main Deck. You may recycle it.) [Action][>] Kill this, :rb_exhaust:: Give a unit +2 :rb_might: this turn.
@@ -108,6 +108,7 @@ Eclipse;UNL-63;Spell;Mind;3;;9;3;ja;[Reaction] (Play any time, even before spell
 Edge of Night;SFD-139;Gear;Chaos;3;;2;2;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play this from face down, attach it to a unit you control here. [Equip] :rb_rune_chaos: (:rb_rune_chaos:: Attach this to a unit you control.)
 Eminent Benefactor;SFD-152;Unit;Order;6;5;3;3;ja;When I hold, play two Gold gear tokens exhausted.
 Emperor's Dais;SFD-207;Battlefield;Colorless;;;1;1;ja;When you conquer here, you may pay :rb_energy_1: and return a unit you control here to its owner's hand. If you do, play a 2 :rb_might: Sand Soldier unit token here.
+Emperor's Divide;SFD-43;Spell;Calm;2;;1;1;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Action] (Play on your turn or in showdowns.) Move any number of friendly units at a battlefield to their base.
 Enthralling Protector;UNL-162;Unit;Order;2;2;4;3;ja;[Hunt] (When I conquer or hold, gain 1 XP.) Spend 2 XP: [Buff] me. (Give me a +1 :rb_might: buff if I don't have one.)
 Enthusiastic Promoter;UNL-43;Unit;Calm;3;2;2;2;ja;[Backline] (I must be assigned combat damage last.) When I hold, [Buff] all units here. (Give each a +1 :rb_might: buff if it doesn't have one.)
 Esteemed Hierophant;VEN-25;Unit;Calm;5;5;1;1;ja;While you control 7 or more runes, prevent all damage that enemy spells and abilities would deal to me.
@@ -203,6 +204,7 @@ Katarina, Reckless;UNL-23;Unit;Fury;5;5/1;2;2;ja;When you hide a card, ready me.
 Kato the Arm;SFD-112;Unit;Body;4;3/1;1;1;ja;[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.) When I move to a battlefield, give a friendly unit my keywords and +:rb_might: equal to my Might this turn.
 Keeper of Law;VEN-119;Unit;Order;5;5/1;1;1;ja;I cost :rb_energy_2::rb_rune_order: less if you control a battlefield with exactly two units there.
 Keeper of Masks;UNL-81;Unit;Mind;2;1;3;3;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) [Temporary] (Kill me at the start of my controller's Beginning Phase, before scoring.) When you play me, play two Reflection unit tokens here. They become copies of me.
+Kennen, Heart of the Tempest;VEN-155;Legend;Order / Chaos;;;2;2;ja;When you play a card from anywhere other than your hand, empower me. [Action][>] Disempower me, :rb_exhaust:: Give a unit [Assault 2] this turn. (+2 :rb_might: while it's an attacker.)
 Kennen, Keeper of Balance;VEN-135;Unit;Order;3;2;2;2;ja;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.) When you play me or I attack, you may pay :rb_energy_2: to [Stun] a unit. (It doesn't deal combat damage this turn.) While there's a stunned enemy unit here, I have +2 :rb_might:.
 Kha'Zix, Mutating Horror;UNL-143;Unit;Chaos;4;4/1;4;3;ja;[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When I attack or defend, if an enemy unit is alone here, give me +2 :rb_might: this turn and gain 2 XP.
 Kha'Zix, Voidreaver;UNL-201;Legend;Body / Chaos;;;3;3;ja;When you win a combat, gain 1 XP. Spend 1 XP, :rb_exhaust:: [Buff] a unit. Spend 2 XP, :rb_exhaust:: Move an exhausted friendly unit from a battlefield to its base.

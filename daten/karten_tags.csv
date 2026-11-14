@@ -14,6 +14,7 @@ Aspiring Engineer;Unit;Mind;3;3;nicht_aus_hand;auto;play me, return a gear from 
 Assembly Rig;Gear;Fury;4;1;mech;auto;mech
 Atakhan;Unit;Order;10;2;removal;auto;kill a friendly unit
 Azir, Ascendant;Unit;Calm;6;1;waehlt_eigene_einheit;auto;choose a unit
+Azir, Emperor of the Sands;Legend;Calm / Order;;1;equipment;manuell;Sand Soldiers you play have [Weaponmaster]. (When they're played, you may [Equip] one of your Equipment to them for :rb_rune_rainbow: less.)
 B.F. Sword;Gear;Order;4;1;equipment;auto;[equip]
 B.F. Sword;Gear;Order;4;1;waehlt_eigene_einheit;auto;a unit you control
 Back Off;Spell;Calm;3;3;karten_ziehen;auto;draw 1
@@ -50,13 +51,11 @@ Cull;Gear;Chaos;1;2;waehlt_eigene_einheit;auto;a unit you control
 Daisy!;Unit;Calm / Order;9;2;removal;auto;[stun]
 Deadly Flourish;Spell;Mind;4;3;removal;auto;deal 3 to an enemy unit
 Deathgrip;Spell;Order;2;1;karten_ziehen;auto;draw 1
-Deathgrip;Spell;Order;2;1;removal;auto;kill a friendly unit
 Demacian Diplomat;Unit;Body;2;3;xp_quelle;auto;gain 1 xp
 Detonate;Spell;Fury;1;3;gear_antwort;auto;kill a gear
-Disarming Rake;Unit;Calm;3;1;gear_antwort;auto;kill a gear
+Disarming Rake;Unit;Calm;3;3;gear_antwort;auto;kill a gear
 Disciple of Shen;Unit;Order;2;1;nicht_aus_hand;auto;[hidden]
 Disposal Order;Spell;Body;2;2;karten_ziehen;auto;draw 1
-Divining Shells;Gear;Order;2;2;removal;auto;kill this, :rb_exhaust:: give a unit
 Divining Shells;Gear;Order;2;2;waehlt_eigene_einheit;auto;give a unit
 Doran's Blade;Gear;Body;2;3;equipment;auto;[equip]
 Doran's Blade;Gear;Body;2;3;waehlt_eigene_einheit;auto;a unit you control
@@ -71,13 +70,13 @@ Draven, Glorious Executioner;Legend;Fury / Chaos;;1;karten_ziehen;auto;draw 1
 Dredge Up;Spell;Mind;2;1;karten_ziehen;auto;draw 1
 Dredge Up;Spell;Mind;2;1;nicht_aus_hand;auto;you may play this from
 Dusk Rose Lab;Battlefield;Colorless;;3;karten_ziehen;auto;draw 1
-Dusk Rose Lab;Battlefield;Colorless;;3;removal;auto;kill a unit
 Dusk Rose Lab;Battlefield;Colorless;;3;waehlt_eigene_einheit;auto;a unit you control
 Eclipse;Spell;Mind;3;3;waehlt_eigene_einheit;auto;give a unit
 Edge of Night;Gear;Chaos;3;2;equipment;auto;[equip]
 Edge of Night;Gear;Chaos;3;2;nicht_aus_hand;auto;[hidden]
 Edge of Night;Gear;Chaos;3;2;waehlt_eigene_einheit;auto;a unit you control
 Emperor's Dais;Battlefield;Colorless;;1;waehlt_eigene_einheit;auto;a unit you control
+Emperor's Divide;Spell;Calm;2;1;nicht_aus_hand;auto;[hidden]
 Enthralling Protector;Unit;Order;2;3;xp_quelle;auto;[hunt
 Evelynn, Entrancing;Unit;Chaos;2;2;nicht_aus_hand;auto;[hidden]
 Evershade Stalker;Unit;Chaos;3;3;karten_ziehen;auto;draw 1
@@ -119,7 +118,6 @@ Hand Hammer;Gear;Calm;2;1;equipment;auto;[equip]
 Hand Hammer;Gear;Calm;2;1;waehlt_eigene_einheit;auto;a unit you control
 Hard Bargain;Spell;Chaos;2;1;konter;auto;counter a spell
 Heedless Resurrection;Spell;Chaos;2;1;nicht_aus_hand;auto;play a unit from your trash
-Heedless Resurrection;Spell;Chaos;2;1;removal;auto;kill a friendly unit
 Herald of Spring;Unit;Calm;4;3;xp_quelle;auto;[hunt
 Here to Help;Spell;Body;2;1;nicht_aus_hand;auto;[hidden]
 Heroic Charge;Spell;Order;3;3;removal;auto;[stun]
@@ -149,6 +147,7 @@ Katarina, Reckless;Unit;Fury;5;2;removal;auto;deal 2 to an enemy unit
 Kato the Arm;Unit;Body;4;1;waehlt_eigene_einheit;auto;give a friendly unit
 Keeper of Masks;Unit;Mind;2;3;nicht_aus_hand;auto;[hidden]
 Keeper of Masks;Unit;Mind;2;3;temporary;auto;[temporary]
+Kennen, Heart of the Tempest;Legend;Order / Chaos;;2;waehlt_eigene_einheit;auto;give a unit
 Kennen, Keeper of Balance;Unit;Order;3;2;nicht_aus_hand;auto;[hidden]
 Kennen, Keeper of Balance;Unit;Order;3;2;removal;auto;[stun]
 Kha'Zix, Mutating Horror;Unit;Chaos;4;3;xp_quelle;auto;gain 2 xp
