@@ -7,3 +7,5 @@ Azir, Emperor of the Sands;equipment;1;Sand Soldiers you play have [Weaponmaster
 Gust Monk;removal;0;When you play me, if you paid the additional cost, banish a card from any trash to give a unit [Assault 2] this turn. (+2 :rb_might: while it's an attacker.)
 Aspiring Engineer;nicht_aus_hand;0;When you play me, return a gear from your trash to your hand.
 Starhound;nicht_aus_hand;0;When you play me, return a Bird, Cat, Dog, or Poro from your trash to your hand.
+Spiderling;nicht_aus_hand;0;[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:). Your deck can have any number of cards named Spiderling.
+Stargazer;nicht_aus_hand;0;Spells with [Flow] you play from your trash cost :rb_energy_2: less, to a minimum of :rb_energy_1:.
