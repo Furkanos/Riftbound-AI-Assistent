@@ -27,7 +27,8 @@ Große CSVs per Code vollständig einlesen, nicht im Kopf rechnen.
 3. Legalität laut ergebnis/<name>_legalitaet.md: 1 Legende, 40 Main Deck inkl. Chosen Champion, 12 Runen, 3 verschiedene Battlefields, max. 10 Sideboard, max. 3 Kopien je Name. Nur Zahlen aus der Datei übernehmen.
 4. Besitz: Fehlend und Kosten laut deckcheck/kaufliste. Fehlt etwas, klar benennen.
 5. Meta-Stand: Datum von 04_meta_bericht.md nennen; älter als 14 Tage → Hinweis „Meta evtl. veraltet, Rift-Meta neu laufen lassen“.
-Ergebnis als kurze Ampel-Tabelle (✅/⚠️/❌) ganz oben ausgeben.
+6. **Signature-Check:** Alle besessenen Signature-Karten des Chosen-Champion-Tags laut Sammlungs-CSV (Spalten `Tags` und `Supertyp`) gegen das Deck prüfen. Jede fehlende besessene Signature erhält **⚠️** mit Kartentext-Zitat und Hinweis an den Rift-Builder; eine Signature, die nicht zur Legende passt, erhält **❌**. Zusätzlich Kernkarten-Abgleich mit `wissen/08_archetypen.md`; falls dort kein Eintrag für die Legende vorhanden ist, **[UNSICHER]** ausweisen.
+Ergebnis als kurze Ampel-Tabelle (✅/⚠️/❌) ganz oben ausgeben; der Signature-Check und der Archetyp-Kernkarten-Abgleich müssen darin als eigene Zeilen erscheinen.
 
 ## Schritt 3 – Coaching liefern
 1. Spielplan (3–5 Sätze): Siegbedingung und Rolle (Aggro/Tempo/Kontrolle).
