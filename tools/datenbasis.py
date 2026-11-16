@@ -5,7 +5,7 @@
   daten/zuordnung_offen.csv        - Inventarzeilen, die NICHT sicher zugeordnet sind
 Korrekturen von Hand NUR in daten/namens_alias.csv und daten/tags_manuell.csv.
 """
-import csv, re, sys
+import csv, json, re, sys
 from collections import defaultdict
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -55,6 +55,62 @@ def lade_alias():
             if a and b:
                 alias[a] = b
     return alias
+
+
+def signature_info():
+    """Return owned signatures grouped by champion tag, including pool card text.
+
+    Inventory Tags/Supertyp/Owned are authoritative for the collection; card text
+    comes from wissen/03_kartenpool.csv. Each result is a list of card records.
+    """
+    invs = sorted((ROOT / 'wissen').glob('*Karten (Karten)*.csv'))
+    if not invs:
+        raise FileNotFoundError('Inventar fehlt in wissen/.')
+    pool = readcsv(ROOT / 'wissen/03_kartenpool.csv')
+    pkey, pname = defaultdict(list), {}
+    for card in pool:
+        key = (str(card.get('Set') or '').strip().upper(), num(card.get('Nummer')))
+        pkey[key].append(card)
+        pname.setdefault(norm(card.get('Name')), card)
+
+    by_card = {}
+    for row in readcsv(invs[0]):
+        if 'signature' not in str(row.get('Supertyp') or '').casefold():
+            continue
+        owned = int(dec(row.get('Owned')))
+        if owned <= 0:
+            continue
+        title = row.get('Titel', '')
+        name = re.sub(r'\s*#\s*[a-z]*\d+[a-z]*\s*$', '', title, flags=re.I).strip()
+        key = (str(row.get('SetCode') or '').strip().upper(), num(row.get('Kartennummer')))
+        card = next((p for p in pkey.get(key, []) if norm(p.get('Name')) == norm(name)), None)
+        card = card or pname.get(norm(name))
+        # Tags in the collection export are usually comma-separated; also accept JSON arrays.
+        raw_tags = str(row.get('Tags') or '').strip()
+        try:
+            parsed = json.loads(raw_tags) if raw_tags.startswith('[') else None
+        except (ValueError, TypeError):
+            parsed = None
+        tags = [str(x).strip() for x in parsed] if isinstance(parsed, list) else [x.strip() for x in raw_tags.split(',') if x.strip()]
+        if not tags:
+            continue
+        canonical_name = (card or {}).get('Name') or name
+        card_key = norm(canonical_name)
+        rec = by_card.setdefault(card_key, {
+            'name': canonical_name, 'set': key[0], 'number': key[1],
+            'owned': 0, 'tags': set(),
+            'text': pick(card or {}, 'Kartentext', 'Text', anytext=True),
+        })
+        rec['owned'] += owned
+        rec['tags'].update(tags)
+        if not rec['text'] and card:
+            rec['text'] = pick(card, 'Kartentext', 'Text', anytext=True)
+
+    grouped = defaultdict(list)
+    for rec in by_card.values():
+        for tag in sorted(rec['tags'], key=str.casefold):
+            grouped[tag].append({**rec, 'tags': sorted(rec['tags'], key=str.casefold)})
+    return dict(grouped)
 
 
 def main():
