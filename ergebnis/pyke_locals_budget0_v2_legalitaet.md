@@ -26,11 +26,4 @@
 | Runen-Domains entsprechen Legendenidentität | BESTANDEN | Runen passen zu chaos, fury |
 | Chosen Champion Tag passt zur Legende | BESTANDEN | Legend: ['Pyke']; Champion: ['Pyke', 'Bilgewater'] |
 | Höchstens 3 Signatures | BESTANDEN | 0/3 |
-
-## Zuordnung und Besitz
-
-Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.
-
-Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.
-
-Benötigt **66** · Besitz **66** · Fehlend **0** · Kosten **€0.00**.
+\n## Signature-Check\n\nKeine enthaltene Signature widerspricht dem Champion-Tag der Legende.\nKeine passende, besessene Signature fehlt im Deck.\n\n## Zuordnung und Besitz\n\nBesitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.\n\nKeine fehlenden Katalogzuordnungen oder Bannlistentreffer.\n\nBenötigt **66** · Besitz **66** · Fehlend **0** · Kosten **€0.00**.\n

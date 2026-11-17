@@ -26,11 +26,4 @@
 | Runen-Domains entsprechen Legendenidentität | BESTANDEN | Runen passen zu body, chaos |
 | Chosen Champion Tag passt zur Legende | BESTANDEN | Legend: ["Kha'Zix"]; Champion: ["Kha'Zix", 'The Void'] |
 | Höchstens 3 Signatures | BESTANDEN | 0/3 |
-
-## Zuordnung und Besitz
-
-Besitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.
-
-Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.
-
-Benötigt **64** · Besitz **64** · Fehlend **0** · Kosten **€0.00**.
+\n## Signature-Check\n\nKeine enthaltene Signature widerspricht dem Champion-Tag der Legende.\n- ⚠️ **Void Assault** (UNL/202), Besitz 1 – nicht im Deck. Kartentext: Move a friendly unit, then move an enemy unit. (If they both move to a battlefield you don't control, you're the attacker.)\n\n## Zuordnung und Besitz\n\nBesitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.\n\nKeine fehlenden Katalogzuordnungen oder Bannlistentreffer.\n\nBenötigt **64** · Besitz **64** · Fehlend **0** · Kosten **€0.00**.\n
