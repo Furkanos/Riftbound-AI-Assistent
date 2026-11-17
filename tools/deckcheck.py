@@ -172,7 +172,7 @@ def main():
   identity={str(d).casefold() for c,d in domains if c['area']=='Legende'}
   domain_bad=[f"{c['name']} ({d})" for c,d in domains if c['area'] not in ('Legende','Rune') and str(d).casefold() not in identity]
   rune_bad=[f"{c['name']} ({d})" for c,d in domains if c['area']=='Rune' and str(d).casefold() not in identity]
-  tests=[('Main Deck = 40 (Champion einschließlich)',maincount==40,f'{maincount}/40'),('Genau 1 Legende',areas['Legende']==1,f'{areas[\"Legende\"]} eingetragen'),('Genau 12 Runen',areas['Rune']==12,f'{areas[\"Rune\"]}/12'),('Genau 3 Battlefields',areas['Battlefield']==3,f'{areas[\"Battlefield\"]}/3'),('Battlefields unterschiedlich',len(bfs)==len(set(bfs)),'Namen verschieden' if len(bfs)==len(set(bfs)) else 'Doppelte Namen'),('Max. 3 Exemplare je Name (Main + Sideboard)',max(counts.values(),default=0)<=3,'keine Überschreitung' if max(counts.values(),default=0)<=3 else 'Überschreitung'),('Alle Karten Set/Nummer im Katalog',all_catalog,'Katalogabgleich'),('Keine gebannte Karte',not any(norm(c['name']) in bans for c in cards),'Bannliste aus wissen/02_format.md'),('Sideboard höchstens 10',areas['Sideboard']<=10,f'{areas[\"Sideboard\"]}/10'),('Alle Domains entsprechen Legendenidentität',not domain_bad,', '.join(domain_bad) if domain_bad else 'keine Fremd-Domains; Identität '+', '.join(sorted(identity))),('Runen-Domains entsprechen Legendenidentität',not rune_bad,', '.join(rune_bad) if rune_bad else 'Runen passen zu '+', '.join(sorted(identity))),('Chosen Champion Tag passt zur Legende',bool(set(legend_tags)&set(champion_tags)),f'Legend: {legend_tags}; Champion: {champion_tags}'),('Höchstens 3 Signatures',len(signatures)<=3,f'{len(signatures)}/3')]
+  tests=[('Main Deck = 40 (Champion einschließlich)',maincount==40,f'{maincount}/40'),('Genau 1 Legende',areas['Legende']==1,f'{areas["Legende"]} eingetragen'),('Genau 12 Runen',areas['Rune']==12,f'{areas["Rune"]}/12'),('Genau 3 Battlefields',areas['Battlefield']==3,f'{areas["Battlefield"]}/3'),('Battlefields unterschiedlich',len(bfs)==len(set(bfs)),'Namen verschieden' if len(bfs)==len(set(bfs)) else 'Doppelte Namen'),('Max. 3 Exemplare je Name (Main + Sideboard)',max(counts.values(),default=0)<=3,'keine Überschreitung' if max(counts.values(),default=0)<=3 else 'Überschreitung'),('Alle Karten Set/Nummer im Katalog',all_catalog,'Katalogabgleich'),('Keine gebannte Karte',not any(norm(c['name']) in bans for c in cards),'Bannliste aus wissen/02_format.md'),('Sideboard höchstens 10',areas['Sideboard']<=10,f'{areas["Sideboard"]}/10'),('Alle Domains entsprechen Legendenidentität',not domain_bad,', '.join(domain_bad) if domain_bad else 'keine Fremd-Domains; Identität '+', '.join(sorted(identity))),('Runen-Domains entsprechen Legendenidentität',not rune_bad,', '.join(rune_bad) if rune_bad else 'Runen passen zu '+', '.join(sorted(identity))),('Chosen Champion Tag passt zur Legende',bool(set(legend_tags)&set(champion_tags)),f'Legend: {legend_tags}; Champion: {champion_tags}'),('Höchstens 3 Signatures',len(signatures)<=3,f'{len(signatures)}/3')]
   # Signature legality is strictly tied to the legend's champion tag.
   legend_tagset={str(tag).casefold() for tag in legend_tags}
   illegal_signatures=[]
@@ -191,24 +191,24 @@ def main():
    incomplete=any('UNVOLLSTÄNDIG' in x.upper() for x in comments)
    f.write(f'# Legalitätscheck: {p.stem}\n\n| Bereich | Anzahl |\n|---|---:|\n')
    for a in ('Legende','Champion','Main','Rune','Battlefield','Sideboard'): f.write(f'| {a} | {areas[a]} |\n')
-   f.write(f'\n**Deckliste: {\"UNVOLLSTÄNDIG\" if incomplete else \"vollständig markiert\"}.**\n\n| Prüfung | Ergebnis | Details |\n|---|---|---|\n')
-   for label,ok,detail in tests: f.write(f'| {label} | {\"BESTANDEN\" if ok else \"NICHT BESTANDEN\"} | {detail} |\n')
+   f.write(f'\n**Deckliste: {"UNVOLLSTÄNDIG" if incomplete else "vollständig markiert"}.**\n\n| Prüfung | Ergebnis | Details |\n|---|---|---|\n')
+   for label,ok,detail in tests: f.write(f'| {label} | {"BESTANDEN" if ok else "NICHT BESTANDEN"} | {detail} |\n')
    f.write('\\n## Signature-Check\\n\\n')
    if illegal_signatures:
     for c in illegal_signatures:
-     f.write(f\"- ❌ **{c['name']}** passt nicht zum Champion-Tag der Legende ({', '.join(legend_tags)}).\\n\")
+     f.write(f"- ❌ **{c['name']}** passt nicht zum Champion-Tag der Legende ({', '.join(legend_tags)}).\\n")
    else:
     f.write('Keine enthaltene Signature widerspricht dem Champion-Tag der Legende.\\n')
    if signature_warnings:
     for record in sorted(signature_warnings,key=lambda r:r['name'].casefold()):
-     f.write(f\"- ⚠️ **{record['name']}** ({record['set']}/{record['number']}), Besitz {record['owned']} – nicht im Deck. Kartentext: {record['text'] or '[Kartentext fehlt]' }\\n\")
+     f.write(f"- ⚠️ **{record['name']}** ({record['set']}/{record['number']}), Besitz {record['owned']} – nicht im Deck. Kartentext: {record['text'] or '[Kartentext fehlt]' }\\n")
    else:
     f.write('Keine passende, besessene Signature fehlt im Deck.\\n')
    f.write('\\n## Zuordnung und Besitz\\n\\nBesitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.\\n\\n')
    f.write(('Hinweise:\\n'+''.join(f'- {x}\\n' for x in issues)) if issues else 'Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.\\n')
    if not costok: f.write('\\nPreise für fehlende Exemplare sind im Inventar nicht verfügbar; entsprechende Kosten bleiben leer.\\n')
    if incomplete: f.write('\\nDie Liste ist als unvollständig markiert.\\n')
-   f.write(f'\\nBenötigt **{need}** · Besitz **{owned}** · Fehlend **{missing}** · Kosten **{f\"€{costs:.2f}\" if costok else \"nicht vollständig bestimmbar\"}**.\\n')
+   f.write(f'\\nBenötigt **{need}** · Besitz **{owned}** · Fehlend **{missing}** · Kosten **{f"€{costs:.2f}" if costok else "nicht vollständig bestimmbar"}**.\\n')
   # Zusatzdatei 1: vollständige Kartentexte aller Deckkarten.
   deckq=defaultdict(int)
   for c in cards: deckq[norm(c['name'])]+=c['q']
@@ -217,16 +217,16 @@ def main():
    for a in AREA_ORDER:
     sel=[c for c in cards if c['area']==a]
     if not sel: continue
-    f.write(f'\n## {a} ({sum(c[\"q\"] for c in sel)})\n')
+    f.write(f'\n## {a} ({sum(c["q"] for c in sel)})\n')
     for c in sel:
      is_rune=c['area']=='Rune' or c['name'].strip().casefold().endswith('rune')
      if is_rune:
       cat=c['cat'] or {}
       dom=pick(cat,'Domäne','Domaene','Domänen') or ', '.join(str(d) for d in arr(cat.get('Domaenen'))) or '?'
-      f.write(f\"\\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\\nRune – Basisressource (Domäne: {dom}), kein Kartentext\\n\")
+      f.write(f"\\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\\nRune – Basisressource (Domäne: {dom}), kein Kartentext\\n")
      else:
       typ,dom,cost,stats,text=info(c['key'],c['name'],c['cat'])
-      f.write(f\"\\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\\n- Typ: {typ or '?'} · Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\\n- Text: {text or '[TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]'}\\n\")
+      f.write(f"\\n### {c['q']}× {c['name']} ({c['set']}-{c['no']})\\n- Typ: {typ or '?'} · Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\\n- Text: {text or '[TEXT FEHLT IN DEN DATEN – nicht verwenden, bevor geprüft]'}\\n")
   # Zusatzdatei 2: legale Alternativen aus der Sammlung, passend zur Legendenidentität.
   alts=[]; seen=set()
   for k,v in invkey.items():
@@ -238,13 +238,13 @@ def main():
    typ,dom,cost,stats,text=info(k,nm,cat); t=typ.casefold()
    if 'legend' in t or 'rune' in t or 'token' in t: continue
    seen.add(n); own=invname[n]['owned'] or v['owned']; used=deckq.get(n,0)
-   frei=max(own-used,0); maxadd=frei if 'battlefield' in t else max(min(frei,3-used),0)
-   alts.append((typ or '?',nm,k,own,used,maxadd,dom,cost,stats,text))
-  alts.sort(key=lambda x:(x[0].casefold(),x[1].casefold()))
+   maxadd=max(0,min(3-used,own-used))
+   if maxadd<=0: continue
+   alts.append((typ,nm,k,own,used,maxadd,dom,cost,stats,text))
   with (outdir/f'{p.stem}_alternativen.md').open('w',encoding='utf-8') as f:
-   f.write(f'# Alternativen aus der Sammlung: {p.stem}\\n\\nAlle Karten aus der Sammlung, die legal sind (Set legal, nicht gebannt) und zur Domänenidentität **{\", \".join(sorted(identity)) or \"unbekannt\"}** passen. Ohne Legenden, Runen und Tokens. Automatisch erzeugt.\\n\\n- **Besitz** = Exemplare in der Sammlung (alle Drucke)\\n- **Im Deck** = bereits in diesem Deck (alle Bereiche)\\n- **Max. zusätzlich** = so viele dürfen noch dazu (Besitz und 3er-Limit berücksichtigt)\\n\\nAnzahl Karten: {len(alts)}\\n')
+   f.write(f'# Alternativen aus der Sammlung: {p.stem}\\n\\nAlle Karten aus der Sammlung, die legal sind (Set legal, nicht gebannt) und zur Domänenidentität **{", ".join(sorted(identity)) or "unbekannt"}** passen. Ohne Legenden, Runen und Tokens. Automatisch erzeugt.\\n\\n- **Besitz** = Exemplare in der Sammlung (alle Drucke)\\n- **Im Deck** = bereits in diesem Deck (alle Bereiche)\\n- **Max. zusätzlich** = so viele dürfen noch dazu (Besitz und 3er-Limit berücksichtigt)\\n\\nAnzahl Karten: {len(alts)}\\n')
    cur=None
-   for typ,nm,k,own,used,maxadd,dom,cost,stats,text in alts:
+   for typ,nm,k,own,used,maxadd,dom,cost,stats,text in sorted(alts,key=lambda x:(x[0],x[1].casefold())):
     if typ!=cur: cur=typ; f.write(f'\\n## {typ}\\n')
-    f.write(f\"\\n### {nm} ({k[0]}-{k[1]})\\n- Besitz: {own} · Im Deck: {used} · Max. zusätzlich: {maxadd}\\n- Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\\n- Text: {text or '[TEXT FEHLT IN DEN DATEN]'}\\n\")
+    f.write(f"\\n### {nm} ({k[0]}-{k[1]})\\n- Besitz: {own} · Im Deck: {used} · Max. zusätzlich: {maxadd}\\n- Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\\n- Text: {text or '[TEXT FEHLT IN DEN DATEN]'}\\n")
 if __name__=='__main__': main()
