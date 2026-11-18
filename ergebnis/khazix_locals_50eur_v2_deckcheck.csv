@@ -17,7 +17,7 @@ Main;Blast Cone;UNL;133;1;1;0;0.17;0.00
 Main;Kinkou Initiate;UNL;97;3;3;0;0.24;0.00
 Main;Repulse;UNL;106;1;1;0;0.37;0.00
 Main;Boots of Swiftness;SFD;133;1;1;0;0.56;0.00
-Main;An Offer You Can't Refuse;RAD;101;2;0;2;;
+Main;An Offer You Can't Refuse;RAD;101;2;1;1;1.40;1.40
 Battlefield;Altar of Blood;UNL;206;1;1;0;0.05;0.00
 Battlefield;Gardens of Becoming;UNL;213;1;1;0;0.06;0.00
 Battlefield;Trapping Grounds;UNL;217;1;1;0;0.05;0.00
@@ -29,4 +29,4 @@ Sideboard;Repulse;UNL;106;1;1;0;0.37;0.00
 Sideboard;Isolate;UNL;124;1;1;0;0.17;0.00
 Sideboard;Arachnoid Horror;UNL;117;1;1;0;1.17;0.00
 Sideboard;Angler Beast;UNL;132;2;2;0;0.16;0.00
-SUMME;;;;63;61;2;;
+SUMME;;;;63;62;1;;1.40

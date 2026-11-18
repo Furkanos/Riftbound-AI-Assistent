@@ -11,7 +11,7 @@ Einheiten mit Kosten <= 3: **21**
 | Kosten | Kopien |
 |---|---:|
 | 1 | 3 |
-| 2 | 20 |
+| 2 | 22 |
 | 3 | 11 |
 | 4 | 4 |
 
@@ -20,7 +20,7 @@ Einheiten mit Kosten <= 3: **21**
 | Rolle | Main | davon auto | Sideboard |
 |---|---:|---:|---:|
 | removal | 6 | 6 | 0 |
-| gear_antwort | 0 | 0 | 2 |
+| gear_antwort | 2 | 2 | 2 |
 | konter | 4 | 4 | 1 |
 | xp_quelle | 18 | 18 | 1 |
 | nicht_aus_hand | 0 | 0 | 0 |
@@ -29,7 +29,3 @@ Einheiten mit Kosten <= 3: **21**
 | temporary | 0 | 0 | 0 |
 | mech | 0 | 0 | 0 |
 | karten_ziehen | 9 | 9 | 1 |
-
-## Nicht in der Sammlung gefunden
-
-- An Offer You Can't Refuse
