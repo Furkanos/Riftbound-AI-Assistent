@@ -666,7 +666,7 @@
 | Event | Datum | Platz | Link |
 | :--- | :--- | :---: | :--- |
 | LDXP Sacramento - Nexus Night Constructed | 2026-10-24 | 13 | https://riftbench.com/decks/TD-ldxp-sacramento-nexus-night-constructed-0013 |
-| LDXP Sacramento - Riftbound Showdown 25k | 2026-10-24 | 57 | https://riftbench.com/decks/TD-ldxp-sacramento-riftbound-showdown-0057 |
+| LDXP Sacramento - Riftbound Showdown 25k | 2026-10-24 | 57 | https://riftbench.com/decks/TD-ldxp-sacramento-riftbound-showdown-25k-0057 |
 
 ### Gemeinsame Kernkarten (in 2 von 2 Listen)
 
