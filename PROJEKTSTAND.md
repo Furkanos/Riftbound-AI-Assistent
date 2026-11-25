@@ -1,78 +1,86 @@
 # Projektstand: Aktualisierung `wissen/08_archetypen.md`
 
-**Dokumentationsstand:** 25.11.2026. **Status:** Recherche-/Entscheidungsschritte noch nicht abgeschlossen; `wissen/08_archetypen.md` wurde im Rahmen dieses Arbeitsauftrags nicht aktualisiert.
+**Dokumentationsstand:** 25.11.2026.
+**Status:** Schritte 1, 2a und 2b sind abgeschlossen. Schritt 3 (Entscheidungen) und Schritt 4 (08 neu schreiben) sind offen. `wissen/08_archetypen.md` wurde noch nicht geändert.
 
-> **Evidenzhinweis:** Die folgenden Arbeitszahlen und Einzelresultate sind im vorliegenden delegierten Chatkontext genannt, aber nicht unabhängig durch die angeforderten Recherche-PSVs im Repo belegbar. Die spezifischen lokalen Dateien `schritt2a_*`, `schritt2b_*_20261124*`, `paketsummen_8spalten_20261124.psv` und `*_rundeA/B_*` waren im lokalen Arbeitsbereich `/mnt/user-data/outputs` nicht vorhanden. Sie liegen daher nicht als verifizierbare Belege vor. Kennzeichnung „laut Chatverlauf, nicht im Repo belegt“ bleibt erforderlich.
+> **Evidenzhinweis:** Alle Zahlen in diesem Dokument stammen aus dem Chatverlauf der Recherche (21.–25.11.2026). Die Belegdateien (PSV, Rohtexte, gespeicherte Standings-Seiten) liegen nur im Arbeitsbereich dieses Chats und **nicht im Repo**. Ein neuer Chat kann die Zahlen deshalb nicht aus dem Repo nachrechnen. Vor Schritt 4 müssen die Belege entweder ins Repo gelegt (nur auf Auftrag) oder die Zahlen neu erhoben werden.
 
-## Zweck der Aktualisierung
+## Korrekturen zur README (Stand Commit 4156116)
 
-`wissen/08_archetypen.md` ist im Repo ein Archiv-/Auswertungsstand vom 17.11.2026. Im lokalen Dateikopf steht: 24 Legenden, 25 Legendeneinträge (Diana doppelt gedruckt), 78 unabhängig verifizierte Turnierlisten, Platz ≤64 und maximal fünf Listen je Legende. Die laufende Aufgabe soll prüfen, ob neuere Listen und vorhandene Kandidaten korrekt berücksichtigt werden, bevor eine neue 08-Fassung entworfen wird. Der Repo-Stand wurde hier nicht geändert.
+- **Nummernschreibweise `201/221`:** Die README beschreibt diese Stolperfalle ungenau. Gemeint ist: Riftwatch schreibt Drucke als `SFD-201/221`, das heißt Karte 201 von 221 (Setumfang). Das entspricht `SFD/201` in `wissen/07_legenden_uebersicht.md`. Liegt die Nummer **über** dem Setumfang (Beispiel Poppy `UNL-237/219`), ist es vermutlich ein Alternativdruck: `[BITTE PRÜFEN]`.
+- **Pfadprüfung:** Die README-Pfade wurden nicht per Skript gegen das Repo validiert. `[BITTE PRÜFEN]`
 
-## Methode und Auswahlfilter
+## Ausgangslage
 
-**Laut Chatverlauf, nicht im Repo belegt:**
+`wissen/08_archetypen.md` (Stand 17.11.2026) enthält 24 Legenden, 78 Turnierlisten-Links, 208 Kernkarten-Zeilen und 2 × `[BITTE PRÜFEN]` (Kennen `RBO-L-dotgg-414231`, Rek'sai `RBO-L-dotgg-389155`). Eine Zwischenzählung von 76 Links entstand, weil genau diese zwei Links ausgelassen wurden; 78 ist korrekt.
 
-1. Quellen für Einzelbelege: `riftbound.org`, `riftwatch.gg`, `riftbench.com`.
-2. Kandidaten nach Eventdatum ab 24.10.2026 (einschließlich) auswählen.
-3. Nur Platzierungen 1 bis 64 einschließlich als gültig zählen.
-4. Testevents ausschließen.
-5. Bannnamen der verwendeten Karten gegen Bannliste prüfen.
-6. Kartennamen und Drucke/Setnummern gegen den Kartenpool abgleichen.
-7. Fehlendes Datum, Platz, unvollständige Belegliste oder Druckunsicherheit als `[BITTE PRÜFEN]` behandeln, nicht stillschweigend entscheiden.
-8. „Keine Turnierlisten gefunden“ bedeutet nur, dass in der beschriebenen Recherche keine Liste gefunden wurde, nicht dass es keine gibt.
+`wissen/07_legenden_uebersicht.md` führt inzwischen 34 Legendeneinträge mit 33 unterschiedlichen Namen (Diana doppelt: `UNL/197` und `UNL/234`). Gegenüber 08 fehlen also 9 neue RAD-Legenden.
 
-Das konkrete Skript, die Suchabfragen, vollständige Linklisten, Einzelkarten-Decklisten und die Summenberechnung sind im Repo nicht dokumentiert. Sie müssen anhand der lokalen Recherchebelege rekonstruiert/geprüft werden, bevor die Zahlen als auditierbare Ergebnisse gelten.
+## Methode und Filter
 
-## Arbeitszahlen je Block
+Eine Turnierliste zählt als **gültig**, wenn alle Punkte belegt sind:
 
-### Block 1 – neue RAD-Legenden
+1. Eventdatum ≥ 24.10.2026 (laut Zielseite).
+2. Platz ≤ 64, belegt durch Standings. Endziffern in der URL sind kein Platzbeleg.
+3. Kein Testevent (Beispiel: „Test Riftbound“, 24.10.2026).
+4. Legende auf der Zielseite bestätigt.
+5. Bannnamen-Check: alle zwölf Bannnamen aus `wissen/02_format.md` vollständig geprüft, kein Treffer.
+6. Kartenpool-Gegenprobe: Kartennamen der Liste gegen `wissen/03_kartenpool.csv`.
 
-**Laut Chatverlauf, nicht im Repo belegt:** Neun RAD-Legenden wurden bearbeitet; Chatstatus nennt **41 gültige Listen** und **5 `[BITTE PRÜFEN]`-Fälle**. Diese Summen werden hier nicht eigenständig aus Listen nachgerechnet. Die ermittelten Legendenbezeichnungen und Einzelbelege liegen nicht in der Repo-Version von 08 als neue, nachvollziehbare Blocktabelle vor. Vollständige Aufteilung je Legende, Quellenlinks und Zuordnung der fünf Prüffälle: **[BITTE PRÜFEN]**.
+Quellen in dieser Reihenfolge: riftbound.org (Legendenseite und Turnierübersicht), riftwatch.gg (Legendenprofil und All-lists-Ansicht), riftbench.com (Eventfilter). Zählungen nur per Skript über gespeicherte Seiten. Je Ansicht werden „gemeldet“ und „erfasst“ getrennt notiert. Ergebnisdateien sind PSV mit festen 8 Spalten; vor jedem Überschreiben eine `_vorher`-Sicherung.
 
-### Block 2a – Kandidaten aus den bereits in 08 verzeichneten 78 Links
+„Keine Turnierlisten gefunden“ bedeutet: in den genannten Quellen kein Treffer innerhalb der Filter. Es bedeutet nicht, dass keine Liste existiert.
 
-**Laut Chatverlauf, nicht im Repo belegt:** 21 Kandidaten überprüft, davon **15 gültig** und **6 Nexus-Night-Kandidaten** mit unklarem Datum 23./24.10.2026. Diese sechs Fälle können mit dem Stichtagsfilter unterschiedlich eingeordnet werden; ohne belastbares Eventdatum sind sie offen. Die 21 konkreten Links und Einzelergebnisse sind in der hier verfügbaren Repo-Dokumentation nicht vorhanden. Dateibelege `schritt2a_*` fehlten lokal: `[BITTE PRÜFEN]`.
+## Ergebnisse
 
-### Block 2b – Suche nach Listen für Poppy, Renata Glasc und Sivir
+### Block 1: 9 neue RAD-Legenden
 
-**Laut Chatverlauf, nicht im Repo belegt:**
+Gesamt: **41 gültige Listen, 5 `[BITTE PRÜFEN]`** (darunter 2 Nexus-Night-Fälle bei Seraphine).
 
-| Legende/Champion | Kandidat | Chatstatus | Caveat |
+Bearbeitete Legenden laut Chatverlauf: Ekko, Evelynn, Jarvan IV, K'Sante, Mordekaiser, Orianna, Riven (`RAD/149`), Seraphine (`RAD/151`), Ziggs (`RAD/141`). Die Liste der Namen und die Aufteilung je Legende gegen 07 und die Beleg-PSVs prüfen: `[BITTE PRÜFEN]`.
+
+### Block 2a: Kandidaten aus den 78 alten Links
+
+21 Links erfüllen laut 08 Datum ≥ 24.10.2026 und Platz ≤ 64.
+
+| Paket | Gültig | Nexus Night | Gesamt |
 |---|---|---|---|
-| Poppy | `UNL/203` | keine Turnierlisten gefunden | zusätzlicher Vermerk zu Riftwatch-Druck `UNL-237/219`; exakter Druck und Quelle prüfen |
-| Renata Glasc | `SFD/201` | keine Turnierlisten gefunden | Druck/Nummer separat vom Championnamen prüfen |
-| Sivir | `SFD/203` | keine Turnierlisten gefunden | Druck/Nummer separat vom Championnamen prüfen |
+| 1 | 3 | 4 | 7 |
+| 2 | 6 | 1 | 7 |
+| 3 | 6 | 1 | 7 |
+| Gesamt | 15 | 6 | 21 |
 
-„Keine gefunden“ darf nicht als Nichtexistenz ausgegeben werden. Suchraum, geprüfte Seiten und Abrufdatum: `[BITTE PRÜFEN]`; `schritt2b_*_20261124*` war nicht vorhanden.
+Nexus Night = „LDXP Sacramento – Nexus Night Constructed“. Der Platz ist bestätigt, das Datum ist zwischen 23.10. und 24.10.2026 unklar (riftbound.org nennt den 24.10.). Status bis zur Entscheidung: `[BITTE PRÜFEN]`, nicht gültig.
 
-## Offene Entscheidungen – Schritt 3
+### Block 2b: Legenden ohne Link in 08
 
-1. Die fünf RAD-Fälle `[BITTE PRÜFEN]` einzeln anhand ihrer Primärquellen klären oder ausdrücklich als ungeklärt stehen lassen.
-2. Die sechs Nexus-Night-Belege mit unklarem 23./24.10.-Datum einzeln entscheiden: Datum aus belastbarer Eventquelle belegen, sonst nicht in den nach Stichtag zählenden Pool aufnehmen und Unsicherheit ausweisen.
-3. Druckvermerk Poppy: unterscheiden, ob `UNL/203` und erwähnter Riftwatch-Druck `UNL-237/219` dieselbe Karte, anderer Druck oder Fehler im Datensatz ist. Nicht zusammenführen ohne Kataloggegenprobe.
-4. Für sämtliche Kandidaten Set/Nummer-Schreibweisen normalisieren, dabei Rohbeleg erhalten. Beispiele `201`/`221` dürfen nicht durch Namensähnlichkeit vertauscht werden.
-5. Doppeldrucke, insbesondere Diana (`UNL/197`, `UNL/234` laut Kontext), getrennt nachvollziehbar halten.
-6. Summen aus Quellenprotokoll reproduzierbar neu berechnen; für jeden Beleg Event, Datum, Platz, Legende/Champion, Druck, Testeventstatus, Bannlistenabgleich, Poolabgleich und URL nachhalten.
+| Legende | Set/Nr laut 07 | Ergebnis | Belege |
+|---|---|---|---|
+| Poppy, Keeper of the Hammer | `UNL/203` | keine Turnierlisten gefunden | 8 Standings-Einträge belegt: 6 × Sacramento Showdown 25k (Plätze 284 bis 647), Regional Championship Europe Platz 290, Testevent Platz 31 (ausgeschlossen) |
+| Renata Glasc, Chem-Baroness | `SFD/201` | keine Turnierlisten gefunden | 25 Events (24.10. bis 22.11.2026) gescannt; einziger Eintrag: Radiance Standard Challenge Friday, 06.11.2026, Platz 1746, kein Decklink |
+| Sivir, Battle Mistress | `SFD/203` | keine Turnierlisten gefunden | 25 Events gescannt; einziger Eintrag: Nation Clash Saturday, 07.11.2026, Platz 606, kein Decklink |
 
-## Schritt 4 – noch nicht ausgeführt
+Riftwatch führt für Renata und Sivir als jüngstes Ergebnis jeweils den 03.10.2026. RiftBench: je 0 Treffer bei Sacramento (723 Listen), Convergence IV (235 Listen) und Regional Championship Europe (315 Standings, Listen nicht veröffentlicht).
 
-`wissen/08_archetypen.md` neu entwerfen und schreiben ist offen und wurde nicht ausgeführt. Im Arbeitskontext ausdrücklich: erst nach abgeschlossenem Schritt 3 und nur auf konkreten Auftrag. Vor dem Schreiben müssen die 41/15 etc. Summen mit den lokalen PSV-Belegen programmatisch kontrolliert und alle offenen Prüffälle dokumentiert sein.
+Vermerke:
 
-## Fehlende Belege und lokale Dateien
+- **Poppy:** Eine frühere Zählung von 12 Einträgen ist nicht reproduzierbar. Der Skriptlauf deckte nur die gespeicherten Sacramento-Seiten ab, nicht alle 25 Events. Riftwatch zeigt den Druck `UNL-237/219`. `[BITTE PRÜFEN]`
+- **Renata:** Eine frühere Angabe `SFD/207` war falsch; `SFD/201` ist per grep in 07 bestätigt.
+- **Sivir:** Die RiftBench-Filter-URLs und die riftbound.org-Profilansicht sind nicht protokolliert.
 
-Erwartete Recherchedateien zur Verifikation, angefragt für diesen Auftrag:
+## Offene Entscheidungen (Schritt 3, Entscheidung beim Nutzer)
 
-- `schritt2a_*`
-- `schritt2b_*_20261124*`
-- `paketsummen_8spalten_20261124.psv`
-- `*_rundeA_*` und `*_rundeB_*`
+1. 6 Nexus-Night-Listen aus Block 2a: als gültig zählen oder mit Vermerk ausschließen?
+2. 5 `[BITTE PRÜFEN]` aus Block 1: gleiche Regel wie Punkt 1 oder Einzelentscheidung?
+3. Poppy-Druck `UNL-237/219`: als zweiten Druck in 07 und 08 vermerken (analog Diana)?
+4. Optional: Poppy-Zählung über alle 25 Events nachholen.
 
-Sie waren bei der Inventur von `/mnt/user-data/outputs` und `/mnt/user-data/uploads` nicht vorhanden. Es wurden stattdessen lokale ältere Audit-/Statusdateien vorgefunden, darunter `rad_step1_status.md`, `rad_link_audit.py` und `audit_riftbound_projekt.md`; diese belegen nicht die oben genannten Schritt-2-Zahlen. Keine davon wurde ins Repo kopiert.
+## Schritt 4 (nicht begonnen)
 
-## Abschlusskriterien für die nächste Bearbeitung
+`wissen/08_archetypen.md` neu entwerfen und schreiben. Nur auf ausdrücklichen Auftrag und erst nach Schritt 3. Die 24 alten Legendenabschnitte bleiben 1:1 erhalten; die 9 RAD-Legenden und die drei „keine Turnierlisten gefunden“-Einträge kommen dazu.
 
-- Alle erwarteten Belegdateien bereitstellen oder Recherche erneut aus Primärquellen ausführen.
-- Pro Liste Datum und Rang auf der Quelle prüfen; URL-Nummer nicht als Platzierungsbeleg interpretieren.
-- Filter maschinell anwenden, Ausschlüsse/Unklarheiten sichtbar ausweisen und Summen doppelt reproduzieren.
-- Format-/Bannliste mit dem zum Event passenden Stand prüfen und Kartenpoolabgleich dokumentieren.
-- Schritt 3 Entscheidungen festhalten; erst danach für Schritt 4 gesonderten Auftrag einholen.
+## Belegdateien (nur im Chat-Arbeitsbereich, nicht im Repo)
+
+Unter anderem: `schritt2a_livepruefung_20261124.psv`, `paketsummen_8spalten_20261124.psv`, `schritt2b_poppy_final_20261124.psv`, `schritt2b_renata_20261124.psv`, `schritt2b_sivir_20261124.psv`, je Legende `*_rundeA_sammeln_*.psv` und `*_rundeB_pruefen_*.psv`, Deckrohtexte `P1-*`, `P2-*`, `P3-*` sowie gespeicherte Standings-Seiten (Sacramento, Convergence IV, Nexus Night).
+
+Beim Erstellen dieser Dokumentation waren diese Dateien nicht erneut lesbar; die Zahlen oben wurden deshalb nicht noch einmal aus den Dateien nachgerechnet.
