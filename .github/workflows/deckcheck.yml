@@ -1,37 +1,54 @@
 name: Deckcheck
+
 on:
   push:
     paths:
-      - 'decks/**'
-      - 'tools/**'
-      - 'wissen/**'
-      - 'daten/namens_alias.csv'
-      - 'daten/tags_manuell.csv'
-      - 'daten/legenden_engine.csv'
-      - '.github/workflows/deckcheck.yml'
+      - "decks/**"
+      - "tools/deckcheck.py"
+      - ".github/workflows/deckcheck.yml"
+  pull_request:
+    paths:
+      - "decks/**"
+      - "tools/deckcheck.py"
+      - ".github/workflows/deckcheck.yml"
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-      - name: Datenbasis erzeugen
-        run: python tools/datenbasis.py
-      - name: Decks prüfen und Ergebnisse erstellen
-        run: python tools/deckcheck.py
-      - name: Deckqualität
-        run: python tools/deckqualitaet.py
-      - name: Ergebnisse committen
+          python-version: "3.x"
+      - name: Deck-CSV-Struktur prüfen
+        id: structure
+        shell: bash
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add ergebnis/ daten/
-          if ! git diff --cached --quiet; then
-            git commit -m 'Automated deckcheck results [skip ci]'
-            git push
-          fi
+          test ! -e decks/ci_smoke.csv
+          cat > decks/ci_smoke.csv <<EOF
+          Anzahl;Name;Set;Nummer;Bereich
+          1;Testlegende;SET;001;Legende
+          1;Testchampion;SET;002;Champion
+          39;Testkarte;SET;003;Main
+          12;Testrune;SET;004;Rune
+          1;Testfeld A;SET;005;Battlefield
+          1;Testfeld B;SET;006;Battlefield
+          1;Testfeld C;SET;007;Battlefield
+          EOF
+          out="$RUNNER_TEMP/rift-deckcheck"
+          python tools/deckcheck.py --structure-only --output-dir "$out"
+          test -s "$out/ci_smoke_pruefstatus.md"
+      - name: Kompakte Prüfberichte hochladen
+        if: ${{ !cancelled() && (steps.structure.outcome == 'success' || steps.structure.outcome == 'failure') }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: deckcheck-pruefstatus
+          path: ${{ runner.temp }}/rift-deckcheck/*_pruefstatus.md
+          retention-days: 7
+          if-no-files-found: error

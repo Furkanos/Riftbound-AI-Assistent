@@ -18,6 +18,8 @@
 
 ## Methode und Filter
 
+Die folgenden Kriterien dokumentieren die Recherche vom 21.–25.11.2026. Der Bannabgleich bezog sich auf den damaligen Snapshot. `wissen/03_kartenpool.csv` ist eine lokale, nicht mitgelieferte Arbeitsdatei. Die Ergebnisse belegen keine aktuelle Turnierlegalität.
+
 Eine Turnierliste zählt als **gültig**, wenn alle Punkte belegt sind:
 
 1. Eventdatum ≥ 24.10.2026 (laut Zielseite).

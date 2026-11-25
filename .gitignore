@@ -1,0 +1,15 @@
+
+# Lokale Riftbound-Daten und generierte Berichte
+/wissen/*Karten (Karten)*.csv
+/wissen/*Kartenkatalog*.csv
+/wissen/03_kartenpool.csv
+/wissen/01_regeln*.md
+/wissen/Riftbound*Rules*.pdf
+/daten/sammlung_normalisiert.csv
+/daten/karten_tags.csv
+/daten/zuordnung_offen.csv
+/ergebnis/
+
+# Lokale Decklisten; nur die Vorlage bleibt im Repo
+/decks/*.csv
+!/decks/VORLAGE.csv

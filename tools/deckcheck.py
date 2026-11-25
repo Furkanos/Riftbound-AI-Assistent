@@ -39,6 +39,91 @@ def pick(r,*names,anytext=False):
    if k and 'text' in k.casefold() and v: return ' '.join(str(v).split())
  return ''
 
+def read_deck(p):
+    lines=p.read_text(encoding='utf-8-sig').splitlines(); comments=[x[1:].strip() for x in lines if x.lstrip().startswith('#')]
+    rows=list(csv.DictReader([x for x in lines if not x.lstrip().startswith('#')],delimiter=';'))
+    cards=[]
+    for i,r in enumerate(rows,2):
+     if not r or not any(r.values()): continue
+     q=int(r['Anzahl']); a=r['Bereich'].strip(); a=AREA_ALIASES.get(a,a); nm=r['Name'].strip(); st=r.get('Set','').strip().upper(); no=r.get('Nummer','').strip()
+     if q<1 or a not in AREAS or not nm: raise ValueError(f'{p}:{i}: ungültige Anzahl, Name oder Bereich')
+     cards.append({'q':q,'name':nm,'set':st,'no':no,'area':a,'key':(st,num(no)),'cat':None})
+    return comments, cards
+
+
+def structure_only(output_dir):
+    decks = [
+        p for p in sorted((ROOT / "decks").glob("*.csv"))
+        if p.name.upper() != "VORLAGE.CSV"
+    ]
+    if not decks:
+        raise SystemExit("Keine Deck-CSV zur Strukturprüfung gefunden.")
+
+    reports = {}
+    failed = False
+    for p in decks:
+        try:
+            _, cards = read_deck(p)
+            if not cards:
+                raise ValueError("Keine Kartenzeilen")
+            areas = defaultdict(int)
+            for card in cards:
+                areas[card["area"]] += card["q"]
+            checks = [
+                ("CSV-Zeilen lesbar und gültig", True),
+                ("Main + Champion = 40 (Projektvorgabe)",
+                 areas["Main"] + areas["Champion"] == 40),
+                ("Legenden-Slots = 1 (Projektvorgabe)", areas["Legende"] == 1),
+                ("Runen-Slots = 12 (Projektvorgabe)", areas["Rune"] == 12),
+                ("Battlefield-Slots = 3 (Projektvorgabe)", areas["Battlefield"] == 3),
+                ("Sideboard-Slots höchstens 10 (Projektvorgabe)", areas["Sideboard"] <= 10),
+            ]
+        except (ValueError, KeyError, TypeError, AttributeError, csv.Error) as exc:
+            print(f"{p.name}: CSV-Struktur ungültig ({exc})")
+            checks = [("CSV-Zeilen lesbar und gültig", False)]
+
+        failed = failed or any(ok is False for _, ok in checks)
+        checks.extend((label, None) for label in (
+            "Kartenidentität, Kopienlimit und unterschiedliche Battlefields",
+            "Domänen, Chosen Champion und Signatures",
+            "Aktueller Bannstatus",
+            "Aktuelle Set-Freigabe",
+            "Besitz und Budget",
+        ))
+        lines = [
+            "# Deck-Prüfstatus", "",
+            "CSV-Struktur gegen lokale Projektvorgaben; keine Bestätigung aktueller Turnierlegalität.", "",
+            "| Prüfung | Status |", "|---|---|",
+        ]
+        for label, ok in checks:
+            status = "NICHT VERIFIZIERT" if ok is None else "BESTANDEN" if ok else "NICHT BESTANDEN"
+            lines.append(f"| {label} | {status} |")
+        reports[f"{p.stem}_pruefstatus.md"] = "\n".join(lines) + "\n"
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    if any(output_dir.iterdir()):
+        raise SystemExit(f"Ausgabeverzeichnis nicht leer: {output_dir}")
+    for name, report in reports.items():
+        (output_dir / name).write_text(report, encoding="utf-8")
+    return int(failed)
+
+
+def cli():
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Lokaler Vollcheck oder inventarfreier Strukturcheck.")
+    parser.add_argument("--structure-only", action="store_true")
+    parser.add_argument("--output-dir", type=Path)
+    args = parser.parse_args()
+    if args.structure_only:
+        if args.output_dir is None:
+            parser.error("--structure-only verlangt --output-dir")
+        return structure_only(args.output_dir)
+    if args.output_dir is not None:
+        parser.error("--output-dir ist nur mit --structure-only verfügbar")
+    main()
+    return 0
+
 def main():
  invs=sorted((ROOT/'wissen').glob('*Karten (Karten)*.csv')); cats=sorted((ROOT/'wissen').glob('*Kartenkatalog*.csv'))
  if not invs or not cats: raise SystemExit('Inventar oder Kartenkatalog fehlt in wissen/.')
@@ -80,14 +165,7 @@ def main():
  outdir=ROOT/'ergebnis'; outdir.mkdir(exist_ok=True)
  for p in sorted((ROOT/'decks').glob('*.csv')):
   if p.name.upper()=='VORLAGE.CSV': continue
-  lines=p.read_text(encoding='utf-8-sig').splitlines(); comments=[x[1:].strip() for x in lines if x.lstrip().startswith('#')]
-  rows=list(csv.DictReader([x for x in lines if not x.lstrip().startswith('#')],delimiter=';'))
-  cards=[]
-  for i,r in enumerate(rows,2):
-   if not r or not any(r.values()): continue
-   q=int(r['Anzahl']); a=r['Bereich'].strip(); a=AREA_ALIASES.get(a,a); nm=r['Name'].strip(); st=r.get('Set','').strip().upper(); no=r.get('Nummer','').strip()
-   if q<1 or a not in AREAS or not nm: raise ValueError(f'{p}:{i}: ungültige Anzahl, Name oder Bereich')
-   cards.append({'q':q,'name':nm,'set':st,'no':no,'area':a,'key':(st,num(no)),'cat':None})
+  comments, cards = read_deck(p)
   # Choose the catalog printing matching requested set+number; otherwise name lookup for diagnosis only.
   issues=[]; all_catalog=True
   for c in cards:
@@ -98,7 +176,7 @@ def main():
     if matches or cname.get(norm(c['name'])): issues.append(f"Katalogabweichung: **{c['name']}** – {c['set']} {c['no']} stimmt nicht mit dem Namens-/Seteintrag überein.")
     else: issues.append(f"Katalog: **{c['name']}** nicht gefunden.")
    c['cat']=chosen
-   if norm(c['name']) in bans: issues.append(f"Gebannt: **{c['name']}** steht auf der Bannliste.")
+   if norm(c['name']) in bans: issues.append(f"Treffer im historischen Bannlisten-Snapshot: **{c['name']}** steht auf der Bannliste.")
   # Ownership is allocated once per physical copy across duplicate deck rows.
   remaining_key={k:v['owned'] for k,v in invkey.items()}; remaining_name={k:v['owned'] for k,v in invname.items()}
   remaining_key_names={k:dict(v) for k,v in invkey_names.items()}
@@ -172,13 +250,33 @@ def main():
   identity={str(d).casefold() for c,d in domains if c['area']=='Legende'}
   domain_bad=[f"{c['name']} ({d})" for c,d in domains if c['area'] not in ('Legende','Rune') and str(d).casefold() not in identity]
   rune_bad=[f"{c['name']} ({d})" for c,d in domains if c['area']=='Rune' and str(d).casefold() not in identity]
-  tests=[('Main Deck = 40 (Champion einschließlich)',maincount==40,f'{maincount}/40'),('Genau 1 Legende',areas['Legende']==1,f'{areas["Legende"]} eingetragen'),('Genau 12 Runen',areas['Rune']==12,f'{areas["Rune"]}/12'),('Genau 3 Battlefields',areas['Battlefield']==3,f'{areas["Battlefield"]}/3'),('Battlefields unterschiedlich',len(bfs)==len(set(bfs)),'Namen verschieden' if len(bfs)==len(set(bfs)) else 'Doppelte Namen'),('Max. 3 Exemplare je Name (Main + Sideboard)',max(counts.values(),default=0)<=3,'keine Überschreitung' if max(counts.values(),default=0)<=3 else 'Überschreitung'),('Alle Karten Set/Nummer im Katalog',all_catalog,'Katalogabgleich'),('Keine gebannte Karte',not any(norm(c['name']) in bans for c in cards),'Bannliste aus wissen/02_format.md'),('Sideboard höchstens 10',areas['Sideboard']<=10,f'{areas["Sideboard"]}/10'),('Alle Domains entsprechen Legendenidentität',not domain_bad,', '.join(domain_bad) if domain_bad else 'keine Fremd-Domains; Identität '+', '.join(sorted(identity))),('Runen-Domains entsprechen Legendenidentität',not rune_bad,', '.join(rune_bad) if rune_bad else 'Runen passen zu '+', '.join(sorted(identity))),('Chosen Champion Tag passt zur Legende',bool(set(legend_tags)&set(champion_tags)),f'Legend: {legend_tags}; Champion: {champion_tags}'),('Höchstens 3 Signatures',len(signatures)<=3,f'{len(signatures)}/3')]
+  snapshot_hits = sorted({c["name"] for c in cards if norm(c["name"]) in bans})
+  if not bans:
+   bann_detail = "Keine Einträge im lokalen Snapshot erkannt; aktuelle offizielle Liste nicht geprüft."
+  elif snapshot_hits:
+   bann_detail = "Treffer im lokalen Snapshot (07.11.2026): " + ", ".join(snapshot_hits) + ". Aktuelle offizielle Liste nicht geprüft."
+  else:
+   bann_detail = "Kein Treffer im lokalen Snapshot (07.11.2026); aktuelle offizielle Liste nicht geprüft."
+  tests=[('Main Deck = 40 (Champion einschließlich)',maincount==40,f'{maincount}/40'),('Genau 1 Legende',areas['Legende']==1,f'{areas["Legende"]} eingetragen'),('Genau 12 Runen',areas['Rune']==12,f'{areas["Rune"]}/12'),('Genau 3 Battlefields',areas['Battlefield']==3,f'{areas["Battlefield"]}/3'),('Battlefields unterschiedlich',len(bfs)==len(set(bfs)),'Namen verschieden' if len(bfs)==len(set(bfs)) else 'Doppelte Namen'),('Max. 3 Exemplare je Name (Main + Sideboard)',max(counts.values(),default=0)<=3,'keine Überschreitung' if max(counts.values(),default=0)<=3 else 'Überschreitung'),('Alle Karten Set/Nummer im Katalog',all_catalog,'Katalogabgleich'),('Aktueller Bannstatus',None,bann_detail),('Sideboard höchstens 10',areas['Sideboard']<=10,f'{areas["Sideboard"]}/10'),('Alle Domains entsprechen Legendenidentität',not domain_bad,', '.join(domain_bad) if domain_bad else 'keine Fremd-Domains; Identität '+', '.join(sorted(identity))),('Runen-Domains entsprechen Legendenidentität',not rune_bad,', '.join(rune_bad) if rune_bad else 'Runen passen zu '+', '.join(sorted(identity))),('Chosen Champion Tag passt zur Legende',bool(set(legend_tags)&set(champion_tags)),f'Legend: {legend_tags}; Champion: {champion_tags}'),('Höchstens 3 Signatures',len(signatures)<=3,f'{len(signatures)}/3')]
   # Signature legality is strictly tied to the legend's champion tag.
   legend_tagset={str(tag).casefold() for tag in legend_tags}
   illegal_signatures=[]
   for signature in signatures:
    card_tags={str(tag).casefold() for tag in arr((signature.get('cat') or {}).get('Tags'))}
    if not (legend_tagset & card_tags): illegal_signatures.append(signature)
+  with (outdir / f"{p.stem}_pruefstatus.md").open("w", encoding="utf-8") as f:
+   f.write("# Deck-Prüfstatus\n\nLokale Prüfungen; keine Bestätigung aktueller Turnierlegalität.\n\n")
+   f.write("| Prüfung | Status |\n|---|---|\n")
+   for label, ok, _ in tests:
+    status = "NICHT VERIFIZIERT" if ok is None else "BESTANDEN" if ok else "NICHT BESTANDEN"
+    f.write(f"| {label} | {status} |\n")
+   signature_status = (
+    "NICHT BESTANDEN" if illegal_signatures else
+    "NICHT VERIFIZIERT" if not all_catalog or not legend_tagset else
+    "BESTANDEN"
+   )
+   f.write(f"| Signature-Zuordnung zur Legende | {signature_status} |\n")
+   f.write("| Aktuelle Set-Freigabe | NICHT VERIFIZIERT |\n")
   from datenbasis import signature_info
   owned_signatures=signature_info()
   present_signature_names={norm(c['name']) for c in signatures}
@@ -192,7 +290,7 @@ def main():
    f.write(f'# Legalitätscheck: {p.stem}\n\n| Bereich | Anzahl |\n|---|---:|\n')
    for a in ('Legende','Champion','Main','Rune','Battlefield','Sideboard'): f.write(f'| {a} | {areas[a]} |\n')
    f.write(f'\n**Deckliste: {"UNVOLLSTÄNDIG" if incomplete else "vollständig markiert"}.**\n\n| Prüfung | Ergebnis | Details |\n|---|---|---|\n')
-   for label,ok,detail in tests: f.write(f'| {label} | {"BESTANDEN" if ok else "NICHT BESTANDEN"} | {detail} |\n')
+   for label,ok,detail in tests: f.write(f'| {label} | {"NICHT VERIFIZIERT" if ok is None else "BESTANDEN" if ok else "NICHT BESTANDEN"} | {detail} |\n')
    f.write('\\n## Signature-Check\\n\\n')
    if illegal_signatures:
     for c in illegal_signatures:
@@ -205,7 +303,7 @@ def main():
    else:
     f.write('Keine passende, besessene Signature fehlt im Deck.\\n')
    f.write('\\n## Zuordnung und Besitz\\n\\nBesitzabgleich nach Set+Nummer; Foil-/Normal- und Showcase-Bestand wird über Set+Nummer summiert. Fallback: normalisierter Name (einschließlich Entfernen von `[Foil]` und `#Nummer`). Bestand wird bei mehrfachen Decklistenzeilen nur einmal angerechnet. Runen gelten als unbegrenzt vorhanden; sie werden vollständig als Besitz ausgewiesen und verursachen keine Fehlmenge oder Kosten.\\n\\n')
-   f.write(('Hinweise:\\n'+''.join(f'- {x}\\n' for x in issues)) if issues else 'Keine fehlenden Katalogzuordnungen oder Bannlistentreffer.\\n')
+   f.write(('Hinweise:\\n'+''.join(f'- {x}\\n' for x in issues)) if issues else 'Keine fehlenden Katalogzuordnungen gemeldet. Zum Bannstatus siehe Prüftabelle.\\n')
    if not costok: f.write('\\nPreise für fehlende Exemplare sind im Inventar nicht verfügbar; entsprechende Kosten bleiben leer.\\n')
    if incomplete: f.write('\\nDie Liste ist als unvollständig markiert.\\n')
    f.write(f'\\nBenötigt **{need}** · Besitz **{owned}** · Fehlend **{missing}** · Kosten **{f"€{costs:.2f}" if costok else "nicht vollständig bestimmbar"}**.\\n')
@@ -242,9 +340,9 @@ def main():
    if maxadd<=0: continue
    alts.append((typ,nm,k,own,used,maxadd,dom,cost,stats,text))
   with (outdir/f'{p.stem}_alternativen.md').open('w',encoding='utf-8') as f:
-   f.write(f'# Alternativen aus der Sammlung: {p.stem}\\n\\nAlle Karten aus der Sammlung, die legal sind (Set legal, nicht gebannt) und zur Domänenidentität **{", ".join(sorted(identity)) or "unbekannt"}** passen. Ohne Legenden, Runen und Tokens. Automatisch erzeugt.\\n\\n- **Besitz** = Exemplare in der Sammlung (alle Drucke)\\n- **Im Deck** = bereits in diesem Deck (alle Bereiche)\\n- **Max. zusätzlich** = so viele dürfen noch dazu (Besitz und 3er-Limit berücksichtigt)\\n\\nAnzahl Karten: {len(alts)}\\n')
+   f.write(f'# Alternativen aus der Sammlung: {p.stem}\\n\\nKandidaten aus der Sammlung, die nach lokaler Setliste und historischem Bannlisten-Snapshot vorgefiltert wurden. Aktuelle Formatlegalität ist nicht verifiziert. Die Kandidaten passen laut Katalog zur Domänenidentität **{", ".join(sorted(identity)) or "unbekannt"}** passen. Ohne Legenden, Runen und Tokens. Automatisch erzeugt.\\n\\n- **Besitz** = Exemplare in der Sammlung (alle Drucke)\\n- **Im Deck** = bereits in diesem Deck (alle Bereiche)\\n- **Max. zusätzlich** = rechnerischer Spielraum nach Besitz und lokalem 3er-Limit; keine Legalitätsfreigabe\\n\\nAnzahl Karten: {len(alts)}\\n')
    cur=None
    for typ,nm,k,own,used,maxadd,dom,cost,stats,text in sorted(alts,key=lambda x:(x[0],x[1].casefold())):
     if typ!=cur: cur=typ; f.write(f'\\n## {typ}\\n')
     f.write(f"\\n### {nm} ({k[0]}-{k[1]})\\n- Besitz: {own} · Im Deck: {used} · Max. zusätzlich: {maxadd}\\n- Domäne: {dom or '?'} · Kosten: {cost or '?'} · Stats: {stats or '-'}\\n- Text: {text or '[TEXT FEHLT IN DEN DATEN]'}\\n")
-if __name__=='__main__': main()
+if __name__=='__main__': raise SystemExit(cli())
